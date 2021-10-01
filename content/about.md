@@ -1,25 +1,43 @@
 +++
 title = "About"
-description = "Hugo, the world's fastest framework for building websites"
-date = "2019-02-28"
-aliases = ["about-us", "about-hugo", "contact"]
-author = "Hugo Authors"
+slug = "about"
+description = "About Andres Garcia"
+date = "2020-02-28"
+aliases = ["about-us", "about-andres-garcia", "contact"]
+author = "Andrés García"
 +++
 
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
 
-Hugo makes use of a variety of open source projects including:
+Hi! I'm Andres, I am a Deaf person, my native language is Colombian Sign Language and I love to be behind a computer, it can be researching new trends in software, learning a new technology or seeing what's new in the world to find new ways to unite logic and communications.
+<!-- I have a thing for mobile development and backend, and love working on software development and UX! -->
 
-* https://github.com/yuin/goldmark
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
+Technologist specialized in application development for mobile devices with solid experience in mobile front-end in Flutter.
 
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
+Technologist in Analysis and development in information systems with
+Front-end knowledge of HTML, CSS, Javascript, Vue.js and Typescript.
+Solid understanding of design principles, UI/UX and responsive design, PWAs, Clean Architecture.
+Back-end experience using Node.js/Express, Loopback 3/4, Nest, Directus, Auth (JWT), Security, RESTful APIs and GraphQL.
+DevOps experience with CI/CD, Docker, manage Linux servers and microservices architectures.
+Relational and non-relational database analysis, design, administration using MySQL, MariaDB, MongoDB, PostgreSQL and Firebase.
 
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
+Proactive, innovative, self-starter with initiative, analytical skills, decision making, strong work ethic and high level of professionalism.
 
-Websites built with Hugo are extremely fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
+I am a Deaf Full-Stack App Mobile Flutter Developer graduated from SENA and have degrees from:
 
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+* **National Learning Service SENA-MARKET MANAGEMENT, LOGISTICS AND INFORMATION TECHNOLOGY CENTRE (CGMLTI)-Regional Capital District. Bogotá D.C.**
+
+  Technological Specialization in Application Development for Mobile Devices (2020)
+
+* **National Learning Service SENA-ELECTRICITY, ELECTRONICS AND TELECOMMUNICATIONS CENTRE (CEET)-Regional Capital District. Bogotá D.C.**
+
+  Technology in Analysis and Development of Information Systems (2019)
+
+  _Activities and associations:_
+
+    ➢ Competitor 9th version of SENASoft 2018 Ability Web Application Development
+
+* **SENA Market Management, Logistics and Information Technology Centre - Regional Capital District. Bogotá D.C**
+
+  Certificate of Labour Competence in the Standard (2011):
+    * Perform preventive and predictive maintenance that prolongs the operation of computer equipment.
+    * Perform corrective maintenance of computer equipment as established.

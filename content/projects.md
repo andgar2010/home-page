@@ -3,4 +3,6 @@ title = "Projects"
 slug = "projects"
 +++
 
-Nothing to see here... Move along!
+Under construction... Wait!
+
+You can look at my CV or Linkedln, which has a brief description of the projects.

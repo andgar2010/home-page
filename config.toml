@@ -18,7 +18,7 @@ keywords = "blog,developer,personal"
 info = ["Developer Full Stack App Mobile Flutter", ""]
 avatarURL = "images/avatar.jpg"
 #gravatar = "john.doe@example.com"
-footerContent = "Enter a text here."
+footerContent = "H E L L O @ T E C H - A N D G A R . M E"
 dateFormat = "January 2, 2006"
 hideFooter = false
 hideCredits = true
@@ -71,22 +71,33 @@ customJS = []
 # serverURL = "analytics.example.com" # For cloud-hosting, use provided URL, e.g. example.matomo.cloud
 
 # If you want to use Google Tag Manager(https://analytics.google.com/) for analytics, add this section
-# [params.googleTagManager]
-# id = "gid"
+[params.googleTagManager]
+id = "UA-33194632-1"
 
 # If you want to implement a Content-Security-Policy, add this section
 [params.csp]
-childsrc = ["'self'"]
+childsrc = [
+  "'self'",
+]
 fontsrc = [
   "'self'",
   "https://fonts.gstatic.com",
   "https://cdn.jsdelivr.net/",
 ]
-formaction = ["'self'"]
-framesrc = ["'self'"]
+formaction = [
+  "'self'",
+]
+framesrc = [
+  "'self'",
+  "https://www.youtube.com"
+]
 imgsrc = [
   "'self'",
-  "https://user-images.githubusercontent.com"
+  "https://user-images.githubusercontent.com",
+  "https://www.google-analytics.com",
+  "https://twemoji.maxcdn.com",
+  "https://i.vimeocdn.com",
+  "https://i.ytimg.com",
 ]
 objectsrc = ["'none'"]
 stylesrc = [
@@ -97,10 +108,18 @@ stylesrc = [
 ]
 scriptsrc = [
   "'self'",
+  "eval",
   "'unsafe-inline'",
   "https://www.google-analytics.com",
+  "https://static.cloudflareinsights.com",
+  "https://www.googletagmanager.com/",
+  "https://twemoji.maxcdn.com",
+  "https://polyfill.io",
+  "https://cdn.jsdelivr.net",
 ]
-prefetchsrc = ["'self'"]
+prefetchsrc = [
+  "'self'",
+]
 # connect-src directive – defines valid targets for to XMLHttpRequest (AJAX),WebSockets or EventSource
 connectsrc = [
   "'self'",
@@ -162,7 +181,7 @@ url = "https://link.tech-andgar.me/linkedin"
 
 
 [languages.en]
-languageName = ":uk:"
+languageName = "English :uk:"
 
 [[languages.en.menu.main]]
 name = "About"
@@ -190,7 +209,7 @@ weight = 6
 url = "https://link.tech-andgar.me/CV-AFGR-DEV"
 
 [languages.es-419]
-languageName = "Español"
+languageName = "Español :es:"
 title = "TECH-ANDGAR"
 
 [languages.es-419.params]
