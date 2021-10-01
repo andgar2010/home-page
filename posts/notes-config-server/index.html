@@ -4,7 +4,7 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta http-equiv=content-language content="en">
 <meta name=color-scheme content="light dark">
-<meta http-equiv=content-security-policy content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self'; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self'; img-src 'self'; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/; script-src 'self' 'unsafe-inline' https://www.google-analytics.com; prefetch-src 'self'; connect-src 'self' https://www.google-analytics.com;">
+<meta http-equiv=content-security-policy content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self'; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self'; img-src 'self' https://user-images.githubusercontent.com; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/; script-src 'self' 'unsafe-inline' https://www.google-analytics.com; prefetch-src 'self'; connect-src 'self' https://www.google-analytics.com;">
 <meta name=author content="Andrés García">
 <meta name=description content="View logs ngnix    $ cat /var/log/nginx/error.log # OR $ sudo tail -n 20 /var/log/nginx/error.log Check configuration nginx    $ nginx -c /etc/nginx/nginx.conf -t Reset service nginx on Ubuntu    $ sudo systemctl restart nginx Reload configuration of service nginx on Ubuntu    $ sudo systemctl reload nginx Assign permissitions for user of nginx on Ubuntu    $ chown -R www-data:www-data /var/www/domain.">
 <meta name=keywords content="blog,developer,personal">
@@ -59,11 +59,14 @@ TECH-ANDGAR
 <li class=navigation-item>
 <a class=navigation-link href=/contact/>Contact me</a>
 </li>
+<li class=navigation-item>
+<a class=navigation-link href=https://link.tech-andgar.me/CV-AFGR-DEV>CV</a>
+</li>
 <li class="navigation-item menu-separator">
 <span>|</span>
 </li>
 <li class=navigation-item>
-<a href=https://tech-andgar.me/pt-br/>🇧🇷</a>
+<a href=https://tech-andgar.me/es-419/>Español</a>
 </li>
 </ul>
 </section>
@@ -101,66 +104,66 @@ View logs ngnix
 <i class="fa fa-link" aria-hidden=true></i>
 </a>
 </h2>
-<div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ cat /var/log/nginx/error.log
-<span style=font-style:italic># OR</span>
-$ sudo tail -n 20 /var/log/nginx/error.log
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ cat /var/log/nginx/error.log
+<span style=color:#75715e># OR</span>
+$ sudo tail -n <span style=color:#ae81ff>20</span> /var/log/nginx/error.log
 </code></pre></div><h2 id=check-configuration-nginx>
 Check configuration nginx
 <a class=heading-link href=#check-configuration-nginx>
 <i class="fa fa-link" aria-hidden=true></i>
 </a>
 </h2>
-<div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ nginx -c /etc/nginx/nginx.conf -t
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ nginx -c /etc/nginx/nginx.conf -t
 </code></pre></div><h2 id=reset-service-nginx-on-ubuntu>
 Reset service nginx on Ubuntu
 <a class=heading-link href=#reset-service-nginx-on-ubuntu>
 <i class="fa fa-link" aria-hidden=true></i>
 </a>
 </h2>
-<div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ sudo systemctl restart nginx
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ sudo systemctl restart nginx
 </code></pre></div><h2 id=reload-configuration-of-service-nginx-on-ubuntu>
 Reload configuration of service nginx on Ubuntu
 <a class=heading-link href=#reload-configuration-of-service-nginx-on-ubuntu>
 <i class="fa fa-link" aria-hidden=true></i>
 </a>
 </h2>
-<div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ sudo systemctl reload nginx
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ sudo systemctl reload nginx
 </code></pre></div><h2 id=assign-permissitions-for-user-of-nginx-on-ubuntu>
 Assign permissitions for user of nginx on Ubuntu
 <a class=heading-link href=#assign-permissitions-for-user-of-nginx-on-ubuntu>
 <i class="fa fa-link" aria-hidden=true></i>
 </a>
 </h2>
-<div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ chown -R www-data:www-data /var/www/domain.com/subdomain/*
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ chown -R www-data:www-data /var/www/domain.com/subdomain/*
 </code></pre></div><h2 id=copy-project-to-folder-www-public-nginx>
 Copy project to folder WWW public Nginx
 <a class=heading-link href=#copy-project-to-folder-www-public-nginx>
 <i class="fa fa-link" aria-hidden=true></i>
 </a>
 </h2>
-<div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ cp -rL /root/projects/project1/dist/public /var/www/domain.me/subdomain/project
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ cp -rL /root/projects/project1/dist/public /var/www/domain.me/subdomain/project
 </code></pre></div><h2 id=fix-permissions-for-user-of-nginx-on-ubuntu>
 Fix permissions for user of nginx on Ubuntu
 <a class=heading-link href=#fix-permissions-for-user-of-nginx-on-ubuntu>
 <i class="fa fa-link" aria-hidden=true></i>
 </a>
 </h2>
-<div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ chmod -R 755 */   <span style=font-style:italic># or 751 Fix Permissions Folder</span>
-$ chmod -R 644 */*  <span style=font-style:italic># Fix Permissions Files</span>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ chmod -R <span style=color:#ae81ff>755</span> */   <span style=color:#75715e># or 751 Fix Permissions Folder</span>
+$ chmod -R <span style=color:#ae81ff>644</span> */*  <span style=color:#75715e># Fix Permissions Files</span>
 </code></pre></div><h2 id=copy-project-to-folder-www-public-nginx-and-fix-permissions>
 Copy project to folder WWW public Nginx and Fix permissions
 <a class=heading-link href=#copy-project-to-folder-www-public-nginx-and-fix-permissions>
 <i class="fa fa-link" aria-hidden=true></i>
 </a>
 </h2>
-<div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ cp -rL /root/projects/Personal/demo_cobrandoAG/app/dist/pwa /var/www/tech-andgar.me/subdomain/pwa &amp;&amp; chmod -R 755 */ &amp;&amp; chmod -R 644 */*
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ cp -rL /root/projects/Personal/demo_cobrandoAG/app/dist/pwa /var/www/tech-andgar.me/subdomain/pwa <span style=color:#f92672>&amp;&amp;</span> chmod -R <span style=color:#ae81ff>755</span> */ <span style=color:#f92672>&amp;&amp;</span> chmod -R <span style=color:#ae81ff>644</span> */*
 </code></pre></div><h2 id=link-symbolic>
 Link symbolic
 <a class=heading-link href=#link-symbolic>
 <i class="fa fa-link" aria-hidden=true></i>
 </a>
 </h2>
-<div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ ln -s /root/projects/Personal/demo_cobrandoAG/app/dist/pwa/* /var/www/tech-andgar.me/subdomain/demo_cobrando
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ ln -s /root/projects/Personal/demo_cobrandoAG/app/dist/pwa/* /var/www/tech-andgar.me/subdomain/demo_cobrando
 
 $ ln -sv /root/projects/Personal/demo_cobrandoAG/app/dist/pwa /var/www/tech-andgar.me/subdomain
 </code></pre></div><h2 id=pm2-freeze-list-process-for-startup>
@@ -169,7 +172,7 @@ PM2 Freeze list process for startup
 <i class="fa fa-link" aria-hidden=true></i>
 </a>
 </h2>
-<div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=font-style:italic># [PM2] Freeze a process list on reboot via:</span>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e># [PM2] Freeze a process list on reboot via:</span>
 $ pm2 save
 </code></pre></div><h2 id=pm2-remove-startup>
 PM2 remove startup
@@ -177,7 +180,7 @@ PM2 remove startup
 <i class="fa fa-link" aria-hidden=true></i>
 </a>
 </h2>
-<div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=font-style:italic># [PM2] Remove init script via:</span>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e># [PM2] Remove init script via:</span>
 $ pm2 unstartup systemd
 </code></pre></div><h2 id=git-push>
 Git push
@@ -185,7 +188,7 @@ Git push
 <i class="fa fa-link" aria-hidden=true></i>
 </a>
 </h2>
-<div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ git push -u origin master
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ git push -u origin master
 </code></pre></div>
 </div>
 <footer>

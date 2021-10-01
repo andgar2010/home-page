@@ -4,7 +4,7 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta http-equiv=content-language content="en">
 <meta name=color-scheme content="light dark">
-<meta http-equiv=content-security-policy content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self'; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self'; img-src 'self'; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/; script-src 'self' 'unsafe-inline' https://www.google-analytics.com; prefetch-src 'self'; connect-src 'self' https://www.google-analytics.com;">
+<meta http-equiv=content-security-policy content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self'; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self'; img-src 'self' https://user-images.githubusercontent.com; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/; script-src 'self' 'unsafe-inline' https://www.google-analytics.com; prefetch-src 'self'; connect-src 'self' https://www.google-analytics.com;">
 <meta name=author content="Andrés García">
 <meta name=description content="LCOV is a graphical tool for GCC coverage testing with gcov. It creates HTML pages containing source code annotated with coverage information by collecting gcov data from multiple source files. LCOV supports &ldquo;Line Coverage&rdquo; and &ldquo;Function Coverage&rdquo; measurement.
 The LCOV report looks as follows:
@@ -65,11 +65,14 @@ TECH-ANDGAR
 <li class=navigation-item>
 <a class=navigation-link href=/contact/>Contact me</a>
 </li>
+<li class=navigation-item>
+<a class=navigation-link href=https://link.tech-andgar.me/CV-AFGR-DEV>CV</a>
+</li>
 <li class="navigation-item menu-separator">
 <span>|</span>
 </li>
 <li class=navigation-item>
-<a href=https://tech-andgar.me/pt-br/>🇧🇷</a>
+<a href=https://tech-andgar.me/es-419/posts/la-cobertura-de-pruebas-test-coverage-en-flutter/>Español</a>
 </li>
 </ul>
 </section>
@@ -132,7 +135,7 @@ Install on Ubuntu
 <i class="fa fa-link" aria-hidden=true></i>
 </a>
 </h3>
-<div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>sudo apt-get update -qq -y
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>sudo apt-get update -qq -y
 sudo apt-get install lcov -y
 </code></pre></div><h3 id=install-on-mac>
 Install on Mac
@@ -140,7 +143,7 @@ Install on Mac
 <i class="fa fa-link" aria-hidden=true></i>
 </a>
 </h3>
-<div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>brew install lcov
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>brew install lcov
 </code></pre></div><h3 id=install-on-windows>
 Install on Windows
 <a class=heading-link href=#install-on-windows>
@@ -167,11 +170,11 @@ Si devuelve <strong>Restricted</strong>, ejecuta <code>Set-ExecutionPolicy AllSi
 <ul>
 <li>CMD (with Admin)</li>
 </ul>
-<div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>@<span style=font-style:italic>&#34;%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe&#34;</span> -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command <span style=font-style:italic>&#34;iex ((New-Object System.Net.WebClient).DownloadString(&#39;https://chocolatey.org/install.ps1&#39;))&#34;</span> &amp;&amp; SET <span style=font-style:italic>&#34;PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin&#34;</span>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>@<span style=color:#e6db74>&#34;%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe&#34;</span> -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command <span style=color:#e6db74>&#34;iex ((New-Object System.Net.WebClient).DownloadString(&#39;https://chocolatey.org/install.ps1&#39;))&#34;</span> <span style=color:#f92672>&amp;&amp;</span> SET <span style=color:#e6db74>&#34;PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin&#34;</span>
 </code></pre></div><ul>
 <li>PowerShell (with Admin)</li>
 </ul>
-<div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString(<span style=font-style:italic>&#39;https://chocolatey.org/install.ps1&#39;</span>))
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>Set-ExecutionPolicy Bypass -Scope Process -Force; iex <span style=color:#f92672>((</span>New-Object System.Net.WebClient<span style=color:#f92672>)</span>.DownloadString<span style=color:#f92672>(</span><span style=color:#e6db74>&#39;https://chocolatey.org/install.ps1&#39;</span><span style=color:#f92672>))</span>
 </code></pre></div></li>
 </ol>
 <h4 id=2-perl>
@@ -183,16 +186,16 @@ Si devuelve <strong>Restricted</strong>, ejecuta <code>Set-ExecutionPolicy AllSi
 <ol>
 <li>
 <p>Install Perl</p>
-<div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>choco install strawberryperl
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>choco install strawberryperl
 </code></pre></div></li>
 <li>
 <p>Check Installed Perl</p>
-<div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>where perl
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>where perl
 </code></pre></div><p>If it returns correct it is and next step 3. LCOV:</p>
-<div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=font-style:italic># C:\Strawberry\perl\bin\perl.exe</span>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=color:#75715e># C:\Strawberry\perl\bin\perl.exe</span>
 </code></pre></div><p>If it does not exist, add the perl path in the system environment variables</p>
 <p>Note: A command that changes the cmd environment variables for the current cmd session only</p>
-<div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>set PATH=$PATH:C:<span style=font-weight:700;font-style:italic>\S</span>trawberry<span style=font-weight:700;font-style:italic>\p</span>erl<span style=font-weight:700;font-style:italic>\b</span>in
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>set PATH<span style=color:#f92672>=</span>$PATH:C:<span style=color:#ae81ff>\S</span>trawberry<span style=color:#ae81ff>\p</span>erl<span style=color:#ae81ff>\b</span>in
 
 echo %path%
 </code></pre></div><p>If desired, you can permanently add a path to PATH with the setx command:</p>
@@ -202,9 +205,9 @@ echo %path%
 <li>Do not call SETX %PATH%;xxx - <em>adds the system path to the user path</em> (SETX will default to updating your user path).</li>
 <li>Do not call SETX %PATH%;xxx /M - <em>adds the user path to the system path</em> (SETX &mldr; /M will update your system path.).</li>
 </ol>
-<div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>setx /M path <span style=font-style:italic>&#34;%path%;C:\Strawberry\perl\bin\&#34;
-</span><span style=font-style:italic>
-</span><span style=font-style:italic>echo %path%
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>setx /M path <span style=color:#e6db74>&#34;%path%;C:\Strawberry\perl\bin\&#34;
+</span><span style=color:#e6db74>
+</span><span style=color:#e6db74>echo %path%
 </span></code></pre></div></li>
 </ol>
 <h4 id=3-lcov>
@@ -213,7 +216,7 @@ echo %path%
 <i class="fa fa-link" aria-hidden=true></i>
 </a>
 </h4>
-<div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>choco install lcov
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>choco install lcov
 </code></pre></div><h2 id=lcov-operation>
 LCOV operation
 <a class=heading-link href=#lcov-operation>
@@ -226,7 +229,7 @@ LCOV operation
 <i class="fa fa-link" aria-hidden=true></i>
 </a>
 </h3>
-<div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>flutter test --coverage
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>flutter test --coverage
 </code></pre></div><h3 id=2-generate-coverage-files-and-convert-them-to-html>
 2. Generate coverage files and convert them to HTML
 <a class=heading-link href=#2-generate-coverage-files-and-convert-them-to-html>
@@ -239,7 +242,7 @@ Linux/Mac
 <i class="fa fa-link" aria-hidden=true></i>
 </a>
 </h4>
-<div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>genhtml coverage/lcov.info -o coverage/html
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>genhtml coverage/lcov.info -o coverage/html
 </code></pre></div><h4 id=windows>
 Windows
 <a class=heading-link href=#windows>
@@ -252,14 +255,14 @@ Windows
 <i class="fa fa-link" aria-hidden=true></i>
 </a>
 </h5>
-<div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>perl C:<span style=font-weight:700;font-style:italic>\P</span>rogramData<span style=font-weight:700;font-style:italic>\c</span>hocolatey<span style=font-weight:700;font-style:italic>\l</span>ib<span style=font-weight:700;font-style:italic>\l</span>cov<span style=font-weight:700;font-style:italic>\t</span>ools<span style=font-weight:700;font-style:italic>\b</span>in<span style=font-weight:700;font-style:italic>\g</span>enhtml coverage/lcov.info -o coverage/html
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>perl C:<span style=color:#ae81ff>\P</span>rogramData<span style=color:#ae81ff>\c</span>hocolatey<span style=color:#ae81ff>\l</span>ib<span style=color:#ae81ff>\l</span>cov<span style=color:#ae81ff>\t</span>ools<span style=color:#ae81ff>\b</span>in<span style=color:#ae81ff>\g</span>enhtml coverage/lcov.info -o coverage/html
 </code></pre></div><h5 id=git-bash>
 <strong>Git bash</strong>
 <a class=heading-link href=#git-bash>
 <i class="fa fa-link" aria-hidden=true></i>
 </a>
 </h5>
-<div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>perl /c/ProgramData/chocolatey/lib/lcov/tools/bin/genhtml coverage/lcov.info -o coverage/html
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>perl /c/ProgramData/chocolatey/lib/lcov/tools/bin/genhtml coverage/lcov.info -o coverage/html
 </code></pre></div>
 </div>
 <footer>
