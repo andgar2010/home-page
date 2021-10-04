@@ -1,10 +1,14 @@
 +++
-title = "Acerca de"
-slug = "about"
-description = "Acerca de Andres Garcia"
-date = "2020-02-28"
-aliases = ["about-us", "about-andres-garcia", "contacto"]
 author = "Andrés García"
+title = "Acerca de"
+date = "2020-02-28"
+description = "Acerca de Andres Garcia"
+slug = "about"
+aliases = [
+  "about-us",
+  "about-andres-garcia",
+  "contacto"
+]
 +++
 
 

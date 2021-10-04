@@ -1,9 +1,24 @@
 +++
-date = "2021-09-30"
+author = "Andrés García"
 title = "La cobertura de pruebas (Test Coverage) en Flutter"
+date = "2021-09-30"
+description = "Cobertura de pruebas de Flutter - Cómo instalar Linux, Mac OS, Windows y cómo usar con comandos"
 slug = "La cobertura de pruebas (Test Coverage) en Flutter"
-tags = ["Flutter", "LCOV", "Test Coverage", "prueba de cobertura"]
-categories = ["Flutter"]
+tags = [
+  "Flutter",
+  "LCOV",
+  "Test Coverage",
+  "prueba de cobertura",
+]
+categories = [
+  "Flutter",
+]
+series = [
+  "Flutter Test Coverage"
+]
+aliases = [
+  "Flutter Test Coverage"
+]
 +++
 
 LCOV es una herramienta gráfica para las pruebas de cobertura de GCC con gcov. Crea páginas HTML que contienen el código fuente anotado con información de cobertura mediante la recopilación de datos gcov de múltiples archivos fuente. LCOV soporta la medición de "Cobertura de líneas" y "Cobertura de funciones".
