@@ -132,6 +132,8 @@ choco install lcov
 
 ```shell
 genhtml coverage/lcov.info -o coverage/html
+
+open coverage/html/index.html
 ```
 
 #### Windows
@@ -140,10 +142,14 @@ genhtml coverage/lcov.info -o coverage/html
 
 ```shell
 perl C:\ProgramData\chocolatey\lib\lcov\tools\bin\genhtml coverage/lcov.info -o coverage/html
+
+coverage/html/index.html # Abrir reporte cobertura de prueba HTML
 ```
 
 ##### **Git bash**
 
-   ```bash
-   perl /c/ProgramData/chocolatey/lib/lcov/tools/bin/genhtml coverage/lcov.info -o coverage/html
-   ```
+```bash
+perl /c/ProgramData/chocolatey/lib/lcov/tools/bin/genhtml coverage/lcov.info -o coverage/html
+
+coverage/html/index.html # Abrir reporte cobertura de prueba HTML
+```

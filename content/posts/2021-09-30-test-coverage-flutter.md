@@ -121,9 +121,9 @@ choco install lcov
 
 ### 1. Execute Flutter project test coverage to generate LCOV file
 
-   ```shell
-   flutter test --coverage
-   ```
+```shell
+flutter test --coverage
+```
 
 ### 2. Generate coverage files and convert them to HTML
 
@@ -131,6 +131,8 @@ choco install lcov
 
 ```shell
 genhtml coverage/lcov.info -o coverage/html
+
+open coverage/html/index.html
 ```
 
 #### Windows
@@ -139,10 +141,14 @@ genhtml coverage/lcov.info -o coverage/html
 
 ```shell
 perl C:\ProgramData\chocolatey\lib\lcov\tools\bin\genhtml coverage/lcov.info -o coverage/html
+
+coverage/html/index.html # Open report coverage test HTML
 ```
 
 ##### **Git bash**
 
-   ```bash
-   perl /c/ProgramData/chocolatey/lib/lcov/tools/bin/genhtml coverage/lcov.info -o coverage/html
-   ```
+```bash
+perl /c/ProgramData/chocolatey/lib/lcov/tools/bin/genhtml coverage/lcov.info -o coverage/html
+
+coverage/html/index.html # Open report coverage test HTML
+```
