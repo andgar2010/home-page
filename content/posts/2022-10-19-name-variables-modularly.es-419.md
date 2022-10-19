@@ -123,8 +123,8 @@ var colorTextStroke;
 var colorTextStrokeLight;
 var colorTextStrokeDark;
 
-
-// No debe estar en este mismo archivo porque principio de responsabilidad única (SRP) por un archivo o un clase.
+// No debe estar en este mismo archivo porque principio de responsabilidad única (SRP)
+// por un archivo o un clase.
 var fontFamilyTextLight;
 var fontFamilyTextDark;
 var sizeTextStrokeLight;
