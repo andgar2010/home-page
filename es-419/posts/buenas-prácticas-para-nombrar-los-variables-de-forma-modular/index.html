@@ -1,0 +1,162 @@
+<!doctype html><html lang=es-419><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=content-language content="es-419"><meta name=color-scheme content="light dark"><meta http-equiv=content-security-policy content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self'; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self' https://www.youtube.com; img-src 'self' https://user-images.githubusercontent.com https://www.google-analytics.com https://twemoji.maxcdn.com https://i.vimeocdn.com https://i.ytimg.com; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/; script-src 'self' eval 'unsafe-inline' https://www.google-analytics.com https://static.cloudflareinsights.com https://www.googletagmanager.com/ https://twemoji.maxcdn.com https://polyfill.io https://cdn.jsdelivr.net; prefetch-src 'self'; connect-src 'self' https://www.google-analytics.com;"><meta name=author content="Andrés García"><meta name=description content="Buenas prácticas para nombrar los variables de forma modular"><meta name=keywords content="blog,desarrollador,personal"><meta name=twitter:card content="summary"><meta name=twitter:title content="Buenas prácticas para nombrar los variables de forma modular"><meta name=twitter:description content="Buenas prácticas para nombrar los variables de forma modular"><meta property="og:title" content="Buenas prácticas para nombrar los variables de forma modular"><meta property="og:description" content="Buenas prácticas para nombrar los variables de forma modular"><meta property="og:type" content="article"><meta property="og:url" content="https://tech-andgar.me/es-419/posts/buenas-pr%C3%A1cticas-para-nombrar-los-variables-de-forma-modular/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2022-10-19T00:00:00+00:00"><meta property="article:modified_time" content="2022-10-19T00:00:00+00:00"><meta property="og:site_name" content="TECH-ANDGAR"><title>Buenas prácticas para nombrar los variables de forma modular · TECH-ANDGAR</title><link rel=canonical href=https://tech-andgar.me/es-419/posts/buenas-pr%C3%A1cticas-para-nombrar-los-variables-de-forma-modular/><link rel=preload href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as=font type=font/woff2 crossorigin><link rel=stylesheet href=/css/coder.min.708686f8ab8176e91d44fcbe488a0fe0333b94f405cf18a52383d67ba22f0ccb.css integrity="sha256-cIaG+KuBdukdRPy+SIoP4DM7lPQFzxilI4PWe6IvDMs=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/coder-dark.min.aa883b9ce35a8ff4a2a5008619005175e842bb18a8a9f9cc2bbcf44dab2d91fa.css integrity="sha256-qog7nONaj/SipQCGGQBRdehCuxioqfnMK7z0Tastkfo=" crossorigin=anonymous media=screen><link rel=icon type=image/png href=/images/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/images/favicon-16x16.png sizes=16x16><link rel=apple-touch-icon href=/images/apple-touch-icon.png><link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png><meta name=generator content="Hugo 0.104.3"></head><body class="preload-transitions colorscheme-auto"><div class=float-container><a id=dark-mode-toggle class=colorscheme-toggle><i class="fa fa-adjust fa-fw" aria-hidden=true></i></a></div><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=/es-419>TECH-ANDGAR</a>
+<input type=checkbox id=menu-toggle>
+<label class="menu-button float-right" for=menu-toggle><i class="fa fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/es-419/about/>Acerca de</a></li><li class=navigation-item><a class=navigation-link href=/es-419/posts/>Blog</a></li><li class=navigation-item><a class=navigation-link href=/es-419/projects/>Proyectos</a></li><li class=navigation-item><a class=navigation-link href=/es-419/contact/>Contacto</a></li><li class=navigation-item><a class=navigation-link href=https://link.tech-andgar.me/CV-AFGR-DEV>CV</a></li><li class="navigation-item menu-separator"><span>|</span></li><li class=navigation-item><a href=https://tech-andgar.me/>English 🇬🇧</a></li></ul></section></nav><div class=content><section class="container post"><article><header><div class=post-title><h1 class=title><a class=title-link href=https://tech-andgar.me/es-419/posts/buenas-pr%C3%A1cticas-para-nombrar-los-variables-de-forma-modular/>Buenas prácticas para nombrar los variables de forma modular</a></h1></div><div class=post-meta><div class=date><span class=posted-on><i class="fa fa-calendar" aria-hidden=true></i>
+<time datetime=2022-10-19T00:00:00Z>October 19, 2022</time></span>
+<span class=reading-time><i class="fa fa-clock-o" aria-hidden=true></i>
+4-minute read</span></div><div class=categories><i class="fa fa-folder" aria-hidden=true></i>
+<a href=/es-419/categories/programming-language/>Programming Language</a></div><div class=tags><i class="fa fa-tag" aria-hidden=true></i>
+<span class=tag><a href=/es-419/tags/nombrar-los-variables/>nombrar los variables</a></span>
+<span class=separator>•</span>
+<span class=tag><a href=/es-419/tags/nombramiento-las-variables/>nombramiento las variables</a></span></div></div></header><div><h1 id=estándar-nombramiento-las-variables-de-forma-modular>Estándar nombramiento las variables de forma modular
+<a class=heading-link href=#est%c3%a1ndar-nombramiento-las-variables-de-forma-modular><i class="fa fa-link" aria-hidden=true></i></a></h1><p>Cuando trabajas con un lenguaje de programación vas a aprovechar el poder de las variables. Sin embargo, si creas espontáneamente los nombres de las variables a medida que codificas, lo más probable es que tu convención de nomenclatura carezca de cohesión. Deberías pensar en organizar los nombres de tus variables (y del proyecto en general) de forma modular. Esto traerá estructura y unidad a tu proyecto como un todo, haciendo más fácil la comprensión y la navegación de todo el asunto.</p><h2 id=una-sugerencia-de-nomenclatura>Una sugerencia de nomenclatura
+<a class=heading-link href=#una-sugerencia-de-nomenclatura><i class="fa fa-link" aria-hidden=true></i></a></h2><p>Digamos que necesitas una variable para el color del texto en tu proyecto.
+¿Podrías llamarla <code>text-color</code>, o deberías llamarla <code>color-text</code>? ¿Cómo se decide?
+Elegir una al azar puede contribuir a la falta de estructura a medida que aumenta el número de variables en tu proyecto. Como muestra la experiencia, a menudo olvidamos exactamente cómo nombramos las variables para determinados proyectos. Esto lleva a la confusión y a métodos de búsqueda y sustitución global de nombres de variables que llevan mucho tiempo.</p><p>Lo que necesitamos es una regla para definir y seleccionar nuestros nombres de variables. Una gran manera de mantener el modularidad en su proyecto es agrupar las variables que comparten relaciones y puntos en común. Entonces puedes nombrarlas ordenando las palabras que describen su función de <strong>genérico a específico de izquierda a derecha</strong>.</p><p>Por ejemplo, si tengo cuatro variables para cuatro colores de borde diferentes, puedo nombrarlas todas empezando por <code>border</code> (ya que ese es el término genérico que todas comparten) y ser más específico con una lectura de izquierda a derecha. Agrupar y nombrar las variables de esta manera hace que tu código sea más fácil de leer, comprender y recordar.</p><h3 id=sin-patrón-no-debe-utilizar-este-ejemplo>Sin patrón (No debe utilizar este ejemplo)
+<a class=heading-link href=#sin-patr%c3%b3n-no-debe-utilizar-este-ejemplo><i class="fa fa-link" aria-hidden=true></i></a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-dart data-lang=dart><span style=display:flex><span><span style=color:#66d9ef>var</span> blue<span style=color:#f92672>-</span>border;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> light<span style=color:#f92672>-</span>blue<span style=color:#f92672>-</span>border;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> lightest<span style=color:#f92672>-</span>blue<span style=color:#f92672>-</span>border;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> dark<span style=color:#f92672>-</span>green<span style=color:#f92672>-</span>border;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> darkest<span style=color:#f92672>-</span>border<span style=color:#f92672>-</span>green;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> red<span style=color:#f92672>-</span>border;
+</span></span></code></pre></div><h3 id=genérico---específico-se-recomienda-utilizar-este-ejemplo>Genérico -> Específico (Se recomienda utilizar este ejemplo)
+<a class=heading-link href=#gen%c3%a9rico---espec%c3%adfico-se-recomienda-utilizar-este-ejemplo><i class="fa fa-link" aria-hidden=true></i></a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-dart data-lang=dart><span style=display:flex><span><span style=color:#66d9ef>var</span> border<span style=color:#f92672>-</span>blue;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> border<span style=color:#f92672>-</span>blue<span style=color:#f92672>-</span>light;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> border<span style=color:#f92672>-</span>blue<span style=color:#f92672>-</span>lightest;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> border<span style=color:#f92672>-</span>green<span style=color:#f92672>-</span>dark;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> border<span style=color:#f92672>-</span>green<span style=color:#f92672>-</span>darkest;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> border<span style=color:#f92672>-</span>red;
+</span></span></code></pre></div><h2 id=de-lo-genérico-a-lo-específico-un-ejemplo>De lo genérico a lo específico: Un ejemplo
+<a class=heading-link href=#de-lo-gen%c3%a9rico-a-lo-espec%c3%adfico-un-ejemplo><i class="fa fa-link" aria-hidden=true></i></a></h2><p>Supongamos que estamos trabajando en un lenguaje de programación y queremos crear una serie de variables que definan la paleta de colores de nuestro proyecto. Si estamos trabajando con un tono de blue, podríamos crear algunas variables como esta:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-dart data-lang=dart><span style=display:flex><span><span style=color:#66d9ef>var</span> blue;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> dark<span style=color:#f92672>-</span>blue;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> medium<span style=color:#f92672>-</span>blue;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> darkest<span style=color:#f92672>-</span>blue;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> light<span style=color:#f92672>-</span>blue;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> lightest<span style=color:#f92672>-</span>blue;
+</span></span></code></pre></div><p>Una mejor manera de nombrar estas variables sería empezar con la palabra genérica que todas tienen en común: <strong>blue</strong>. Luego podemos ir concretando de izquierda a derecha:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-dart data-lang=dart><span style=display:flex><span><span style=color:#66d9ef>var</span> blue;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> blue<span style=color:#f92672>-</span>dark;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> blue<span style=color:#f92672>-</span>medium;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> blue<span style=color:#f92672>-</span>darkest;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> blue<span style=color:#f92672>-</span>light;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> blue<span style=color:#f92672>-</span>lightest;
+</span></span></code></pre></div><p>Esto no sólo ayuda a recordar, sino que permitirá a un editor de texto (como VSCode, Android Studio, Sublime Text, etc.) sugerir fácilmente los colores. De esta manera no tiene que memorizar exactamente cómo nombró sus variables. Más bien, puedes empezar de forma genérica y ser más específico a medida que el editor de texto auto-sugiere los nombres de las variables. Todo lo que tienes que recordar es que quieres un color <strong>blue</strong>. Así que empiezas a escribir <code>blue</code> y puedes obtener una lista de todos los diferentes <strong>blue</strong>es que has creado.</p><h2 id=ejemplo-de-sugerencia>Ejemplo de sugerencia
+<a class=heading-link href=#ejemplo-de-sugerencia><i class="fa fa-link" aria-hidden=true></i></a></h2><p>Imagina que estoy trabajando en un gran proyecto y he agrupado todas mis variables que contienen valores de color anteponiéndoles la palabra genérica que todas tienen en común: color.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-dart data-lang=dart><span style=display:flex><span><span style=color:#75715e>// Hmmm... no es mejor
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>var</span> borderColor;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> darkBorderColor;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> lightColorBorder;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> highlight;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> link;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> linkDark;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> text;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> colorText;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> linkColorLight;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> lightestTextColor;
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-dart data-lang=dart><span style=display:flex><span><span style=color:#75715e>// Ok
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>var</span> colorBorder;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> colorBorderDark;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> colorBorderLight;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> colorHighlight;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> colorLink;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> colorLinkDark;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> colorLinkLight;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> colorText;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> colorTextLight;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> colorTextLightest;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> colorBackground;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> colorBackgroundLight;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> colorBackgroundDark;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> colorTextStroke;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> colorTextStrokeLight;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> colorTextStrokeDark;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// No debe estar en este mismo archivo porque principio de responsabilidad única (SRP) por un archivo o un clase.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>var</span> fontFamilyTextLight;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> fontFamilyTextDark;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> sizeTextStrokeLight;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> sizeTextStrokeDark;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> sizeTextLight;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> sizeTextDark;
+</span></span></code></pre></div><p>Si tiene varias responsabilidades de los variables en un archivo o una clase.</p><p>Da otra forma de patrón: <strong>la categoría (o tipo) a lo genérico a lo específico</strong>.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-dart data-lang=dart><span style=display:flex><span><span style=color:#75715e>// Mejor
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>var</span> borderColor;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> borderColorDark;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> borderColorLight;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> highlightColor;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> linkColor;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> linkColorDark;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> linkColorLight;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> backgroundColor;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> backgroundColorLight;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> backgroundColorDark;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> textColor;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> textColorLight;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> textColorLightest;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> textSize;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> textSizeLight;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> textSizeDark;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> textFontFamily;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> textStrokeColor;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> textStrokeColorLight;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> textStrokeColorDark;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> textStrokeSize;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> textStrokeColorLight;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> textStrokeColorDark;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> textStrokeSize;
+</span></span></code></pre></div><p>Si se utilizan los variaciones del mismo un archivo o de una clase</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-dart data-lang=dart><span style=display:flex><span><span style=color:#75715e>// Primary
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>var</span> primaryIconColorLight;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> primaryIconColorDisabledLight;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> primaryIconColorDark;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> primaryIconColorDisabledDark;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> primaryTextColorLight;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> primaryTextColorDisabledLight;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> primaryTextColorDark;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> primaryTextColorDisabledDark;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> primaryBackgroundColorLight;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> primaryBackgroundColorDisabledLight;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> primaryBackgroundColorDark;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> primaryBackgroundColorDisabledDark;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// Secondary
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>var</span> secondaryIconColorLight;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> secondaryIconColorDisabledLight;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> secondaryIconColorDark;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> secondaryIconColorDisabledDark;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> secondaryTextColorLight;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> secondaryTextColorDisabledLight;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> secondaryTextColorDark;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> secondaryTextColorDisabledDark;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> secondaryBackgroundColorLight;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> secondaryBackgroundColorDisabledLight;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> secondaryBackgroundColorDark;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> secondaryBackgroundColorDisabledDark;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// Tertiary
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>var</span> tertiaryIconColorLight;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> tertiaryIconColorDisabledLight;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> tertiaryIconColorDark;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> tertiaryIconColorDisabledDark;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> tertiaryTextColorLight;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> tertiaryTextColorDisabledLight;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> tertiaryTextColorDark;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> tertiaryTextColorDisabledDark;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> tertiaryBackgroundColorLight;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> tertiaryBackgroundColorDisabledLight;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> tertiaryBackgroundColorDark;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> tertiaryBackgroundColorDisabledDark;
+</span></span></code></pre></div><h2 id=conclusión>Conclusión
+<a class=heading-link href=#conclusi%c3%b3n><i class="fa fa-link" aria-hidden=true></i></a></h2><p>Nombrar tus variables de esta manera modular te ayudará a entender tu proyecto conceptualmente antes de codificar, mientras codificas y después de codificar. Es una situación en la que todos ganan.</p></div><footer><section class=see-also></section></footer></article></section></div><footer class=footer><section class=container><p>H E L L O @ T E C H - A N D G A R . M E</p>©
+2020 -
+2022
+Andrés García</section></footer></main><script src=/js/coder.min.cb0c595e02234420f3ad3886bf4a9bd2874d0e1e78e090138a9ef158b35aaf17.js integrity="sha256-ywxZXgIjRCDzrTiGv0qb0odNDh544JATip7xWLNarxc="></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-33194632-1"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","UA-33194632-1")</script></body></html>
