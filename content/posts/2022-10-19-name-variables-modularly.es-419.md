@@ -1,11 +1,11 @@
 +++
 author = "Andrés García"
-title = "Buenas prácticas para nombrar los variables de forma modular"
+title = "Buenas prácticas para nombrar las variables de forma modular"
 date = "2022-10-19"
-description = "Buenas prácticas para nombrar los variables de forma modular"
-slug = "Buenas prácticas para nombrar los variables de forma modular"
+description = "Buenas prácticas para nombrar las variables de forma modular"
+slug = "Buenas prácticas para nombrar las variables de forma modular"
 tags = [
-  "nombrar los variables",
+  "nombrar las variables",
   "nombramiento las variables",
 ]
 categories = [
