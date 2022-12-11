@@ -38,8 +38,6 @@ colorScheme = "auto"
 hideColorSchemeToggle = false
 # Series see also post count
 maxSeeAlsoItems = 5
-# Enable Twemoji
-enableTwemoji = false
 # Custom CSS
 customCSS = []
 # Custom SCSS
@@ -95,7 +93,6 @@ imgsrc = [
   "'self'",
   "https://user-images.githubusercontent.com",
   "https://www.google-analytics.com",
-  "https://twemoji.maxcdn.com",
   "https://i.vimeocdn.com",
   "https://i.ytimg.com",
 ]
@@ -113,7 +110,6 @@ scriptsrc = [
   "https://www.google-analytics.com",
   "https://static.cloudflareinsights.com",
   "https://www.googletagmanager.com/",
-  "https://twemoji.maxcdn.com",
   "https://polyfill.io",
   "https://cdn.jsdelivr.net",
 ]
