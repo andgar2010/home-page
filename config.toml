@@ -107,6 +107,7 @@ scriptsrc = [
   "'self'",
   "eval",
   "'unsafe-inline'",
+  "'unsafe-eval'",
   "https://www.google-analytics.com",
   "https://static.cloudflareinsights.com",
   "https://www.googletagmanager.com/",
