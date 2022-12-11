@@ -19,6 +19,7 @@ info = ["Full Stack App Mobile (Flutter) Developer", ""]
 avatarURL = "images/avatar.jpg"
 #gravatar = "john.doe@example.com"
 footerContent = "H E L L O @ T E C H - A N D G A R . M E"
+# license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
 dateFormat = "January 2, 2006"
 hideFooter = false
 hideCredits = true
