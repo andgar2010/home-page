@@ -12,7 +12,10 @@ tags = [
   "ABC",
 ]
 categories = [
-  "Flutter",
+  "Sordera",
+  "Sordo",
+  "Lengua de Señas",
+  "Lengua de Señas Colombiana",
 ]
 series = [
   "ABC de la Sordera/Hipoacusia"
