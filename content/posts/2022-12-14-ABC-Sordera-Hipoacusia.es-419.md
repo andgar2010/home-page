@@ -1,9 +1,9 @@
 +++
 author = "Andrés García"
-title = "ABC de la Sordera/Hipoacusia"
+title = "ABC de la Sordera-Hipoacusia"
 date = "2022-12-14"
-description = "ABC de la Sordera/Hipoacusia"
-slug = "ABC de la Sordera/Hipoacusia"
+description = "ABC de la Sordera-Hipoacusia"
+slug = "ABC de la Sordera-Hipoacusia"
 tags = [
   "Sordera",
   "Hipoacusia",
@@ -18,10 +18,10 @@ categories = [
   "Lengua de Señas Colombiana",
 ]
 series = [
-  "ABC de la Sordera/Hipoacusia"
+  "ABC de la Sordera-Hipoacusia"
 ]
 aliases = [
-  "ABC de la Sordera/Hipoacusia"
+  "ABC de la Sordera-Hipoacusia"
 ]
 +++
 
