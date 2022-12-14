@@ -1,4 +1,7 @@
-export * from './~partytown/partytown.js';
-export * from './~partytown/partytown-sw.js';
-export * from './~partytown/partytown-media.js';
-export * from './~partytown/partytown-atomics.js';
+import { partytownSnippet } from '@builder.io/partytown/integration';
+
+const snippetContent = partytownSnippet();
+const script = document.createElement("script");
+
+script.textContent=snippetContent;
+document.body.append(script)
