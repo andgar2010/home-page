@@ -167,7 +167,7 @@ La gran mayoría de las personas Sordas necesitarán los servicios de un intérp
 
 Aunque la lectura del habla puede ser una herramienta útil para las personas con pérdida auditiva, puede que le sorprenda leer los siguientes datos:
 
-* Sólo el 30-35% de los sonidos del español pueden leerse con el habla. Esto significa que incluso un lector de voz altamente cualificado sólo puede entender un tercio de las palabras que se dicen.
+* Sólo el 30-35% de los sonidos del español pueden leerse con el habla[^3]. Esto significa que incluso un lector de voz altamente cualificado sólo puede entender un tercio de las palabras que se dicen.
 
 * Las palabras homónimas y los sonidos que, aunque suenan diferente, tienen un patrón de movimiento labial parecido como el grupo de consonantes “m”, “b” y “p”, como en “papá” y “mamá” o “boca” y “poca”, o el grupo “n”, “t”, “d”, como en “siento”, “tiendo” y “tenido” o “cada”, “cata” y “cana”, presentan problemas en la comprensión de la lectura del habla. Incluso consonantes que no requieren del movimiento de los labios como el par “k” y “g” y la acentuación impiden la correcta interpretación de la lectura del habla.
 
@@ -179,6 +179,8 @@ Aunque la lectura del habla puede ser una herramienta útil para las personas co
   * La familiaridad de la persona Hipoacúsica con el orador
   * La duración del diálogo
   * La comprensión de la persona Hipoacúsica sobre el tema que se está tratando.
+
+[^3]: [Comunicación: La lectura labial en Mi hijo sordo - Un mundo de respuestas FAMISOR](https://www.mihijosordo.org/lectura-labial.php)
 
 ## Comunidad y cultura sorda - Preguntas frecuentes
 
