@@ -1,4 +1,4 @@
-{{ $js := resources.Get "js/index.js" | js.Build }}
+{{ $js := resources.Get "js/index.js" | js.Build (dict "minify" true) }}
 <script src="{{ $js.RelPermalink }}"></script>
 
 <script>
@@ -26,7 +26,6 @@
 
       firstScript.parentNode.insertBefore(gtmScript, firstScript);
       console.log("starting GTag");
-
 
       // window.dataLayer = window.dataLayer || [];
       // function gtag(){dataLayer.push(arguments);}
