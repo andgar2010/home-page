@@ -1,11 +1,11 @@
-{{ $js := resources.Get "js/index.js" | js.Build (dict "minify" true) }}
-<script src="{{ $js.RelPermalink }}"></script>
-
 <script>
   partytown = {
     forward: ["dataLayer.push"],
   };
 </script>
+
+{{ $js := resources.Get "js/index.js" | js.Build (dict "minify" true) }}
+<script src="{{ $js.RelPermalink }}"></script>
 
 <script type="text/partytown">
   (function (window, document, i) {
