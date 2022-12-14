@@ -1,0 +1,35 @@
+{{ $js := resources.Get "js/index.js" | js.Build (dict "minify" true) }}
+<script src="{{ $js.RelPermalink }}"></script>
+
+<script>
+  partytown = {
+    forward: ["dataLayer.push"],
+  };
+</script>
+
+<script type="text/partytown">
+  (function (window, document, i) {
+      window['dataLayer'] = window[dataLayer] || [];
+      window['dataLayer'].push({ 'gtm.start': new Date().getTime(), 'event': 'gtm.js' });
+
+      var firstScript = document.getElementsByTagName('script')[0];
+      var gtmScript = document.createElement('script');
+      var dataLayer = 'dataLayer' != 'dataLayer' ? '&l=' + 'dataLayer' : '';
+
+      gtmScript.async = true;
+
+      // ORIGINAL
+      gtmScript.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dataLayer;
+
+      // HACK
+      // gtmScript.src = './gtm.js?id=' + i + dataLayer;
+
+      firstScript.parentNode.insertBefore(gtmScript, firstScript);
+      console.log("starting GTag");
+
+      // window.dataLayer = window.dataLayer || [];
+      // function gtag(){dataLayer.push(arguments);}
+      // gtag('js', new Date());
+      // gtag('config', '{{ $.Site.Params.googleTagManager.id }}');
+    })(window, document, '{{ $.Site.Params.googleTagManager.id }}');
+</script>
