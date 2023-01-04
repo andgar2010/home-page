@@ -5,7 +5,7 @@
 
   [![Deploy](https://github.com/andgar2010/home-page/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/andgar2010/home-page/actions/workflows/pages/pages-build-deployment)
   ![website](https://img.shields.io/badge/website-available-green)
-  [![PGP Key](https://badgen.net/keybase/pgp/mstrangfeld)](https://keybase.io/mstrangfeld)
+  [![PGP Key](https://badgen.net/keybase/pgp/tech_andgar)](https://keybase.io/tech_andgar)
   [![License](https://badgen.net/badge/license/CC-BY-4.0/green)](https://creativecommons.org/licenses/by/4.0/)
 
 </div>
