@@ -5,6 +5,7 @@
 
   [![Deploy](https://github.com/andgar2010/home-page/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/andgar2010/home-page/actions/workflows/pages/pages-build-deployment)
   ![website](https://img.shields.io/badge/website-available-green)
+  ![Uptime](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fandgar2010%2Fupptime%2Fmaster%2Fapi%2Ftech-andgar%2Fuptime.json)
   [![PGP Key](https://badgen.net/keybase/pgp/tech_andgar)](https://keybase.io/tech_andgar)
   [![License](https://badgen.net/badge/license/CC-BY-4.0/green)](https://creativecommons.org/licenses/by/4.0/)
 
