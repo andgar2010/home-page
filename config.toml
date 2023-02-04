@@ -10,6 +10,7 @@ pygmentsCodeFencesGuessSyntax = true
 enableEmoji = true
 # Enable Disqus comments
 # disqusShortname = "andgar2010"
+enableRobotsTXT = true
 
 [params]
 author = "Andrés García"
