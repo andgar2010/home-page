@@ -43,6 +43,7 @@ Por ejemplo, si tienes cuatro variables para cuatro colores de borde diferentes,
 <td>
 
 ```dart
+// Dart / TypeScript
 class Style {
   ...
   var blueBorder;
@@ -59,6 +60,7 @@ class Style {
 <td>
 
 ```css
+/* CSS */
 :root {
   ...
   --blue-border;
@@ -85,6 +87,7 @@ class Style {
 <td>
 
 ```dart
+// Dart / TypeScript
 class Style {
   ...
   var borderBlue;
@@ -101,6 +104,7 @@ class Style {
 <td>
 
 ```css
+/* CSS */
 :root {
   ...
   --border-blue;
@@ -134,6 +138,8 @@ Supongamos que estamos trabajando en un lenguaje de programación y queremos cre
 <td>
 
 ```dart
+// Hmmm... no es mejor
+// Dart / TypeScript
 class Style {
   ...
   var blue;
@@ -150,6 +156,8 @@ class Style {
 <td>
 
 ```css
+/* Hmmm... no es mejor */
+/* CSS */
 :root {
   ...
   --blue;
@@ -181,6 +189,8 @@ Una mejor manera de nombrar estas variables sería empezar con la palabra genér
 <td>
 
 ```dart
+// Es mejor
+// Dart / TypeScript
 class Style {
   ...
   var blue;
@@ -197,6 +207,8 @@ class Style {
 <td>
 
 ```css
+/* Es mejor */
+/* CSS */
 :root {
   ...
   --blue;
@@ -232,6 +244,8 @@ Imagina que estoy trabajando en un gran proyecto y he agrupado todas mis variabl
 <td>
 
 ```dart
+// Hmmm... no es mejor
+// Dart / TypeScript
 class Style {
   ...
   var borderColor;
@@ -252,6 +266,8 @@ class Style {
 <td>
 
 ```css
+/* Hmmm... no es mejor */
+/* CSS */
 :root {
   ...
   --border-color;
@@ -279,6 +295,8 @@ class Style {
 <td>
 
 ```dart
+// OK
+// Dart / TypeScript
 class Style {
   ...
   var colorBorder;
@@ -310,6 +328,8 @@ class Style {
 <td>
 
 ```css
+/* OK */
+/* CSS */
 :root {
   ...
   --color-border;
@@ -349,6 +369,9 @@ class Style {
 <td>
 
 ```dart
+// Si existen otros parámetros que no están relacionados en el mismo archivo o clase,
+// no deberían estar allí, ya que esto violaría el principio de responsabilidad única (SRP).
+// Dart / TypeScript
 class Style {
   ...
   var fontFamilyTextLight;
@@ -365,6 +388,9 @@ class Style {
 <td>
 
 ```css
+/* Si existen otros parámetros que no están relacionados en el mismo archivo o clase,
+ no deberían estar allí, ya que esto violaría el principio de responsabilidad única (SRP). */
+/* CSS */
 :root {
   ...
   --font-family-text-light;
@@ -396,6 +422,8 @@ Si una clase o archivo tiene varias responsabilidades con las variables, se debe
 <td>
 
 ```dart
+// Es mejor
+// Dart / TypeScript
 class Style {
   ...
   var borderColor;
@@ -433,6 +461,8 @@ class Style {
 <td>
 
 ```css
+/* Es mejor */
+/* CSS */
 :root {
   ...
   --border-color;
@@ -485,6 +515,8 @@ Si se utilizan variaciones del mismo tipo en un archivo o en una clase
 <td>
 
 ```dart
+// OK
+// Dart / TypeScript
 class Style {
   ...
   // Primary
@@ -536,6 +568,8 @@ class Style {
 <td>
 
 ```css
+/* OK */
+/* CSS */
 :root {
   ...
   /* Primary */
