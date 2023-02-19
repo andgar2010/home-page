@@ -3,7 +3,7 @@
 <label class="menu-button float-right" for=menu-toggle><i class="fa fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/es-419/about/>Acerca de</a></li><li class=navigation-item><a class=navigation-link href=/es-419/posts/>Blog</a></li><li class=navigation-item><a class=navigation-link href=/es-419/projects/>Proyectos</a></li><li class=navigation-item><a class=navigation-link href=/es-419/contact/>Contacto</a></li><li class=navigation-item><a class=navigation-link href=https://link.tech-andgar.me/CV-AFGR-DEV>CV</a></li><li class="navigation-item menu-separator"><span>|</span></li><li class=navigation-item><a href=/>English 🇬🇧</a></li></ul></section></nav><div class=content><section class="container post"><article><header><div class=post-title><h1 class=title><a class=title-link href=https://tech-andgar.me/es-419/posts/buenas-pr%C3%A1cticas-para-nombrar-las-variables-de-forma-modular/>Buenas prácticas para nombrar las variables de forma modular</a></h1></div><div class=post-meta><div class=date><span class=posted-on><i class="fa fa-calendar" aria-hidden=true></i>
 <time datetime=2022-10-19T00:00:00Z>octubre 19, 2022</time></span>
 <span class=reading-time><i class="fa fa-clock-o" aria-hidden=true></i>
-5-minute read</span></div><div class=categories><i class="fa fa-folder" aria-hidden=true></i>
+6-minute read</span></div><div class=categories><i class="fa fa-folder" aria-hidden=true></i>
 <a href=/es-419/categories/programming-language/>Programming Language</a></div><div class=tags><i class="fa fa-tag" aria-hidden=true></i>
 <span class=tag><a href=/es-419/tags/nombrar-las-variables/>nombrar las variables</a></span>
 <span class=separator>•</span>
@@ -15,7 +15,8 @@
 ¿Deberías llamarla <code>text-color</code> o <code>color-text</code>? ¿Cómo se decide?
 Elegir uno al azar puede contribuir a la falta de estructura a medida que aumenta el número de variables en tu proyecto. Como se ha comprobado en la práctica, a menudo olvidamos exactamente cómo hemos nombrado las variables para determinados proyectos, lo que puede llevar a la confusión y a métodos de búsqueda y sustitución global de nombres de variables que llevan mucho tiempo.</p><p>Lo que necesitamos es una regla para definir y seleccionar nuestros nombres de variables. Una excelente manera de mantener la modularidad en tu proyecto es agrupar las variables que comparten relaciones y puntos en común. Entonces, puedes nombrarlas ordenando las palabras que describen su función de <strong>genérico a específico de izquierda a derecha</strong>.</p><p>Por ejemplo, si tienes cuatro variables para cuatro colores de borde diferentes, puedes nombrarlas todas comenzando por <code>border</code> (ya que es el término genérico que todas comparten) y ser más específico con una lectura de izquierda a derecha. Agrupar y nombrar las variables de esta manera hace que tu código sea más fácil de leer, comprender y recordar.</p><h3 id=sin-patrón-no-debe-utilizar-este-ejemplo>Sin patrón (No debe utilizar este ejemplo)
 <a class=heading-link href=#sin-patr%c3%b3n-no-debe-utilizar-este-ejemplo><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-dart data-lang=dart><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Style</span> {
+<span class=sr-only>Link to heading</span></a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-dart data-lang=dart><span style=display:flex><span><span style=color:#75715e>// Dart / TypeScript
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Style</span> {
 </span></span><span style=display:flex><span>  ...
 </span></span><span style=display:flex><span>  <span style=color:#66d9ef>var</span> blueBorder;
 </span></span><span style=display:flex><span>  <span style=color:#66d9ef>var</span> lightBlueBorder;
@@ -25,7 +26,8 @@ Elegir uno al azar puede contribuir a la falta de estructura a medida que aument
 </span></span><span style=display:flex><span>  <span style=color:#66d9ef>var</span> redBorder;
 </span></span><span style=display:flex><span>  ...
 </span></span><span style=display:flex><span>}
-</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-css data-lang=css><span style=display:flex><span>:<span style=color:#a6e22e>root</span> {
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-css data-lang=css><span style=display:flex><span><span style=color:#75715e>/* CSS */</span>
+</span></span><span style=display:flex><span>:<span style=color:#a6e22e>root</span> {
 </span></span><span style=display:flex><span>  <span style=color:#960050;background-color:#1e0010>...</span>
 </span></span><span style=display:flex><span>  <span style=color:#960050;background-color:#1e0010>--blue-border</span>;
 </span></span><span style=display:flex><span>  <span style=color:#960050;background-color:#1e0010>--light-blue-border</span>;
@@ -37,7 +39,8 @@ Elegir uno al azar puede contribuir a la falta de estructura a medida que aument
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><h3 id=genérico---específico-se-recomienda-utilizar-este-ejemplo>Genérico -> Específico (Se recomienda utilizar este ejemplo)
 <a class=heading-link href=#gen%c3%a9rico---espec%c3%adfico-se-recomienda-utilizar-este-ejemplo><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-dart data-lang=dart><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Style</span> {
+<span class=sr-only>Link to heading</span></a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-dart data-lang=dart><span style=display:flex><span><span style=color:#75715e>// Dart / TypeScript
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Style</span> {
 </span></span><span style=display:flex><span>  ...
 </span></span><span style=display:flex><span>  <span style=color:#66d9ef>var</span> borderBlue;
 </span></span><span style=display:flex><span>  <span style=color:#66d9ef>var</span> borderBlueLight;
@@ -47,7 +50,8 @@ Elegir uno al azar puede contribuir a la falta de estructura a medida que aument
 </span></span><span style=display:flex><span>  <span style=color:#66d9ef>var</span> borderRed;
 </span></span><span style=display:flex><span>  ...
 </span></span><span style=display:flex><span>}
-</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-css data-lang=css><span style=display:flex><span>:<span style=color:#a6e22e>root</span> {
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-css data-lang=css><span style=display:flex><span><span style=color:#75715e>/* CSS */</span>
+</span></span><span style=display:flex><span>:<span style=color:#a6e22e>root</span> {
 </span></span><span style=display:flex><span>  <span style=color:#960050;background-color:#1e0010>...</span>
 </span></span><span style=display:flex><span>  <span style=color:#960050;background-color:#1e0010>--border-blue</span>;
 </span></span><span style=display:flex><span>  <span style=color:#960050;background-color:#1e0010>--border-blue-light</span>;
@@ -59,7 +63,9 @@ Elegir uno al azar puede contribuir a la falta de estructura a medida que aument
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><h2 id=de-lo-más-general-a-lo-más-específico-un-ejemplo>De lo más general a lo más específico: Un ejemplo
 <a class=heading-link href=#de-lo-m%c3%a1s-general-a-lo-m%c3%a1s-espec%c3%adfico-un-ejemplo><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h2><p>Supongamos que estamos trabajando en un lenguaje de programación y queremos crear una serie de variables que definan la paleta de colores de nuestro proyecto. Si estamos trabajando con un tono de blue (azul), podríamos crear algunas variables como esta</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-dart data-lang=dart><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Style</span> {
+<span class=sr-only>Link to heading</span></a></h2><p>Supongamos que estamos trabajando en un lenguaje de programación y queremos crear una serie de variables que definan la paleta de colores de nuestro proyecto. Si estamos trabajando con un tono de blue (azul), podríamos crear algunas variables como esta</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-dart data-lang=dart><span style=display:flex><span><span style=color:#75715e>// Hmmm... no es mejor
+</span></span></span><span style=display:flex><span><span style=color:#75715e>// Dart / TypeScript
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Style</span> {
 </span></span><span style=display:flex><span>  ...
 </span></span><span style=display:flex><span>  <span style=color:#66d9ef>var</span> blue;
 </span></span><span style=display:flex><span>  <span style=color:#66d9ef>var</span> darkBlue;
@@ -69,7 +75,9 @@ Elegir uno al azar puede contribuir a la falta de estructura a medida que aument
 </span></span><span style=display:flex><span>  <span style=color:#66d9ef>var</span> lightestBlue;
 </span></span><span style=display:flex><span>  ...
 </span></span><span style=display:flex><span>}
-</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-css data-lang=css><span style=display:flex><span>:<span style=color:#a6e22e>root</span> {
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-css data-lang=css><span style=display:flex><span><span style=color:#75715e>/* Hmmm... no es mejor */</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>/* CSS */</span>
+</span></span><span style=display:flex><span>:<span style=color:#a6e22e>root</span> {
 </span></span><span style=display:flex><span>  <span style=color:#960050;background-color:#1e0010>...</span>
 </span></span><span style=display:flex><span>  <span style=color:#960050;background-color:#1e0010>--blue</span>;
 </span></span><span style=display:flex><span>  <span style=color:#960050;background-color:#1e0010>--dark-blue</span>;
@@ -79,7 +87,9 @@ Elegir uno al azar puede contribuir a la falta de estructura a medida que aument
 </span></span><span style=display:flex><span>  <span style=color:#960050;background-color:#1e0010>--lightest-blue</span>;
 </span></span><span style=display:flex><span>  <span style=color:#960050;background-color:#1e0010>...</span>
 </span></span><span style=display:flex><span>}
-</span></span></code></pre></div><p>Una mejor manera de nombrar estas variables sería empezar con la palabra genérica que todas tienen en común: <strong>blue</strong>. Luego, podemos ir concretando de izquierda a derecha:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-dart data-lang=dart><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Style</span> {
+</span></span></code></pre></div><p>Una mejor manera de nombrar estas variables sería empezar con la palabra genérica que todas tienen en común: <strong>blue</strong>. Luego, podemos ir concretando de izquierda a derecha:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-dart data-lang=dart><span style=display:flex><span><span style=color:#75715e>// Es mejor
+</span></span></span><span style=display:flex><span><span style=color:#75715e>// Dart / TypeScript
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Style</span> {
 </span></span><span style=display:flex><span>  ...
 </span></span><span style=display:flex><span>  <span style=color:#66d9ef>var</span> blue;
 </span></span><span style=display:flex><span>  <span style=color:#66d9ef>var</span> blueDark;
@@ -89,7 +99,9 @@ Elegir uno al azar puede contribuir a la falta de estructura a medida que aument
 </span></span><span style=display:flex><span>  <span style=color:#66d9ef>var</span> blueLightest;
 </span></span><span style=display:flex><span>  ...
 </span></span><span style=display:flex><span>}
-</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-css data-lang=css><span style=display:flex><span>:<span style=color:#a6e22e>root</span> {
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-css data-lang=css><span style=display:flex><span><span style=color:#75715e>/* Es mejor */</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>/* CSS */</span>
+</span></span><span style=display:flex><span>:<span style=color:#a6e22e>root</span> {
 </span></span><span style=display:flex><span>  <span style=color:#960050;background-color:#1e0010>...</span>
 </span></span><span style=display:flex><span>  <span style=color:#960050;background-color:#1e0010>--blue</span>;
 </span></span><span style=display:flex><span>  <span style=color:#960050;background-color:#1e0010>--blue-dark</span>;
@@ -101,7 +113,9 @@ Elegir uno al azar puede contribuir a la falta de estructura a medida que aument
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><p>Esto no solo ayuda a recordar, sino que también permite que el editor de texto (como VSCode, Android Studio, Sublime Text, etc.) sugiera fácilmente los colores. De esta manera, no tienes que memorizar exactamente cómo nombraste tus variables. En su lugar, puedes comenzar con un término genérico y luego ir siendo más específico a medida que el editor de texto te sugiere los nombres de las variables. Todo lo que tienes que recordar es que quieres un color <strong>blue</strong>. Entonces, comienzas a escribir &ldquo;blue&rdquo; y puedes obtener una lista de todos los diferentes tonos de <strong>blue</strong> (azul) que has creado.</p><h2 id=ejemplo-de-sugerencia>Ejemplo de sugerencia
 <a class=heading-link href=#ejemplo-de-sugerencia><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h2><p>Imagina que estoy trabajando en un gran proyecto y he agrupado todas mis variables que contienen valores de color anteponiéndoles la palabra genérica que todas tienen en común: color.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-dart data-lang=dart><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Style</span> {
+<span class=sr-only>Link to heading</span></a></h2><p>Imagina que estoy trabajando en un gran proyecto y he agrupado todas mis variables que contienen valores de color anteponiéndoles la palabra genérica que todas tienen en común: color.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-dart data-lang=dart><span style=display:flex><span><span style=color:#75715e>// Hmmm... no es mejor
+</span></span></span><span style=display:flex><span><span style=color:#75715e>// Dart / TypeScript
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Style</span> {
 </span></span><span style=display:flex><span>  ...
 </span></span><span style=display:flex><span>  <span style=color:#66d9ef>var</span> borderColor;
 </span></span><span style=display:flex><span>  <span style=color:#66d9ef>var</span> darkBorderColor;
@@ -115,7 +129,9 @@ Elegir uno al azar puede contribuir a la falta de estructura a medida que aument
 </span></span><span style=display:flex><span>  <span style=color:#66d9ef>var</span> lightestTextColor;
 </span></span><span style=display:flex><span>  ...
 </span></span><span style=display:flex><span>}
-</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-css data-lang=css><span style=display:flex><span>:<span style=color:#a6e22e>root</span> {
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-css data-lang=css><span style=display:flex><span><span style=color:#75715e>/* Hmmm... no es mejor */</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>/* CSS */</span>
+</span></span><span style=display:flex><span>:<span style=color:#a6e22e>root</span> {
 </span></span><span style=display:flex><span>  <span style=color:#960050;background-color:#1e0010>...</span>
 </span></span><span style=display:flex><span>  <span style=color:#960050;background-color:#1e0010>--border-color</span>;
 </span></span><span style=display:flex><span>  <span style=color:#960050;background-color:#1e0010>--dark-border-color</span>;
@@ -129,7 +145,9 @@ Elegir uno al azar puede contribuir a la falta de estructura a medida que aument
 </span></span><span style=display:flex><span>  <span style=color:#960050;background-color:#1e0010>--lightest-text-color</span>;
 </span></span><span style=display:flex><span>  <span style=color:#960050;background-color:#1e0010>...</span>
 </span></span><span style=display:flex><span>}
-</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-dart data-lang=dart><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Style</span> {
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-dart data-lang=dart><span style=display:flex><span><span style=color:#75715e>// OK
+</span></span></span><span style=display:flex><span><span style=color:#75715e>// Dart / TypeScript
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Style</span> {
 </span></span><span style=display:flex><span>  ...
 </span></span><span style=display:flex><span>  <span style=color:#66d9ef>var</span> colorBorder;
 </span></span><span style=display:flex><span>  <span style=color:#66d9ef>var</span> colorBorderDark;
@@ -154,7 +172,9 @@ Elegir uno al azar puede contribuir a la falta de estructura a medida que aument
 </span></span><span style=display:flex><span>  <span style=color:#66d9ef>var</span> colorTextStrokeDark;
 </span></span><span style=display:flex><span>  ...
 </span></span><span style=display:flex><span>}
-</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-css data-lang=css><span style=display:flex><span>:<span style=color:#a6e22e>root</span> {
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-css data-lang=css><span style=display:flex><span><span style=color:#75715e>/* OK */</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>/* CSS */</span>
+</span></span><span style=display:flex><span>:<span style=color:#a6e22e>root</span> {
 </span></span><span style=display:flex><span>  <span style=color:#960050;background-color:#1e0010>...</span>
 </span></span><span style=display:flex><span>  <span style=color:#960050;background-color:#1e0010>--color-border</span>;
 </span></span><span style=display:flex><span>  <span style=color:#960050;background-color:#1e0010>--color-border-dark</span>;
@@ -179,7 +199,9 @@ Elegir uno al azar puede contribuir a la falta de estructura a medida que aument
 </span></span><span style=display:flex><span>  <span style=color:#960050;background-color:#1e0010>--color-text-stroke-dark</span>;
 </span></span><span style=display:flex><span>  <span style=color:#960050;background-color:#1e0010>...</span>
 </span></span><span style=display:flex><span>}
-</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-dart data-lang=dart><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Style</span> {
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-dart data-lang=dart><span style=display:flex><span><span style=color:#75715e>// Si existen otros parámetros que no están relacionados en el mismo archivo o clase, no deberían estar allí, ya que esto violaría el principio de responsabilidad única (SRP).
+</span></span></span><span style=display:flex><span><span style=color:#75715e>// Dart / TypeScript
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Style</span> {
 </span></span><span style=display:flex><span>  ...
 </span></span><span style=display:flex><span>  <span style=color:#66d9ef>var</span> fontFamilyTextLight;
 </span></span><span style=display:flex><span>  <span style=color:#66d9ef>var</span> fontFamilyTextDark;
@@ -189,7 +211,9 @@ Elegir uno al azar puede contribuir a la falta de estructura a medida que aument
 </span></span><span style=display:flex><span>  <span style=color:#66d9ef>var</span> sizeTextDark;
 </span></span><span style=display:flex><span>  ...
 </span></span><span style=display:flex><span>}
-</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-css data-lang=css><span style=display:flex><span>:<span style=color:#a6e22e>root</span> {
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-css data-lang=css><span style=display:flex><span><span style=color:#75715e>/* Si existen otros parámetros que no están relacionados en el mismo archivo o clase, no deberían estar allí, ya que esto violaría el principio de responsabilidad única (SRP). */</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>/* CSS */</span>
+</span></span><span style=display:flex><span>:<span style=color:#a6e22e>root</span> {
 </span></span><span style=display:flex><span>  <span style=color:#960050;background-color:#1e0010>...</span>
 </span></span><span style=display:flex><span>  <span style=color:#960050;background-color:#1e0010>--font-family-text-light</span>;
 </span></span><span style=display:flex><span>  <span style=color:#960050;background-color:#1e0010>--font-family-text-dark</span>;
@@ -199,7 +223,9 @@ Elegir uno al azar puede contribuir a la falta de estructura a medida que aument
 </span></span><span style=display:flex><span>  <span style=color:#960050;background-color:#1e0010>--size-text-dark</span>;
 </span></span><span style=display:flex><span>  <span style=color:#960050;background-color:#1e0010>...</span>
 </span></span><span style=display:flex><span>}
-</span></span></code></pre></div><p>Si una clase o archivo tiene varias responsabilidades con las variables, se debe considerar aplicar otro patrón de diseño: categorización (o tipificación) de lo genérico a lo específico.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-dart data-lang=dart><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Style</span> {
+</span></span></code></pre></div><p>Si una clase o archivo tiene varias responsabilidades con las variables, se debe considerar aplicar otro patrón de diseño: categorización (o tipificación) de lo genérico a lo específico.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-dart data-lang=dart><span style=display:flex><span><span style=color:#75715e>// Es mejor
+</span></span></span><span style=display:flex><span><span style=color:#75715e>// Dart / TypeScript
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Style</span> {
 </span></span><span style=display:flex><span>  ...
 </span></span><span style=display:flex><span>  <span style=color:#66d9ef>var</span> borderColor;
 </span></span><span style=display:flex><span>  <span style=color:#66d9ef>var</span> borderColorDark;
@@ -230,7 +256,9 @@ Elegir uno al azar puede contribuir a la falta de estructura a medida que aument
 </span></span><span style=display:flex><span>  <span style=color:#66d9ef>var</span> textStrokeSize;
 </span></span><span style=display:flex><span>  ...
 </span></span><span style=display:flex><span>}
-</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-css data-lang=css><span style=display:flex><span>:<span style=color:#a6e22e>root</span> {
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-css data-lang=css><span style=display:flex><span><span style=color:#75715e>/* Es mejor */</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>/* CSS */</span>
+</span></span><span style=display:flex><span>:<span style=color:#a6e22e>root</span> {
 </span></span><span style=display:flex><span>  <span style=color:#960050;background-color:#1e0010>...</span>
 </span></span><span style=display:flex><span>  <span style=color:#960050;background-color:#1e0010>--border-color</span>;
 </span></span><span style=display:flex><span>  <span style=color:#960050;background-color:#1e0010>--border-color-dark</span>;
@@ -261,7 +289,9 @@ Elegir uno al azar puede contribuir a la falta de estructura a medida que aument
 </span></span><span style=display:flex><span>  <span style=color:#960050;background-color:#1e0010>--text-stroke-size</span>;
 </span></span><span style=display:flex><span>  <span style=color:#960050;background-color:#1e0010>...</span>
 </span></span><span style=display:flex><span>}
-</span></span></code></pre></div><p>Si se utilizan variaciones del mismo tipo en un archivo o en una clase</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-dart data-lang=dart><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Style</span> {
+</span></span></code></pre></div><p>Si se utilizan variaciones del mismo tipo en un archivo o en una clase</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-dart data-lang=dart><span style=display:flex><span><span style=color:#75715e>// OK
+</span></span></span><span style=display:flex><span><span style=color:#75715e>// Dart / TypeScript
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Style</span> {
 </span></span><span style=display:flex><span>  ...
 </span></span><span style=display:flex><span>  <span style=color:#75715e>// Primary
 </span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#66d9ef>var</span> primaryIconColorLight;
@@ -306,7 +336,9 @@ Elegir uno al azar puede contribuir a la falta de estructura a medida que aument
 </span></span><span style=display:flex><span>  <span style=color:#66d9ef>var</span> tertiaryBackgroundColorDisabledDark;
 </span></span><span style=display:flex><span>  ...
 </span></span><span style=display:flex><span>}
-</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-css data-lang=css><span style=display:flex><span>:<span style=color:#a6e22e>root</span> {
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-css data-lang=css><span style=display:flex><span><span style=color:#75715e>/* OK */</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>/* CSS */</span>
+</span></span><span style=display:flex><span>:<span style=color:#a6e22e>root</span> {
 </span></span><span style=display:flex><span>  <span style=color:#960050;background-color:#1e0010>...</span>
 </span></span><span style=display:flex><span>  <span style=color:#75715e>/* Primary */</span>
 </span></span><span style=display:flex><span>  <span style=color:#960050;background-color:#1e0010>--primary-icon-color-light</span>;
