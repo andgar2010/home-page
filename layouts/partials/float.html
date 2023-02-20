@@ -65,12 +65,12 @@
   const letters = 'aábcdeéfghiíjklmnñoópqrstuúvwxyzAÁBCDEÉFGHIÍJKLMNÑOÓPQRSTUÚVWXYZ ';
   let interval = null;
 
-  let currentWordSelector = document.querySelector('h1');
-  let currentWord = currentWordSelector.getInnerHTML();
-  currentWordSelector.dataset.value = currentWord;
   document.querySelector("h1").onmouseover = event => {
-    let iteration = 0;
+    let currentWordSelector = document.querySelector('h1');
+    let currentWord = currentWordSelector.getInnerHTML();
+    currentWordSelector.dataset.value = currentWord;
 
+    let iteration = 0;
     clearInterval(interval);
 
     interval = setInterval(() => {
