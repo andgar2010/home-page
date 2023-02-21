@@ -4,7 +4,7 @@
   };
 </script>
 
-{{ $js := resources.Get "js/index.js" | js.Build (dict "minify" true) }}
+{{ $js := resources.Get "js/main_partytown.js" | js.Build (dict "minify" true) }}
 <script src="{{ $js.RelPermalink }}"></script>
 
 <script type="text/partytown">
