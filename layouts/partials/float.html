@@ -1,59 +1,96 @@
 {{ if not .Site.Params.hideColorSchemeToggle }}
 <div class="float-container">
-    <a href="#" id="dark-mode-toggle" class="colorscheme-toggle" aria-label="Toggle color scheme">
-        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
-    </a>
+  <a href="#" id="dark-mode-toggle" class="colorscheme-toggle" aria-label="Toggle color scheme">
+    <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+  </a>
 </div>
 {{ end }}
 
 <style>
-#cursor-color {
-  height: 60vh;
-  aspect-ratio: 1;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  translate: -50% -50%;
-  border-radius: 50%;
-  background: #005AA7;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  animation: rotate 15s infinite;
-  filter: blur(200px);
-  z-index: -1;
-}
-
-#blur{
-  width: 100%;
-  height: 100wh;
-  position: relative;
-  z-index: -1;
-  backdrop-filter: blur(200px);
-}
-
-@keyframes rotate {
-  from {
-  rotate: 0deg;
+  #cursor-color {
+    height: 60vh;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    background: #005AA7;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFDE4, #005AA7);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    animation: rotate 15s infinite;
+    filter: blur(200px);
+    z-index: -1;
   }
 
-  50% {
-  scale: 1 1.5;
+  #blur {
+    width: 100%;
+    height: 100wh;
+    position: relative;
+    z-index: -1;
+    backdrop-filter: blur(200px);
   }
 
-  to {
-  rotate: 360deg;
+  @keyframes rotate {
+    from {
+      rotate: 0deg;
+    }
+
+    50% {
+      scale: 1 1.5;
+    }
+
+    to {
+      rotate: 360deg;
+    }
   }
-}
 </style>
 <div id="cursor-color"></div>
 <div id="blur"></div>
 <script>
-const cursorColor = document.getElementById("cursor-color");
-document.body.onpointermove = (event) => {
-const { clientX, clientY } = event;
-cursorColor.animate({
-    left : `${clientX}px`,
-    top : `${clientY}px`,
-}, {duration: 1000, fill: "forwards"});
-};
+  // Cursor Color Blur
+  const cursorColor = document.getElementById("cursor-color");
+  document.body.onpointermove = (event) => {
+    const { clientX, clientY } = event;
+    cursorColor.animate({
+      left: `${clientX}px`,
+      top: `${clientY}px`,
+    }, { duration: 1000, fill: "forwards" });
+  };
+
+  // H1 Animation
+  const letters = 'aábcdeéfghiíjklmnñoópqrstuúvwxyzAÁBCDEÉFGHIÍJKLMNÑOÓPQRSTUÚVWXYZ ';
+  let interval = null;
+
+  document.querySelector("h1").onmouseover = event => {
+    let currentWordSelector = document.querySelector('h1');
+    let currentWord = currentWordSelector.getInnerHTML();
+    currentWordSelector.dataset.value = currentWord;
+
+    let iteration = 0;
+    clearInterval(interval);
+
+    interval = setInterval(() => {
+      event.target.innerText = event.target.innerText
+        .split("")
+        .map((letter, index) => {
+          if (index < iteration) {
+            return event.target.dataset.value[index];
+          }
+
+          return letters[Math.floor(Math.random() * 26)];
+        })
+        .join("");
+
+      if (iteration >= event.target.dataset.value.length) {
+        clearInterval(interval);
+      }
+
+      iteration += 1 / 3;
+    }, 30);
+  };
+
 </script>
