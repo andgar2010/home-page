@@ -11,7 +11,7 @@ aliases = [
 ]
 +++
 
-Hi! I'm Andres, I am a Deaf person, my native language is Colombian Sign Language and I love to be behind a computer, it can be researching new trends in software, learning a new technology or seeing what's new in the world to find new ways to unite logic and communications.
+Hi! I'm Andres, I'm a Deaf person, my native language is Colombian Sign Language and I love to be behind a computer, it can be researching new trends in software, learning a new technology or seeing what's new in the world to find new ways to unite logic and communications.
 <!-- I have a thing for mobile development and backend, and love working on software development and UX! -->
 
 Technologist specialized in application development for mobile devices with solid experience in mobile front-end in Flutter.
@@ -25,7 +25,7 @@ Relational and non-relational database analysis, design, administration using My
 
 Proactive, innovative, self-starter with initiative, analytical skills, decision making, strong work ethic and high level of professionalism.
 
-I am a Deaf Full-Stack App Mobile Flutter Developer graduated from SENA and have degrees from:
+I'm a Deaf Full-Stack App Mobile Flutter Developer graduated from SENA and have degrees from:
 
 * **National Learning Service SENA-MARKET MANAGEMENT, LOGISTICS AND INFORMATION TECHNOLOGY CENTRE (CGMLTI)-Regional Capital District. Bogotá D.C.**
 
