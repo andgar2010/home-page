@@ -61,3 +61,116 @@
     }, { duration: 1000, fill: "forwards" });
   };
 </script>
+
+
+<div id="trailer">
+  <i id="trailer-icon" aria-hidden="true"></i>
+</div>
+
+<style>
+  /* body:hover > #trailer {
+    opacity: 1;
+  } */
+
+  /* #trailer:not([class=""])> */
+  #trailer-icon {
+    opacity: 1;
+    color: #05182a;
+    margin-top: -20px;
+  }
+
+  #trailer-icon {
+    font-size: 10px;
+    line-height: 60px;
+    /* opacity: 0; */
+    transition: opacity 400ms ease;
+  }
+
+  #trailer {
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 20px;
+
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 1000;
+
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 600ms ease;
+    display: grid;
+    place-items: center;
+  }
+
+  body.colorscheme-dark .navigation a:hover,
+  body.colorscheme-dark .navigation a:focus {
+    color: white;
+  }
+
+  .navigation a,
+  .navigation span {
+    color: #05182a;
+  }
+
+  .navigation a:hover,
+  .navigation span:hover,
+  .list ul li .title:hover {
+    color: #5252FF;
+  }
+
+  a:hover {
+    font-size: 130%;
+  }
+
+  a i:hover {
+    font-size: 175%;
+  }
+</style>
+<script>
+  if (3 > window.location.pathname.split('/').length) {
+    document.body.style.overflow = "clip";
+  } else {
+    document.body.style.overflowX = "clip";
+  }
+
+  const trailer = document.getElementById("trailer");
+
+  const animateTrailer = (e, interacting) => {
+    const { clientX, clientY } = e;
+    const x = clientX - trailer.offsetWidth / 2,
+      y = clientY - trailer.offsetHeight / 2;
+    const keyframes = {
+      transform: `translate(${x}px, ${y}px) scale(${interacting ? 2.5 : 0.75})`,
+      opacity: `${interacting ? 0.5 : 1}`
+    };
+
+    trailer.animate(keyframes, { duration: 350, fill: "forwards" });
+  };
+
+  const getTailerClass = (type) => {
+    switch (type) {
+      case "video":
+        return "fa fa-play";
+      case "title":
+        return "fa fa-file-text-o";
+      default:
+        return "fa fa-location-arrow";
+    }
+  };
+
+  window.onmousemove = e => {
+    const interactable = e.target.closest("a"),
+      interacting = interactable !== null;
+    const icon = document.getElementById("trailer-icon");
+    animateTrailer(e, interacting);
+    trailer.className = interacting ? interactable.className : "";
+    if (interacting) {
+      icon.className = getTailerClass(interactable.className);
+    } else {
+      icon.className = "";
+    }
+  };
+
+</script>
