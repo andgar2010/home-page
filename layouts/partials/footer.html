@@ -28,3 +28,6 @@
     </section>
   </footer>
 {{ end }}
+
+{{ $js := resources.Get "js/animation_h1.js" | js.Build (dict "minify" true) }}
+<script src="{{ $js.RelPermalink }}"></script>

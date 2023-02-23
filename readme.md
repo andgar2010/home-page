@@ -35,6 +35,7 @@ Typo style corrections welcome via PRs.
 
 > rm -rf public
 > git worktree add -B gh-pages public origin/gh-pages
+> npm i
 
 # Create local preview server with `hugo serve`
 > hugo serve
