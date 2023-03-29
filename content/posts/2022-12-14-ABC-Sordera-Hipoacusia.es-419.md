@@ -41,7 +41,7 @@ Si tiene algún comentario, opinión, idea o sugerencia sobre este documento, pu
 
 ## Terminología
 
-**Lengua de Señas (LS)**: Idioma visual que utiliza movimientos articulados de las manos junto con marcadores no manuales gramaticalmente relevantes como expresiones faciales, movimientos del cuerpo, la cabeza y deletreo con los dedos para expresar un conjunto infinito de enunciados. La LS es un idioma auténtico de la comunidad Sorda de cada país. La LS de un país puede influenciar a otros países. Tiene su propia gramática, sintaxis y vocabulario, que son distintos del idioma hablado en el país donde habita la comunidad. Como todos los idiomas, la LS evoluciona y crece con el tiempo.
+**Lengua de Señas (LS)**: Idioma visual que utiliza movimientos articulados de las manos junto con marcadores no manuales gramaticalmente relevantes como **expresiones faciales, movimientos del cuerpo, la cabeza y deletreo con los dedos** para expresar un conjunto infinito de enunciados. La LS es un idioma auténtico de la comunidad Sorda de cada país. La LS de un país puede influenciar a otros países. Tiene su propia gramática, sintaxis y vocabulario, que son distintos del idioma hablado en el país donde habita la comunidad. Como todos los idiomas, la LS evoluciona y crece con el tiempo.
 
 **Lengua de Señas Colombiana (LSC)**: Idioma visual utilizado predominantemente en Colombia que cumple con todas las características de la LS mencionadas en el apartado anterior. La LSC tiene distintas variantes que corresponden a las diferentes regiones donde habita la comunidad Sorda colombiana.
 
