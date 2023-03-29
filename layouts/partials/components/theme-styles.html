@@ -1,22 +1,22 @@
 {{ if .Site.IsServer }}
-  {{ $cssOpts := (dict "targetPath" "css/custom_style.css" "enableSourceMap" true ) }}
-  {{ $styles := resources.Get "scss/custom_style.scss" | resources.ExecuteAsTemplate "style.custom_style.css" . | toCSS $cssOpts }}
+  {{ $cssOpts := (dict "targetPath" "css/bundle.css" "enableSourceMap" true ) }}
+  {{ $styles := resources.Get "scss/custom_style.scss" | resources.ExecuteAsTemplate "style.bundle.css" . | toCSS $cssOpts }}
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
 {{ else }}
-  {{ $cssOpts := (dict "targetPath" "css/custom_style.css" ) }}
-  {{ $styles := resources.Get "scss/custom_style.scss" | resources.ExecuteAsTemplate "style.custom_style.css" . | toCSS $cssOpts | minify | fingerprint }}
+  {{ $cssOpts := (dict "targetPath" "css/bundle.css" ) }}
+  {{ $styles := resources.Get "scss/custom_style.scss" | resources.ExecuteAsTemplate "style.bundle.css" . | toCSS $cssOpts | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
 {{ end }}
 
 <div id="cursor-color"></div>
 <div id="blur"></div>
 
-{{ $js_cursor_color_blur := resources.Get "js/cursor_color_blur.js" | js.Build (dict "minify" true) }}
-<script defer src="{{ $js_cursor_color_blur.RelPermalink }}"></script>
-
 <div id="trailer">
     <i id="trailer-icon" aria-hidden="true"></i>
 </div>
 
-{{ $js_trailer_cursor := resources.Get "js/trailer_cursor.js" | js.Build (dict "minify" true) }}
-<script defer src="{{ $js_trailer_cursor.RelPermalink }}"></script>
+{{ $js_animation_h1 := resources.Get "js/animation_h1.js" }}
+{{ $js_cursor_color_blur := resources.Get "js/cursor_color_blur.js" }}
+{{ $js_trailer_cursor := resources.Get "js/trailer_cursor.js" }}
+{{ $js_bundle := slice $js_cursor_color_blur $js_trailer_cursor $js_animation_h1 | resources.Concat "js/bundle.js" | js.Build (dict "minify" true) | resources.Fingerprint "sha512" }}
+<script defer src="{{ $js_bundle.RelPermalink }}" integrity="{{ $js_bundle.Data.Integrity }}"></script>
