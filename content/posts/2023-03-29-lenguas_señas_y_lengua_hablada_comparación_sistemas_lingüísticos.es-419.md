@@ -32,6 +32,6 @@ La lengua de señas es un sistema de comunicación muy complejo y completo que n
 
 En resumen, tanto la lengua hablada como la lengua de señas son herramientas valiosas para la comunicación humana. La lengua de señas es un sistema de comunicación muy completo y efectivo que explota las características únicas del medio visual y táctil, mientras que la lengua hablada se basa principalmente en la secuencia temporal de las palabras para transmitir significado. En general, la percepción visual es fundamental para la comprensión y producción de la lengua de señas, lo que hace que sea una forma muy efectiva de comunicación.
 
-Si tiene algún comentario, opinión, idea o sugerencia sobre este documento, puede contactarme en **contact - at - tech-andgar.me**
+Si tiene algún comentario, opinión, idea o sugerencia sobre este documento, puede contactarme en **hello - at - tech-andgar.me**
 
 [^1]: Aunque existen sistemas de transcripción de la lengua de señas a través de la escritura, la lengua en sí misma no tiene una forma escrita estandarizada y su uso está limitado en su mayoría a la comunicación en tiempo real.
