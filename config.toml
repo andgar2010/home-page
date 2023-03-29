@@ -138,6 +138,12 @@ icon = "fa fa-github"
 weight = 1
 url = "https://link.tech-andgar.me/github"
 
+[[params.social]]
+name = "Stackoverflow"
+icon = "fa fa-stack-overflow"
+weight = 2
+url = "https://link.tech-andgar.me/stackoverflow"
+
 # [[params.social]]
 # name = "Gitlab"
 # icon = "fa fa-gitlab"
