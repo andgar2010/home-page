@@ -44,11 +44,11 @@ Typo style corrections welcome via PRs.
 
 ## Disclaimer
 
-The information in this weblog is provided “AS IS” with no warranties, and confers no rights.
+The information in this weblog is provided "AS IS" with no warranties, and confers no rights.
 
 This weblog does not represent the thoughts, intentions, plans or strategies of my employer. It is solely my opinion.
 
-Feel free to challenge me, disagree with me, or tell me I’m completely nuts in the comments section of each blog entry, but I reserve the right to delete any comment for any reason whatsoever (abusive, profane, rude, or anonymous comments) – so keep it polite, please.
+Feel free to challenge me, disagree with me, or tell me I'm completely nuts in the comments section of each blog entry, but I reserve the right to delete any comment for any reason whatsoever (abusive, profane, rude, or anonymous comments) - so keep it polite, please.
 
 ## Copyright and License
 
