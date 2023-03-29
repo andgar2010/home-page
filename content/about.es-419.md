@@ -12,7 +12,7 @@ aliases = [
 +++
 
 
-¡Hola! Soy Andrés, Soy una persona Sordo, mi lengua materna es Lengua de Señas Colombiana y me encanta estar detrás de un computador, puede ser investigando sobre nuevas tendencias en software, aprendiendo una nueva tecnología o viendo qué hay de nuevo en el mundo para encontrar nuevas formas de unir las lógicas y las comunicaciones.
+¡Hola! Soy Andrés, un desarrollador sordo cuya lengua materna es Lengua de Señas Colombiana (LSC). Tengo una pasión por trabajar con computadoras, ya sea investigando nuevas tendencias de software, aprendiendo nuevas tecnologías o explorando las últimas novedades en el mundo tecnológico para encontrar nuevas formas de integrar la lógica y la comunicación.
 
 Tecnólogo especializado en desarrollo de aplicaciones para dispositivos móviles con sólida experiencia en front-end móvil Flutter.
 
@@ -26,7 +26,7 @@ Proactivo, innovador, con iniciativa, capacidad de análisis, toma de decisiones
 
 <!-- Mi investigación se centra en acoplar la ingeniería medioambiental y de recursos hídricos, la ciencia de los datos y el aprendizaje de las máquinas, y el análisis de sistemas para abordar los problemas relacionados con los objetivos de cantidad y calidad del agua en competencia y el papel de los datos en las acciones de decisión. -->
 
-Soy un Desarrollador Sordo Full-Stack Móvil Flutter graduado de la SENA y tengo títulos de:
+Soy un desarrollador (Sordo) de apps móviles full stack Flutter graduado de la SENA y tengo títulos de:
 
 - **Servicio en Nacional de Aprendizaje SENA - CENTRO DE GESTIÓN DE MERCADOS, LOGÍSTICA Y TECNOLOGÍAS DE LA INFORMACIÓN (CGMLTI)-Regional Distrito Capital. Bogotá D.C.**
 
