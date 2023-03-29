@@ -18,5 +18,5 @@
     <i id="trailer-icon" aria-hidden="true"></i>
 </div>
 
-{{ $js_trailer_mouse := resources.Get "js/trailer_mouse.js" | js.Build (dict "minify" true) }}
-<script defer src="{{ $js_trailer_mouse.RelPermalink }}"></script>
+{{ $js_trailer_cursor := resources.Get "js/trailer_cursor.js" | js.Build (dict "minify" true) }}
+<script defer src="{{ $js_trailer_cursor.RelPermalink }}"></script>
