@@ -31,7 +31,7 @@ Typo style corrections welcome via PRs.
 # Install dependencies with `go install`
 
 # Clone the repository including submodules
-> git clone git@github.com:andgar2010/blog.git
+> git clone git@github.com:andgar2010/home-page.git
 
 > rm -rf public
 > git worktree add -B gh-pages public origin/gh-pages
