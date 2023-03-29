@@ -16,7 +16,7 @@ series = [
   "Lenguas de señas y lengua hablada: una comparación de sistemas lingüísticos"
 ]
 aliases = [
-  "Lenguas de señas y lengua hablada: una comparación de sistemas lingüísticos"
+  "Lenguas de señas y lengua hablada una comparación de sistemas lingüísticos"
 ]
 +++
 
