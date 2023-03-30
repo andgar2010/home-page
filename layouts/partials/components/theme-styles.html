@@ -23,6 +23,6 @@
   {{ $js_bundle := slice $js_cursor_color_blur $js_trailer_cursor $js_animation_h1 | resources.Concat "js/bundle.js" }}
   <script defer src="{{ $js_bundle.RelPermalink }}"></script>
 {{ else }}
-  {{ $js_bundle := slice $js_cursor_color_blur $js_trailer_cursor $js_animation_h1 | resources.Concat "js/bundle.js" | js.Build (dict "minify" true) | fingerprint }}
-  <script defer src="{{ $js_bundle.RelPermalink }}" integrity="{{ $js_bundle.Data.Integrity }}" crossorigin="anonymous"></script>
+  {{ $js_bundle := slice $js_cursor_color_blur $js_trailer_cursor $js_animation_h1 | resources.Concat "js/bundle.min.js" | js.Build (dict "minify" true) | fingerprint }}
+  <script defer src="{{ $js_bundle.RelPermalink }}" crossorigin="anonymous"></script>
 {{ end }}
