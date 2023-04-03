@@ -43,3 +43,5 @@ I'm a Deaf, Flutter Full-Stack Mobile App Developer, graduated from SENA and hav
   Certificate of Labour Competence in the Standard (2011):
     * Perform preventive and predictive maintenance that prolongs the operation of computer equipment.
     * Perform corrective maintenance of computer equipment as established.
+
+[![Recommendations received: - Paulo Arias: Andrés is a responsible, attentive, and dedicated person in their work; I have had the pleasure of working with them and can attest to their positive attitude and commitment. - Daniel Herrera Sanchez: Andrés is a young person passionate about learning about software-related topics. During their time at Bancolombia, they supported the Design system cell, which was created in Flutter. They have over three years of experience in Flutter development. They are an active individual who, with the right support, can help the team implement digital solutions assigned to them.](/images/recommendations_en.png)                             Check out more received recommendations](https://link.tech-andgar.me/recommendations_linkedin)
