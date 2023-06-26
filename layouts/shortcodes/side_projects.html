@@ -1,0 +1,86 @@
+{{ $dataProjects := getJSON "data/projects.json" }}
+
+<table>
+  <thead>
+    <tr>
+      <th>
+        <center>📥 Type</center>
+      </th>
+      <th>
+        <center>🎁 Projects</center>
+      </th>
+      <th>
+        <center>🛠 Technologies</center>
+      </th>
+      <th>
+        <center>⭐ Stars</center>
+      </th>
+      <th>
+        <center>📚 Forks</center>
+      </th>
+      <th>
+        <center>🛎 Issues</center>
+      </th>
+      <th>
+        <center>📬 Pull requests</center>
+      </th>
+      <th>
+        <center>🔍 Preview</center>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    {{ $side_projects := $dataProjects.side_projects }}
+    {{ range $item := $side_projects }}
+    {{ if $item._enabled }}
+      <tr>
+        <td>{{ $item.type }}</td>
+        <td>
+          <a
+            href="{{ $item.link }}"
+            class="external-link"
+            target="_blank"
+            rel="noopener"
+            >{{ $item.name }}</a
+          ><br />{{ $item.description }}
+        </td>
+        <td>
+          {{ range $tech := $item.technologies }}
+            {{ if $tech}}
+              {{ if $item._bullet_point_technologies}}* {{ end }}{{ $tech }}<br />
+            {{ end }}
+          {{ end }}
+        </td>
+        <td>
+          {{ if $item.stars}}
+            * {{ $item.stars }} stars
+          {{ end }}
+        </td>
+        <td>
+          {{ if $item.forks}}
+            * {{ $item.forks }} forks
+          {{ end }}
+        </td>
+        <td>
+          {{ if $item.issues}}
+            * {{ $item.issues }} issues
+          {{ end }}
+        </td>
+        <td>
+          {{ if $item.pull_requests}}
+            * {{ $item.pull_requests }} pull_requests
+          {{ end }}
+        </td>
+        <td>
+          {{ if $item.preview}}
+            <img
+              src="{{ $item.preview }}"
+              alt="{{ $item.name }}"
+            />
+          {{ end }}
+        </td>
+      </tr>
+    {{ end }}
+  {{ end }}
+  </tbody>
+</table>
