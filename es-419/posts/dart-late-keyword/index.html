@@ -14,113 +14,113 @@ Dart no siempre puede asumir que una variable será inicializada más adelante, 
 <a class=heading-link href=#late-assign><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
 <span class=sr-only>Link to heading</span></a></h2><h3 id=promesa-de-asignación-tardía-para-en-la-migración-de-su-proyecto-a-null-safey-seguridad-de-nulos>Promesa de asignación tardía para en la migración de su proyecto a Null Safey (seguridad de nulos)
 <a class=heading-link href=#promesa-de-asignaci%c3%b3n-tard%c3%ada-para-en-la-migraci%c3%b3n-de-su-proyecto-a-null-safey-seguridad-de-nulos><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h3><p>Algunas ocasiones es necesario indicar explícitamente que inicializaremos una variable no nula posteriormente. Dart no siempre puede asumir que una variable será inicializada más adelante, como en el caso de las variables de alto nivel.</p><p>El siguiente ejemplo, Si la variable no es inicializada antes de utilizarla arrojaría un error en el proyecto con Null Safey en Dart:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-dart data-lang=dart><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Team</span> {
-</span></span><span style=display:flex><span>  <span style=color:#66d9ef>String</span> name;
-</span></span><span style=display:flex><span>}
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>void</span> main(List<span style=color:#f92672>&lt;</span><span style=color:#66d9ef>String</span><span style=color:#f92672>&gt;</span> args) {
-</span></span><span style=display:flex><span>  Team team <span style=color:#f92672>=</span> Team();
-</span></span><span style=display:flex><span>  team.name <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;Flutter&#39;</span>;
-</span></span><span style=display:flex><span>  print(team.name);
-</span></span><span style=display:flex><span>}
-</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>Uncaught Error: LateInitializationError: Field <span style=color:#e6db74>&#39;name&#39;</span> has not been initialized.
-</span></span></code></pre></div><p>En este caso, estamos seguros de que inicializaremos la variable, por lo cual podemos indicárselo a Dart con la palabra reserva late.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-dart data-lang=dart><span style=display:flex><span>late <span style=color:#66d9ef>String</span> name;
-</span></span></code></pre></div><p>En este caso, estamos seguros de que inicializaremos la variable, por lo cual podemos indicárselo a Dart con la palabra reserva <strong>late</strong>.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-dart data-lang=dart><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Team</span> {
-</span></span><span style=display:flex><span>  late <span style=color:#66d9ef>String</span> name;
-</span></span><span style=display:flex><span>}
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>void</span> main(List<span style=color:#f92672>&lt;</span><span style=color:#66d9ef>String</span><span style=color:#f92672>&gt;</span> args) {
-</span></span><span style=display:flex><span>  Team team <span style=color:#f92672>=</span> Team();
-</span></span><span style=display:flex><span>  team.name <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;Flutter&#39;</span>;
-</span></span><span style=display:flex><span>  print(team.name); <span style=color:#75715e>// Output: Flutter
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>}
+<span class=sr-only>Link to heading</span></a></h3><p>Algunas ocasiones es necesario indicar explícitamente que inicializaremos una variable no nula posteriormente. Dart no siempre puede asumir que una variable será inicializada más adelante, como en el caso de las variables de alto nivel.</p><p>El siguiente ejemplo, Si la variable no es inicializada antes de utilizarla arrojaría un error en el proyecto con Null Safey en Dart:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=kd>class</span> <span class=nc>Team</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=kt>String</span> <span class=n>name</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>void</span> <span class=n>main</span><span class=p>(</span><span class=n>List</span><span class=o>&lt;</span><span class=kt>String</span><span class=o>&gt;</span> <span class=n>args</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=n>Team</span> <span class=n>team</span> <span class=o>=</span> <span class=n>Team</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>  <span class=n>team</span><span class=p>.</span><span class=n>name</span> <span class=o>=</span> <span class=s1>&#39;Flutter&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=n>print</span><span class=p>(</span><span class=n>team</span><span class=p>.</span><span class=n>name</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>Uncaught Error: LateInitializationError: Field <span class=s1>&#39;name&#39;</span> has not been initialized.
+</span></span></code></pre></div><p>En este caso, estamos seguros de que inicializaremos la variable, por lo cual podemos indicárselo a Dart con la palabra reserva late.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=n>late</span> <span class=kt>String</span> <span class=n>name</span><span class=p>;</span>
+</span></span></code></pre></div><p>En este caso, estamos seguros de que inicializaremos la variable, por lo cual podemos indicárselo a Dart con la palabra reserva <strong>late</strong>.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=kd>class</span> <span class=nc>Team</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=n>late</span> <span class=kt>String</span> <span class=n>name</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>void</span> <span class=n>main</span><span class=p>(</span><span class=n>List</span><span class=o>&lt;</span><span class=kt>String</span><span class=o>&gt;</span> <span class=n>args</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=n>Team</span> <span class=n>team</span> <span class=o>=</span> <span class=n>Team</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>  <span class=n>team</span><span class=p>.</span><span class=n>name</span> <span class=o>=</span> <span class=s1>&#39;Flutter&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=n>print</span><span class=p>(</span><span class=n>team</span><span class=p>.</span><span class=n>name</span><span class=p>);</span> <span class=c1>// Output: Flutter
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=p>}</span>
 </span></span></code></pre></div><h2 id=late-lazy>Late lazy
 <a class=heading-link href=#late-lazy><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
 <span class=sr-only>Link to heading</span></a></h2><p>Esta inicialización Lazy es útil en los siguientes casos:</p><ul><li><p>La variable puede no ser necesaria, e inicializarla, es costoso.</p></li><li><p>Estás inicializando una variable de instancia, y su inicializador necesita acceder a ella.</p></li></ul><h3 id=inicializando-una-variable-sin-lazy>Inicializando una variable sin Lazy
 <a class=heading-link href=#inicializando-una-variable-sin-lazy><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-dart data-lang=dart><span style=display:flex><span><span style=color:#66d9ef>int</span> getNumMembers() {
-</span></span><span style=display:flex><span>  <span style=color:#75715e>// Some calculation
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  print(<span style=color:#e6db74>&#39;4. calculation number member...&#39;</span>);
-</span></span><span style=display:flex><span>  <span style=color:#66d9ef>return</span> <span style=color:#ae81ff>10500</span>;
-</span></span><span style=display:flex><span>}
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Team</span> {
-</span></span><span style=display:flex><span>  <span style=color:#66d9ef>int</span> numMembers <span style=color:#f92672>=</span> getNumMembers();
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>  <span style=color:#66d9ef>void</span> initalizate() {
-</span></span><span style=display:flex><span>    print(<span style=color:#e6db74>&#39;2. initalization object Team...</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#39;</span>);
-</span></span><span style=display:flex><span>  }
-</span></span><span style=display:flex><span>}
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>void</span> main(List<span style=color:#f92672>&lt;</span><span style=color:#66d9ef>String</span><span style=color:#f92672>&gt;</span> args) {
-</span></span><span style=display:flex><span>  print(<span style=color:#e6db74>&#39;1. Staring app main...</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#39;</span>);
-</span></span><span style=display:flex><span>  <span style=color:#66d9ef>final</span> team <span style=color:#f92672>=</span> Team()..initalizate();
-</span></span><span style=display:flex><span>  print(<span style=color:#e6db74>&#39;3. ---- processing main ... ----</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#39;</span>);
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>  print(team.numMembers);
-</span></span><span style=display:flex><span>}
-</span></span></code></pre></div><p>Output:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>1. Staring app main...
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>4. calculation number member...
-</span></span><span style=display:flex><span>2. initalization object Team...
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>3. ---- processing main ... ----
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#ae81ff>105000</span>
+<span class=sr-only>Link to heading</span></a></h3><div class=highlight><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=kt>int</span> <span class=n>getNumMembers</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=c1>// Some calculation
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=n>print</span><span class=p>(</span><span class=s1>&#39;4. calculation number member...&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=k>return</span> <span class=m>10500</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kd>class</span> <span class=nc>Team</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=kt>int</span> <span class=n>numMembers</span> <span class=o>=</span> <span class=n>getNumMembers</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=kt>void</span> <span class=n>initalizate</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>print</span><span class=p>(</span><span class=s1>&#39;2. initalization object Team...</span><span class=se>\n</span><span class=s1>&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>void</span> <span class=n>main</span><span class=p>(</span><span class=n>List</span><span class=o>&lt;</span><span class=kt>String</span><span class=o>&gt;</span> <span class=n>args</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=n>print</span><span class=p>(</span><span class=s1>&#39;1. Staring app main...</span><span class=se>\n</span><span class=s1>&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=kd>final</span> <span class=n>team</span> <span class=o>=</span> <span class=n>Team</span><span class=p>()..</span><span class=n>initalizate</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>  <span class=n>print</span><span class=p>(</span><span class=s1>&#39;3. ---- processing main ... ----</span><span class=se>\n</span><span class=s1>&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=n>print</span><span class=p>(</span><span class=n>team</span><span class=p>.</span><span class=n>numMembers</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><p>Output:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>1. Staring app main...
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>4. calculation number member...
+</span></span><span class=line><span class=cl>2. initalization object Team...
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>3. ---- processing main ... ----
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=m>105000</span>
 </span></span></code></pre></div><h3 id=inicializando-una-variable-con-lazy>Inicializando una variable con Lazy
 <a class=heading-link href=#inicializando-una-variable-con-lazy><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-dart data-lang=dart><span style=display:flex><span><span style=color:#66d9ef>int</span> getNumMembers() {
-</span></span><span style=display:flex><span>  <span style=color:#75715e>// Some calculation
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  print(<span style=color:#e6db74>&#39;4. calculation number member...&#39;</span>);
-</span></span><span style=display:flex><span>  <span style=color:#66d9ef>return</span> <span style=color:#ae81ff>105000</span>;
-</span></span><span style=display:flex><span>}
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Team</span> {
-</span></span><span style=display:flex><span>  late <span style=color:#66d9ef>int</span> numMembers <span style=color:#f92672>=</span> getNumMembers();
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>  <span style=color:#66d9ef>void</span> initalizate() {
-</span></span><span style=display:flex><span>    print(<span style=color:#e6db74>&#39;2. initalization object Team...</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#39;</span>);
-</span></span><span style=display:flex><span>  }
-</span></span><span style=display:flex><span>}
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>void</span> main(List<span style=color:#f92672>&lt;</span><span style=color:#66d9ef>String</span><span style=color:#f92672>&gt;</span> args) {
-</span></span><span style=display:flex><span>  print(<span style=color:#e6db74>&#39;1. Staring app main...</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#39;</span>);
-</span></span><span style=display:flex><span>  <span style=color:#66d9ef>final</span> team <span style=color:#f92672>=</span> Team()..initalizate();
-</span></span><span style=display:flex><span>  print(<span style=color:#e6db74>&#39;3. ---- processing main ... ----</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#39;</span>);
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>  print(team.numMembers);
-</span></span><span style=display:flex><span>}
-</span></span></code></pre></div><p>Output:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>1. Staring app main...
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>2. initalization object Team...
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>3. ---- processing main ... ----
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>4. calculation number member...
-</span></span><span style=display:flex><span><span style=color:#ae81ff>105000</span>
+<span class=sr-only>Link to heading</span></a></h3><div class=highlight><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=kt>int</span> <span class=n>getNumMembers</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=c1>// Some calculation
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=n>print</span><span class=p>(</span><span class=s1>&#39;4. calculation number member...&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=k>return</span> <span class=m>105000</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kd>class</span> <span class=nc>Team</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=n>late</span> <span class=kt>int</span> <span class=n>numMembers</span> <span class=o>=</span> <span class=n>getNumMembers</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=kt>void</span> <span class=n>initalizate</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>print</span><span class=p>(</span><span class=s1>&#39;2. initalization object Team...</span><span class=se>\n</span><span class=s1>&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>void</span> <span class=n>main</span><span class=p>(</span><span class=n>List</span><span class=o>&lt;</span><span class=kt>String</span><span class=o>&gt;</span> <span class=n>args</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=n>print</span><span class=p>(</span><span class=s1>&#39;1. Staring app main...</span><span class=se>\n</span><span class=s1>&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=kd>final</span> <span class=n>team</span> <span class=o>=</span> <span class=n>Team</span><span class=p>()..</span><span class=n>initalizate</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>  <span class=n>print</span><span class=p>(</span><span class=s1>&#39;3. ---- processing main ... ----</span><span class=se>\n</span><span class=s1>&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=n>print</span><span class=p>(</span><span class=n>team</span><span class=p>.</span><span class=n>numMembers</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><p>Output:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>1. Staring app main...
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>2. initalization object Team...
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>3. ---- processing main ... ----
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>4. calculation number member...
+</span></span><span class=line><span class=cl><span class=m>105000</span>
 </span></span></code></pre></div><h3 id=inicializando-una-variable-con-lazy-final>Inicializando una variable con Lazy Final
 <a class=heading-link href=#inicializando-una-variable-con-lazy-final><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h3><p>Es común usar <strong>late</strong> en combinación con <strong>final</strong>, para diferir la creación de variables de solo lectura hasta el momento en que se leen por primera vez.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-dart data-lang=dart><span style=display:flex><span><span style=color:#66d9ef>int</span> getNumMembers() {
-</span></span><span style=display:flex><span>  <span style=color:#75715e>// Some calculation
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  print(<span style=color:#e6db74>&#39;4. calculation number member...&#39;</span>);
-</span></span><span style=display:flex><span>  <span style=color:#66d9ef>return</span> <span style=color:#ae81ff>105000</span>;
-</span></span><span style=display:flex><span>}
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Team</span> {
-</span></span><span style=display:flex><span>  late <span style=color:#66d9ef>final</span> <span style=color:#66d9ef>int</span> numMembers <span style=color:#f92672>=</span> getNumMembers();
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>  <span style=color:#66d9ef>void</span> initalizate() {
-</span></span><span style=display:flex><span>    print(<span style=color:#e6db74>&#39;2. initalization object Team...</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#39;</span>);
-</span></span><span style=display:flex><span>  }
-</span></span><span style=display:flex><span>}
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>void</span> main(List<span style=color:#f92672>&lt;</span><span style=color:#66d9ef>String</span><span style=color:#f92672>&gt;</span> args) {
-</span></span><span style=display:flex><span>  print(<span style=color:#e6db74>&#39;1. Staring app main...</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#39;</span>);
-</span></span><span style=display:flex><span>  <span style=color:#66d9ef>final</span> team <span style=color:#f92672>=</span> Team()..initalizate();
-</span></span><span style=display:flex><span>  print(<span style=color:#e6db74>&#39;3. ---- processing main ... ----</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#39;</span>);
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>  print(team.numMembers);
-</span></span><span style=display:flex><span>}
+<span class=sr-only>Link to heading</span></a></h3><p>Es común usar <strong>late</strong> en combinación con <strong>final</strong>, para diferir la creación de variables de solo lectura hasta el momento en que se leen por primera vez.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=kt>int</span> <span class=n>getNumMembers</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=c1>// Some calculation
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=n>print</span><span class=p>(</span><span class=s1>&#39;4. calculation number member...&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=k>return</span> <span class=m>105000</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kd>class</span> <span class=nc>Team</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=n>late</span> <span class=kd>final</span> <span class=kt>int</span> <span class=n>numMembers</span> <span class=o>=</span> <span class=n>getNumMembers</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=kt>void</span> <span class=n>initalizate</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>print</span><span class=p>(</span><span class=s1>&#39;2. initalization object Team...</span><span class=se>\n</span><span class=s1>&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>void</span> <span class=n>main</span><span class=p>(</span><span class=n>List</span><span class=o>&lt;</span><span class=kt>String</span><span class=o>&gt;</span> <span class=n>args</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=n>print</span><span class=p>(</span><span class=s1>&#39;1. Staring app main...</span><span class=se>\n</span><span class=s1>&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=kd>final</span> <span class=n>team</span> <span class=o>=</span> <span class=n>Team</span><span class=p>()..</span><span class=n>initalizate</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>  <span class=n>print</span><span class=p>(</span><span class=s1>&#39;3. ---- processing main ... ----</span><span class=se>\n</span><span class=s1>&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=n>print</span><span class=p>(</span><span class=n>team</span><span class=p>.</span><span class=n>numMembers</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span></code></pre></div></div><footer><section class=see-also></section></footer></article></section></div><footer class=footer><section class=container><p>H E L L O @ T E C H - A N D G A R . M E</p>©
 2020 -
 2023

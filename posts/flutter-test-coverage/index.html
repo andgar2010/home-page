@@ -13,56 +13,56 @@
 <a class=heading-link href=#installation><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
 <span class=sr-only>Link to heading</span></a></h2><h3 id=install-on-ubuntu>Install on Ubuntu
 <a class=heading-link href=#install-on-ubuntu><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>sudo apt-get update -qq -y
-</span></span><span style=display:flex><span>sudo apt-get install lcov -y
+<span class=sr-only>Link to heading</span></a></h3><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>sudo apt-get update -qq -y
+</span></span><span class=line><span class=cl>sudo apt-get install lcov -y
 </span></span></code></pre></div><h3 id=install-on-mac>Install on Mac
 <a class=heading-link href=#install-on-mac><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>brew install lcov
+<span class=sr-only>Link to heading</span></a></h3><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>brew install lcov
 </span></span></code></pre></div><h3 id=install-on-windows>Install on Windows
 <a class=heading-link href=#install-on-windows><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
 <span class=sr-only>Link to heading</span></a></h3><p>Required:</p><ul><li>Chocolatey</li><li>Perl</li><li>LCOV</li></ul><h4 id=1-chocolatey>1. CHOCOLATEY
 <a class=heading-link href=#1-chocolatey><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
 <span class=sr-only>Link to heading</span></a></h4><ol><li><p>Install chocolatey</p><p>Ejecuta <code>Get-ExecutionPolicy</code>.
-Si devuelve <strong>Restricted</strong>, ejecuta <code>Set-ExecutionPolicy AllSigned</code> o <code>Set-ExecutionPolicy Bypass -Scope Process</code></p><ul><li>CMD (with Admin)</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>@<span style=color:#e6db74>&#34;%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe&#34;</span> -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command <span style=color:#e6db74>&#34;iex ((New-Object System.Net.WebClient).DownloadString(&#39;https://chocolatey.org/install.ps1&#39;))&#34;</span> <span style=color:#f92672>&amp;&amp;</span> SET <span style=color:#e6db74>&#34;PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin&#34;</span>
-</span></span></code></pre></div><ul><li>PowerShell (with Admin)</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>Set-ExecutionPolicy Bypass -Scope Process -Force; iex <span style=color:#f92672>((</span>New-Object System.Net.WebClient<span style=color:#f92672>)</span>.DownloadString<span style=color:#f92672>(</span><span style=color:#e6db74>&#39;https://chocolatey.org/install.ps1&#39;</span><span style=color:#f92672>))</span>
+Si devuelve <strong>Restricted</strong>, ejecuta <code>Set-ExecutionPolicy AllSigned</code> o <code>Set-ExecutionPolicy Bypass -Scope Process</code></p><ul><li>CMD (with Admin)</li></ul><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>@<span class=s2>&#34;%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe&#34;</span> -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command <span class=s2>&#34;iex ((New-Object System.Net.WebClient).DownloadString(&#39;https://chocolatey.org/install.ps1&#39;))&#34;</span> <span class=o>&amp;&amp;</span> SET <span class=s2>&#34;PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin&#34;</span>
+</span></span></code></pre></div><ul><li>PowerShell (with Admin)</li></ul><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>Set-ExecutionPolicy Bypass -Scope Process -Force<span class=p>;</span> iex <span class=o>((</span>New-Object System.Net.WebClient<span class=o>)</span>.DownloadString<span class=o>(</span><span class=s1>&#39;https://chocolatey.org/install.ps1&#39;</span><span class=o>))</span>
 </span></span></code></pre></div></li></ol><h4 id=2-perl>2. PERL
 <a class=heading-link href=#2-perl><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h4><ol><li><p>Install Perl</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>choco install strawberryperl
-</span></span></code></pre></div></li><li><p>Check Installed Perl</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>where perl
-</span></span></code></pre></div><p>If it returns correct it is and next step 3. LCOV:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span><span style=color:#75715e># C:\Strawberry\perl\bin\perl.exe</span>
-</span></span></code></pre></div><p>If it does not exist, add the perl path in the system environment variables</p><p>Note: A command that changes the cmd environment variables for the current cmd session only</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>set PATH<span style=color:#f92672>=</span>$PATH:C:<span style=color:#ae81ff>\S</span>trawberry<span style=color:#ae81ff>\p</span>erl<span style=color:#ae81ff>\b</span>in
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>echo %path%
-</span></span></code></pre></div><p>If desired, you can permanently add a path to PATH with the setx command:</p><p><strong>Warning:</strong></p><ol><li><strong>Back up your PATH</strong> - SETX will truncate your information longer than 1024 characters.</li><li>Do not call SETX %PATH%;xxx - <em>adds the system path to the user path</em> (SETX will default to updating your user path).</li><li>Do not call SETX %PATH%;xxx /M - <em>adds the user path to the system path</em> (SETX &mldr; /M will update your system path.).</li></ol><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>setx /M path <span style=color:#e6db74>&#34;%path%;C:\Strawberry\perl\bin\&#34;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>echo %path%
+<span class=sr-only>Link to heading</span></a></h4><ol><li><p>Install Perl</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>choco install strawberryperl
+</span></span></code></pre></div></li><li><p>Check Installed Perl</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>where perl
+</span></span></code></pre></div><p>If it returns correct it is and next step 3. LCOV:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl><span class=c1># C:\Strawberry\perl\bin\perl.exe</span>
+</span></span></code></pre></div><p>If it does not exist, add the perl path in the system environment variables</p><p>Note: A command that changes the cmd environment variables for the current cmd session only</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl><span class=nb>set</span> <span class=nv>PATH</span><span class=o>=</span><span class=nv>$PATH</span>:C:<span class=se>\S</span>trawberry<span class=se>\p</span>erl<span class=se>\b</span>in
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nb>echo</span> %path%
+</span></span></code></pre></div><p>If desired, you can permanently add a path to PATH with the setx command:</p><p><strong>Warning:</strong></p><ol><li><strong>Back up your PATH</strong> - SETX will truncate your information longer than 1024 characters.</li><li>Do not call SETX %PATH%;xxx - <em>adds the system path to the user path</em> (SETX will default to updating your user path).</li><li>Do not call SETX %PATH%;xxx /M - <em>adds the user path to the system path</em> (SETX &mldr; /M will update your system path.).</li></ol><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>setx /M path <span class=s2>&#34;%path%;C:\Strawberry\perl\bin\&#34;
+</span></span></span><span class=line><span class=cl><span class=s2>
+</span></span></span><span class=line><span class=cl><span class=s2>echo %path%
 </span></span></span></code></pre></div></li></ol><h4 id=3-lcov>3. LCOV
 <a class=heading-link href=#3-lcov><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h4><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>choco install lcov
+<span class=sr-only>Link to heading</span></a></h4><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>choco install lcov
 </span></span></code></pre></div><h2 id=lcov-operation>LCOV operation
 <a class=heading-link href=#lcov-operation><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
 <span class=sr-only>Link to heading</span></a></h2><h3 id=1-execute-flutter-project-test-coverage-to-generate-lcov-file>1. Execute Flutter project test coverage to generate LCOV file
 <a class=heading-link href=#1-execute-flutter-project-test-coverage-to-generate-lcov-file><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>flutter test --coverage
+<span class=sr-only>Link to heading</span></a></h3><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>flutter <span class=nb>test</span> --coverage
 </span></span></code></pre></div><h3 id=2-generate-coverage-files-and-convert-them-to-html>2. Generate coverage files and convert them to HTML
 <a class=heading-link href=#2-generate-coverage-files-and-convert-them-to-html><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
 <span class=sr-only>Link to heading</span></a></h3><h4 id=linuxmac>Linux/Mac
 <a class=heading-link href=#linuxmac><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h4><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>genhtml coverage/lcov.info -o coverage/html
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>open coverage/html/index.html
+<span class=sr-only>Link to heading</span></a></h4><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>genhtml coverage/lcov.info -o coverage/html
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>open coverage/html/index.html
 </span></span></code></pre></div><h4 id=windows>Windows
 <a class=heading-link href=#windows><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
 <span class=sr-only>Link to heading</span></a></h4><h5 id=cmd-or-powershell><strong>CMD or PowerShell</strong>
 <a class=heading-link href=#cmd-or-powershell><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h5><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>perl C:<span style=color:#ae81ff>\P</span>rogramData<span style=color:#ae81ff>\c</span>hocolatey<span style=color:#ae81ff>\l</span>ib<span style=color:#ae81ff>\l</span>cov<span style=color:#ae81ff>\t</span>ools<span style=color:#ae81ff>\b</span>in<span style=color:#ae81ff>\g</span>enhtml coverage/lcov.info -o coverage/html
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>coverage/html/index.html <span style=color:#75715e># Open report coverage test HTML</span>
+<span class=sr-only>Link to heading</span></a></h5><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>perl C:<span class=se>\P</span>rogramData<span class=se>\c</span>hocolatey<span class=se>\l</span>ib<span class=se>\l</span>cov<span class=se>\t</span>ools<span class=se>\b</span>in<span class=se>\g</span>enhtml coverage/lcov.info -o coverage/html
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>coverage/html/index.html <span class=c1># Open report coverage test HTML</span>
 </span></span></code></pre></div><h5 id=git-bash><strong>Git bash</strong>
 <a class=heading-link href=#git-bash><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h5><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>perl /c/ProgramData/chocolatey/lib/lcov/tools/bin/genhtml coverage/lcov.info -o coverage/html
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>coverage/html/index.html <span style=color:#75715e># Open report coverage test HTML</span>
+<span class=sr-only>Link to heading</span></a></h5><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>perl /c/ProgramData/chocolatey/lib/lcov/tools/bin/genhtml coverage/lcov.info -o coverage/html
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>coverage/html/index.html <span class=c1># Open report coverage test HTML</span>
 </span></span></code></pre></div></div><footer><section class=see-also></section></footer></article></section></div><footer class=footer><section class=container><p>H E L L O @ T E C H - A N D G A R . M E</p>©
 2020 -
 2023

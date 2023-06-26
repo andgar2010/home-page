@@ -13,47 +13,47 @@ One-minute read</span></div><div class=categories><i class="fa fa-folder" aria-h
 <span class=separator>•</span>
 <span class=tag><a href=/tags/pm2/>PM2</a></span></div></div></header><div class=post-content><h2 id=view-logs-ngnix>View logs ngnix
 <a class=heading-link href=#view-logs-ngnix><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ cat /var/log/nginx/error.log
-</span></span><span style=display:flex><span><span style=color:#75715e># OR</span>
-</span></span><span style=display:flex><span>$ sudo tail -n <span style=color:#ae81ff>20</span> /var/log/nginx/error.log
+<span class=sr-only>Link to heading</span></a></h2><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>$ cat /var/log/nginx/error.log
+</span></span><span class=line><span class=cl><span class=c1># OR</span>
+</span></span><span class=line><span class=cl>$ sudo tail -n <span class=m>20</span> /var/log/nginx/error.log
 </span></span></code></pre></div><h2 id=check-configuration-nginx>Check configuration nginx
 <a class=heading-link href=#check-configuration-nginx><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ nginx -c /etc/nginx/nginx.conf -t
+<span class=sr-only>Link to heading</span></a></h2><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>$ nginx -c /etc/nginx/nginx.conf -t
 </span></span></code></pre></div><h2 id=reset-service-nginx-on-ubuntu>Reset service nginx on Ubuntu
 <a class=heading-link href=#reset-service-nginx-on-ubuntu><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ sudo systemctl restart nginx
+<span class=sr-only>Link to heading</span></a></h2><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>$ sudo systemctl restart nginx
 </span></span></code></pre></div><h2 id=reload-configuration-of-service-nginx-on-ubuntu>Reload configuration of service nginx on Ubuntu
 <a class=heading-link href=#reload-configuration-of-service-nginx-on-ubuntu><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ sudo systemctl reload nginx
+<span class=sr-only>Link to heading</span></a></h2><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>$ sudo systemctl reload nginx
 </span></span></code></pre></div><h2 id=assign-permissitions-for-user-of-nginx-on-ubuntu>Assign permissitions for user of nginx on Ubuntu
 <a class=heading-link href=#assign-permissitions-for-user-of-nginx-on-ubuntu><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ chown -R www-data:www-data /var/www/domain.com/subdomain/*
+<span class=sr-only>Link to heading</span></a></h2><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>$ chown -R www-data:www-data /var/www/domain.com/subdomain/*
 </span></span></code></pre></div><h2 id=copy-project-to-folder-www-public-nginx>Copy project to folder WWW public Nginx
 <a class=heading-link href=#copy-project-to-folder-www-public-nginx><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ cp -rL /root/projects/project1/dist/public /var/www/domain.me/subdomain/project
+<span class=sr-only>Link to heading</span></a></h2><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>$ cp -rL /root/projects/project1/dist/public /var/www/domain.me/subdomain/project
 </span></span></code></pre></div><h2 id=fix-permissions-for-user-of-nginx-on-ubuntu>Fix permissions for user of nginx on Ubuntu
 <a class=heading-link href=#fix-permissions-for-user-of-nginx-on-ubuntu><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ chmod -R <span style=color:#ae81ff>755</span> */   <span style=color:#75715e># or 751 Fix Permissions Folder</span>
-</span></span><span style=display:flex><span>$ chmod -R <span style=color:#ae81ff>644</span> */*  <span style=color:#75715e># Fix Permissions Files</span>
+<span class=sr-only>Link to heading</span></a></h2><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>$ chmod -R <span class=m>755</span> */   <span class=c1># or 751 Fix Permissions Folder</span>
+</span></span><span class=line><span class=cl>$ chmod -R <span class=m>644</span> */*  <span class=c1># Fix Permissions Files</span>
 </span></span></code></pre></div><h2 id=copy-project-to-folder-www-public-nginx-and-fix-permissions>Copy project to folder WWW public Nginx and Fix permissions
 <a class=heading-link href=#copy-project-to-folder-www-public-nginx-and-fix-permissions><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ cp -rL /root/projects/Personal/demo_cobrandoAG/app/dist/pwa /var/www/tech-andgar.me/subdomain/pwa <span style=color:#f92672>&amp;&amp;</span> chmod -R <span style=color:#ae81ff>755</span> */ <span style=color:#f92672>&amp;&amp;</span> chmod -R <span style=color:#ae81ff>644</span> */*
+<span class=sr-only>Link to heading</span></a></h2><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>$ cp -rL /root/projects/Personal/demo_cobrandoAG/app/dist/pwa /var/www/tech-andgar.me/subdomain/pwa <span class=o>&amp;&amp;</span> chmod -R <span class=m>755</span> */ <span class=o>&amp;&amp;</span> chmod -R <span class=m>644</span> */*
 </span></span></code></pre></div><h2 id=link-symbolic>Link symbolic
 <a class=heading-link href=#link-symbolic><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ ln -s /root/projects/Personal/demo_cobrandoAG/app/dist/pwa/* /var/www/tech-andgar.me/subdomain/demo_cobrando
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>$ ln -sv /root/projects/Personal/demo_cobrandoAG/app/dist/pwa /var/www/tech-andgar.me/subdomain
+<span class=sr-only>Link to heading</span></a></h2><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>$ ln -s /root/projects/Personal/demo_cobrandoAG/app/dist/pwa/* /var/www/tech-andgar.me/subdomain/demo_cobrando
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>$ ln -sv /root/projects/Personal/demo_cobrandoAG/app/dist/pwa /var/www/tech-andgar.me/subdomain
 </span></span></code></pre></div><h2 id=pm2-freeze-list-process-for-startup>PM2 Freeze list process for startup
 <a class=heading-link href=#pm2-freeze-list-process-for-startup><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#75715e># [PM2] Freeze a process list on reboot via:</span>
-</span></span><span style=display:flex><span>$ pm2 save
+<span class=sr-only>Link to heading</span></a></h2><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># [PM2] Freeze a process list on reboot via:</span>
+</span></span><span class=line><span class=cl>$ pm2 save
 </span></span></code></pre></div><h2 id=pm2-remove-startup>PM2 remove startup
 <a class=heading-link href=#pm2-remove-startup><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#75715e># [PM2] Remove init script via:</span>
-</span></span><span style=display:flex><span>$ pm2 unstartup systemd
+<span class=sr-only>Link to heading</span></a></h2><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># [PM2] Remove init script via:</span>
+</span></span><span class=line><span class=cl>$ pm2 unstartup systemd
 </span></span></code></pre></div><h2 id=git-push>Git push
 <a class=heading-link href=#git-push><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$ git push -u origin master
+<span class=sr-only>Link to heading</span></a></h2><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>$ git push -u origin master
 </span></span></code></pre></div></div><footer><section class=see-also></section></footer></article></section></div><footer class=footer><section class=container><p>H E L L O @ T E C H - A N D G A R . M E</p>©
 2020 -
 2023
