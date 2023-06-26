@@ -1,0 +1,291 @@
+{
+  "side_projects": [
+    {
+      "type": "App mobile",
+      "_enabled": true,
+      "name": "clean-flutter-app",
+      "link": "https://github.com/andgar2010/clean-flutter-app",
+      "description": "Application made in Flutter using TDD, Clean Architecture, Design Patterns and SOLID principles.",
+      "preview": "",
+      "_bullet_point_technologies": true,
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "GitHub Actions"
+      ],
+      "stars": null,
+      "forks": null,
+      "issues": null,
+      "pull_requests": null
+    },
+    {
+      "type": "Web",
+      "_enabled": true,
+      "name": "nomina",
+      "link": "https://andgar2010.github.io/nomina/",
+      "description": "Project focused on calculating basic payroll, taking into account the regulations in place in 2023 for Colombia.",
+      "preview": null,
+      "_bullet_point_technologies": true,
+      "technologies": [
+        "Framework Quasar v2",
+        "Vue.JS 3",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "GitHub Actions"
+      ],
+      "stars": null,
+      "forks": null,
+      "issues": null,
+      "pull_requests": null
+    },
+    {
+      "type": "Web",
+      "_enabled": true,
+      "name": "facturacion",
+      "link": "https://andgar2010.github.io/facturacion/",
+      "description": "Basic invoicing project",
+      "preview": null,
+      "_bullet_point_technologies": true,
+      "technologies": [
+        "Framework Quasar v1",
+        "Vue.JS 2",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "GitHub Actions"
+      ],
+      "stars": null,
+      "forks": null,
+      "issues": null,
+      "pull_requests": null
+    },
+    {
+      "type": "Web",
+      "_enabled": true,
+      "name": "Personal Web Blog",
+      "description": null,
+      "link": "https://tech-andgar.me",
+      "preview": null,
+      "_bullet_point_technologies": true,
+      "technologies": [
+        "HUGO",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "GitHub Actions",
+        "GitHub Pages"
+      ],
+      "stars": null,
+      "forks": null,
+      "issues": null,
+      "pull_requests": null
+    },
+    {
+      "type": "Documentation",
+      "_enabled": true,
+      "name": "solid-example",
+      "link": "https://github.com/andgar2010/solid-example",
+      "description": "Fundamental SOLID Examples",
+      "preview": null,
+      "_bullet_point_technologies": true,
+      "technologies": [
+        "Dart",
+        "TypeScript"
+      ],
+      "stars": null,
+      "forks": null,
+      "issues": null,
+      "pull_requests": null
+    },
+    {
+      "type": "Documentation",
+      "_enabled": true,
+      "name": "Wiki AHID",
+      "link": "https://github.com/andgar2010/Wiki-AHID",
+      "description": "Technical Installation Manual for Project New Reset A.I.H.D. Wiki.",
+      "preview": null,
+      "_bullet_point_technologies": true,
+      "technologies": [
+        "Markdown ",
+        "GitBook"
+      ],
+      "stars": null,
+      "forks": null,
+      "issues": null,
+      "pull_requests": null
+    },
+    {
+      "type": "Documentation",
+      "_enabled": true,
+      "name": "guia-capacitacion-aihd",
+      "link": "https://github.com/andgar2010/guia-capacitacion-aihd",
+      "description": "Training Guide: Project NEW RESET A.I.H.D.",
+      "preview": null,
+      "_bullet_point_technologies": true,
+      "technologies": [
+        "Markdown ",
+        "GitBook"
+      ],
+      "stars": null,
+      "forks": null,
+      "issues": null,
+      "pull_requests": null
+    },
+    {
+      "type": "Documentation",
+      "_enabled": true,
+      "name": "awesome stars",
+      "link": "https://github.com/andgar2010/awesome-stars",
+      "description": "A curated list of my GitHub stars by stargazed.",
+      "preview": null,
+      "_bullet_point_technologies": true,
+      "technologies": [
+        "GitHub Actions"
+      ],
+      "stars": null,
+      "forks": null,
+      "issues": null,
+      "pull_requests": null
+    },
+    {
+      "type": "Package Dart",
+      "_enabled": false,
+      "name": "WidgetPerfRealTime [WIP]",
+      "link": "https://github.com/andgar2010/WidgetPerfRealTime",
+      "description": null,
+      "preview": null,
+      "_bullet_point_technologies": false,
+      "technologies": [
+        "Dart",
+        "GitHub Actions"
+      ],
+      "stars": null,
+      "forks": null,
+      "issues": null,
+      "pull_requests": null
+    },
+    {
+      "type": "Package Dart",
+      "_enabled": false,
+      "name": "http_exception [WIP]",
+      "link": "https://github.com/andgar2010/http_exception",
+      "description": "Shelf middleware that provides the abillity to simply throw an HttpException that gets converted to an appropriate response code and a formatted response body dependent on clients accept header.",
+      "preview": null,
+      "_bullet_point_technologies": false,
+      "technologies": [
+        "Dart",
+        "GitHub Actions"
+      ],
+      "stars": null,
+      "forks": null,
+      "issues": null,
+      "pull_requests": null
+    },
+    {
+      "type": null,
+      "_enabled": false,
+      "name": null,
+      "link": null,
+      "description": null,
+      "preview": null,
+      "_bullet_point_technologies": false,
+      "technologies": [
+        null,
+        null
+      ],
+      "stars": null,
+      "forks": null,
+      "issues": null,
+      "pull_requests": null
+    }
+  ],
+  "contributions": [
+    {
+      "type": "Code of conduct",
+      "_enabled": true,
+      "name": "EthicalSource/contributor_covenant",
+      "link": "https://github.com/EthicalSource/contributor_covenant",
+      "description": "Pledge your respect and appreciation for contributors of all kinds to your open source project.",
+      "engagement_metrics": {
+        "stars": "1672",
+        "downloads": null
+      },
+      "_bullet_point_technologies": true,
+      "technologies": [
+        "Markdown",
+        "GitHub"
+      ],
+      "preview": "/images/preview/logo-contributor_covenant.svg"
+    },
+    {
+      "type": "App mobile",
+      "_enabled": true,
+      "name": "proninyaroslav/blink-comparison",
+      "link": "https://github.com/proninyaroslav/blink-comparison",
+      "description": "Simplifies comparing photos of tamper-evident seals and patterns using your eyes.",
+      "engagement_metrics": {
+        "stars": "201",
+        "downloads": "+100"
+      },
+      "_bullet_point_technologies": true,
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "GitHub Actions"
+      ],
+      "preview": "/images/preview/logo-proninyaroslavblink.png"
+    },
+    {
+      "type": "Package Dart",
+      "_enabled": true,
+      "name": "baderouaich/time_ago_provider",
+      "link": "https://pub.dev/packages/time_ago_provider",
+      "description": "library for generating fuzzy timestamp for example ('9 minutes ago').",
+      "engagement_metrics": {
+        "stars": "16",
+        "downloads": "30"
+      },
+      "_bullet_point_technologies": true,
+      "technologies": [
+        "Dart",
+        "GitHub Actions"
+      ],
+      "preview": null
+    },
+    {
+      "type": "Extension Browser",
+      "_enabled": true,
+      "name": "FastForwardTeam/FastForward</br>Previous name: webtaculars/Universal-Bypass",
+      "link": "https://github.com/FastForwardTeam/FastForward",
+      "description": "Don't waste your time with compliance. Universal Bypass automatically skips annoying link shorteners.",
+      "engagement_metrics": {
+        "stars": "2673",
+        "downloads": "+70.000"
+      },
+      "_bullet_point_technologies": true,
+      "technologies": [
+        "JavaScript",
+        "JSON"
+      ],
+      "preview": "/images/preview/logo-FastForward.png"
+    },
+    {
+      "type": null,
+      "_enabled": false,
+      "name": null,
+      "link": null,
+      "description": null,
+      "engagement_metrics": {
+        "stars": null,
+        "downloads": null
+      },
+      "_bullet_point_technologies": false,
+      "technologies": [
+        null,
+        null
+      ],
+      "preview": null
+    }
+  ]
+}
