@@ -12,6 +12,10 @@ enableEmoji = true
 # disqusShortname = "andgar2010"
 enableRobotsTXT = true
 
+
+[markup.highlight]
+noClasses = false
+
 [params]
 author = "Andrés García"
 description = "Andrés García's personal website"
