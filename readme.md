@@ -36,6 +36,8 @@ Typo style corrections welcome via PRs.
 > rm -rf public
 > git worktree add -B gh-pages public origin/gh-pages
 > npm i
+> hugo mod get -u # If use debugging tools
+> hugo mod clean # Clean cache Project
 
 # Create local preview server with `hugo serve`
 > hugo serve
@@ -60,3 +62,7 @@ Site content is licensed under the *Creative Commons Attribution 4.0 Internation
 
 - Uses [`luizdepra/hugo-coder`](https://github.com/luizdepra/hugo-coder)
 - Hosted via GitHub Pages with Github Actions
+
+<!--
+source: https://lapras.com/public/tech-andgar.json [TODO: NEED CREATE ADAPATER WIP]
+-->
