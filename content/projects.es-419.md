@@ -3,6 +3,17 @@ title = "Proyectos"
 slug = "projects"
 +++
 
-En construcción... ¡Espere!
+## Proyectos secundarios
 
-Puedes mirar mi [currículum](https://link.tech-andgar.me/CV-AFGR-DEV) o [Linkedln](https://link.tech-andgar.me/linkedin), que tiene una breve descripción de los proyectos.
+He realizado varios proyectos paralelos en los últimos años. Aquí están algunos de los que me enorgullezco.
+
+{{< proyectos_secundarios >}}
+
+Y puedes visitar [mi perfil en tiempo real de habilidades técnicas](https://link.tech-andgar.me/lapras), que incluye más proyectos y demos.
+
+## Contribuciones
+
+He contribuido a estos proyectos de código abierto.
+{{< contribuciones >}}
+
+Además, puedes consultar mi [CV](https://link.tech-andgar.me/CV-AFGR-DEV) o [Linkedln](https://link.tech-andgar.me/linkedin), donde encontrarás descripciones breves de proyectos con clientes.
