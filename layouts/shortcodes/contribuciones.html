@@ -4,10 +4,10 @@
   <thead>
     <tr>
       <th>
-        <center>📥 Tipo</center>
+        <center>🗃️ Tipo</center>
       </th>
       <th>
-        <center>🎁 Proyectos</center>
+        <center>🎁 Proyecto</center>
       </th>
       <th>
         <center>📈 Participación</br>Indicadores</center>
@@ -34,10 +34,10 @@
         </td>
         <td>
           {{ if $item.engagement_metrics.stars}}
-            {{ $item.engagement_metrics.stars }} stars
+            ⭐️ {{ $item.engagement_metrics.stars }} estrellas
           {{ end }}
           {{ if $item.engagement_metrics.downloads}}
-            </br>{{ $item.engagement_metrics.downloads }} downloads
+            </br>📥 {{ $item.engagement_metrics.downloads }} descargas
           {{ end }}
         </td>
         <td>
