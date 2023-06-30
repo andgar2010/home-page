@@ -9,17 +9,46 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-20.04
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node: [18]
+        pnpm-version: [8]
+
+    defaults:
+      run:
+        working-directory: .
+
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
+      - name: Identify package manager
+        id: pkgman
+        run: |
+          cache=`[ -f "./pnpm-lock.yaml" ] && echo "pnpm" || ([ -f "./package-lock.json" ] && echo "npm" || ([ -f "./yarn.lock" ] && echo "yarn" || echo ""))`
+          package_manager=`[ ! -z "$cache" ] && echo "$cache" || echo "pnpm"`
+          echo "cache=$cache" >> $GITHUB_OUTPUT
+          echo "package_manager=$package_manager" >> $GITHUB_OUTPUT
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        if: ${{ steps.pkgman.outputs.package_manager == 'pnpm' }}
+        id: pnpm-install
+        with:
+          version: ${{ matrix.pnpm-version }}
+
       - uses: actions/setup-node@v3
         with:
-          node-version: 18
-      - run: npm i
+          node-version: ${{ matrix.node }}
+          cache: ${{ steps.pkgman.outputs.cache }}
+
+      - name: Install dependencies
+        run: ${{ steps.pkgman.outputs.package_manager }} install --prod
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
