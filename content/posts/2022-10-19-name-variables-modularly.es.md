@@ -17,6 +17,7 @@ series = [
 aliases = [
   "Lenguaje de programacion"
 ]
+"featuredImage" = "images/posts/best_practices_naming_modular_variables_programming.webp"
 +++
 
 # Estándar nombramiento las variables de forma modular
