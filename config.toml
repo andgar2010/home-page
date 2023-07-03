@@ -216,38 +216,38 @@ name = "CV"
 weight = 6
 url = "https://link.tech-andgar.me/CV-AFGR-DEV"
 
-[languages.es-419]
+[languages.es]
 languageName = "Español :es:"
 title = "TECH-ANDGAR"
 
-[languages.es-419.params]
+[languages.es.params]
 author = "Andrés García"
 info = ["Desarrollador Full Stack con Flutter", ""]
 description = "Sítio personal de Andrés García"
 keywords = "blog,desarrollador,personal,flutter,sordo"
 footerContent = "H E L L O @ T E C H - A N D G A R . M E"
 
-[[languages.es-419.menu.main]]
+[[languages.es.menu.main]]
 name = "Acerca de"
 weight = 1
 url = "about/"
 
-[[languages.es-419.menu.main]]
+[[languages.es.menu.main]]
 name = "Blog"
 weight = 2
 url = "posts/"
 
-[[languages.es-419.menu.main]]
+[[languages.es.menu.main]]
 name = "Proyectos"
 weight = 3
 url = "projects/"
 
-[[languages.es-419.menu.main]]
+[[languages.es.menu.main]]
 name = "Contacto"
 weight = 5
 url = "contact/"
 
-[[languages.es-419.menu.main]]
+[[languages.es.menu.main]]
 name = "CV"
 weight = 6
 url = "https://link.tech-andgar.me/CV-AFGR-DEV"
