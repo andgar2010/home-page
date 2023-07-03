@@ -13,7 +13,8 @@ categories = [
   "Lengua hablada",
 ]
 series = [
-  "Lenguas de señas y lengua hablada: una comparación de sistemas lingüísticos"
+  "Lengua de Señas",
+  "Lengua hablada",
 ]
 aliases = [
   "Lenguas de señas y lengua hablada una comparación de sistemas lingüísticos"

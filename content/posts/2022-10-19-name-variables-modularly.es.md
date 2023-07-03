@@ -9,13 +9,13 @@ tags = [
   "nombramiento las variables",
 ]
 categories = [
-  "Programming Language",
+  "Lenguaje de programacion",
 ]
 series = [
-  "Programming Language"
+  "Lenguaje de programacion"
 ]
 aliases = [
-  "Programming Language"
+  "Lenguaje de programacion"
 ]
 +++
 
