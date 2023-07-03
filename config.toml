@@ -92,7 +92,8 @@ formaction = [
 ]
 framesrc = [
   "'self'",
-  "https://www.youtube.com"
+  "https://www.youtube.com",
+  "https://giscus.app",
 ]
 imgsrc = [
   "'self'",
@@ -118,6 +119,7 @@ scriptsrc = [
   "https://www.googletagmanager.com/",
   "https://polyfill.io",
   "https://cdn.jsdelivr.net",
+  "https://giscus.app",
 ]
 prefetchsrc = [
   "'self'",
@@ -134,6 +136,20 @@ series = "series"
 tag = "tags"
 author = "authors"
 
+[params.giscus] # https://giscus.app
+  repo = "andgar2010/home-page"
+  repoID = "R_kgDOGJTFUQ"
+  category = "Comments"
+  categoryID = "DIC_kwDOGJTFUc4CXnjc"
+  mapping = "pathname"
+  term = ""
+  strict = "0"
+  reactionsEnabled = "1"
+  emitMetadata = "0"
+  inputPosition = "bottom"
+  theme = ""
+  lang = "en"
+  loading = ""
 
 [[params.social]]
 name = "Github"
