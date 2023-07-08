@@ -229,6 +229,24 @@
   ],
   "contributions": [
     {
+      "type": "Extension GitHub Actions",
+      "_enabled": true,
+      "name": "kawamataryo/lapras-card-readme",
+      "link": "https://link.tech-andgar.me/project_lapras-card-readme_extension_github_action",
+      "description": "GitHub Actions to embed the current LAPRAS score as a card in an SVG image in the GitHub Profile",
+      "engagement_metrics": {
+        "stars": "56",
+        "downloads": null
+      },
+      "_bullet_point_technologies": true,
+      "technologies": [
+        "TypeScript",
+        "JavaScript",
+        "GitHub Actions"
+      ],
+      "preview": "/images/preview/logo-lapras_card_readme.svg"
+    },
+    {
       "type": "Code of conduct",
       "_enabled": true,
       "name": "EthicalSource/contributor_covenant",
