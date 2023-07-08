@@ -1,11 +1,11 @@
 {{ $dataProjects := getJSON "data/projects.json" }}
 {{ $side_projects := $dataProjects.side_projects }}
 
-{{ $is_enabled_stars := false}}
-{{ $is_enabled_forks := false}}
-{{ $is_enabled_issues := false}}
-{{ $is_enabled_pull_requests := false}}
-{{ $is_enabled_preview := false}}
+{{ $is_enabled_stars := false }}
+{{ $is_enabled_forks := false }}
+{{ $is_enabled_issues := false }}
+{{ $is_enabled_pull_requests := false }}
+{{ $is_enabled_preview := false }}
 
 {{ range $item := $side_projects }}
   {{ if $item.stars}}
