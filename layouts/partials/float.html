@@ -1,5 +1,6 @@
 {{ if not .Site.Params.hideColorSchemeToggle }}
-<div class="float-container">
+{{ $label_switch_theme := i18n "switch_theme" | default "Switch theme" }}
+<div class="float-container tooltip" tooltip-title="{{ $label_switch_theme }}">
   <a href="#" id="dark-mode-toggle" class="colorscheme-toggle" aria-label="Toggle color scheme">
     <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
   </a>
