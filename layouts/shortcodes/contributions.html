@@ -10,6 +10,9 @@
         <center>🎁 Project</center>
       </th>
       <th>
+        <center>🛠 Technologies</center>
+      </th>
+      <th>
         <center>📈 Engagement</br>Metrics</center>
       </th>
       <th>
@@ -31,6 +34,13 @@
             rel="noopener"
           >{{ $item.name }}</a>
           </br>{{ $item.description }}
+        </td>
+        <td>
+          {{ range $tech := $item.technologies }}
+            {{ if $tech}}
+              {{ if $item._bullet_point_technologies}}* {{ end }}{{ $tech }}<br />
+            {{ end }}
+          {{ end }}
         </td>
         <td>
           {{ if $item.engagement_metrics.stars}}
