@@ -1,11 +1,11 @@
 .giscus {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.giscus > iframe{
-    width: 75%;
+.giscus > iframe {
+  width: 75%;
 
   @media only screen and (max-width: 768px) {
     width: 95%;
