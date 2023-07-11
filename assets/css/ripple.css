@@ -1,0 +1,28 @@
+#dark-mode-toggle {
+  border: 2px solid white;
+  border-radius: 16%;
+  animation: ripple 1.5s linear infinite;
+  transition: all 0.7s ease;
+}
+
+:root {
+  --ripple-color: rgba(3, 85, 200, 0.3);
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow:
+      0 0 0 0 var(--ripple-color),
+      0 0 0 1px var(--ripple-color),
+      0 0 0 3px var(--ripple-color),
+      0 0 0 5px var(--ripple-color);
+  }
+
+  100% {
+    box-shadow:
+      0 0 0 0 var(--ripple-color),
+      0 0 0 4px var(--ripple-color),
+      0 0 0 20px transparent,
+      0 0 0 30px transparent;
+  }
+}
