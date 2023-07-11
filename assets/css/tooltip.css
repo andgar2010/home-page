@@ -22,4 +22,5 @@
 
 #dark-mode-toggle:hover {
   padding: 3.5rem;
+  transform: scale(1.1);
 }
