@@ -77,7 +77,7 @@ A variable is accessed by referencing the variable name.
 
 Variables can also be defined and referenced.
 
-    {{ $address := "123 Main St."}}
+    {{ $address := "123 Main St." }}
     {{ $address }}
 
 
@@ -125,13 +125,13 @@ range.
 
 **Example 2: Declaring value variable name**
 
-    {{range $element := array}}
+    {{range $element := array }}
         {{ $element }}
     {{ end }}
 
 **Example 2: Declaring key and value variable name**
 
-    {{range $index, $element := array}}
+    {{range $index, $element := array }}
         {{ $index }}
         {{ $element }}
     {{ end }}
@@ -156,13 +156,13 @@ Go Templates treat the following values as false:
 
     {{ if isset .Params "alt" }}
         {{ index .Params "alt" }}
-    {{else}}
+    {{else }}
         {{ index .Params "caption" }}
     {{ end }}
 
 **Example 3: And & Or**
 
-    {{ if and (or (isset .Params "title") (isset .Params "caption")) (isset .Params "attr")}}
+    {{ if and (or (isset .Params "title") (isset .Params "caption")) (isset .Params "attr") }}
 
 **Example 4: With**
 
@@ -215,7 +215,7 @@ Access the page parameter called "disqus_url" and escape the HTML.
 
 **Example 3 :**
 
-    {{ if or (or (isset .Params "title") (isset .Params "caption")) (isset .Params "attr")}}
+    {{ if or (or (isset .Params "title") (isset .Params "caption")) (isset .Params "attr") }}
     Stuff Here
     {{ end }}
 
@@ -310,9 +310,9 @@ again.  This would let you easily update just your top-level config file each
 January 1st, instead of hunting through your templates.
 
 ```
-{{if .Site.Params.CopyrightHTML}}<footer>
-<div class="text-center">{{.Site.Params.CopyrightHTML | safeHtml}}</div>
-</footer>{{end}}
+{{if .Site.Params.CopyrightHTML }}<footer>
+<div class="text-center">{{.Site.Params.CopyrightHTML | safeHtml }}</div>
+</footer>{{end }}
 ```
 
 An alternative way of writing the "if" and then referencing the same value
@@ -320,11 +320,11 @@ is to use "with" instead. With rebinds the context `.` within its scope,
 and skips the block if the variable is absent:
 
 ```
-{{with .Site.Params.TwitterUser}}<span class="twitter">
-<a href="https://twitter.com/{{.}}" rel="author">
-<img src="/images/twitter.png" width="48" height="48" title="Twitter: {{.}}"
+{{with .Site.Params.TwitterUser }}<span class="twitter">
+<a href="https://twitter.com/{{. }}" rel="author">
+<img src="/images/twitter.png" width="48" height="48" title="Twitter: {{. }}"
  alt="Twitter"></a>
-</span>{{end}}
+</span>{{end }}
 ```
 
 Finally, if you want to pull "magic constants" out of your layouts, you can do
@@ -333,9 +333,9 @@ so, such as in this example:
 ```
 <nav class="recent">
   <h1>Recent Posts</h1>
-  <ul>{{range first .Site.Params.SidebarRecentLimit .Site.Recent}}
-    <li><a href="{{.RelPermalink}}">{{.Title}}</a></li>
-  {{end}}</ul>
+  <ul>{{range first .Site.Params.SidebarRecentLimit .Site.Recent }}
+    <li><a href="{{.RelPermalink }}">{{.Title }}</a></li>
+  {{end }}</ul>
 </nav>
 ```
 
