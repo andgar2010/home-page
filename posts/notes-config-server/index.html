@@ -37,12 +37,12 @@ One-minute read</span></div><div class=categories><i class="fa fa-folder" aria-h
 </span></span><span class=line><span class=cl>$ chmod -R <span class=m>644</span> */*  <span class=c1># Fix Permissions Files</span>
 </span></span></code></pre></div><h2 id=copy-project-to-folder-www-public-nginx-and-fix-permissions>Copy project to folder WWW public Nginx and Fix permissions
 <a class=heading-link href=#copy-project-to-folder-www-public-nginx-and-fix-permissions><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h2><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>$ cp -rL /root/projects/Personal/demo_cobrandoAG/app/dist/pwa /var/www/tech-andgar.me/subdomain/pwa <span class=o>&amp;&amp;</span> chmod -R <span class=m>755</span> */ <span class=o>&amp;&amp;</span> chmod -R <span class=m>644</span> */*
+<span class=sr-only>Link to heading</span></a></h2><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>$ cp -rL /root/projects/Personal/demo_project_backend/app/dist/pwa /var/www/tech-andgar.me/subdomain/pwa <span class=o>&amp;&amp;</span> chmod -R <span class=m>755</span> */ <span class=o>&amp;&amp;</span> chmod -R <span class=m>644</span> */*
 </span></span></code></pre></div><h2 id=link-symbolic>Link symbolic
 <a class=heading-link href=#link-symbolic><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h2><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>$ ln -s /root/projects/Personal/demo_cobrandoAG/app/dist/pwa/* /var/www/tech-andgar.me/subdomain/demo_cobrando
+<span class=sr-only>Link to heading</span></a></h2><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>$ ln -s /root/projects/Personal/demo_project_backend/app/dist/pwa/* /var/www/tech-andgar.me/subdomain/demo_cobrando
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>$ ln -sv /root/projects/Personal/demo_cobrandoAG/app/dist/pwa /var/www/tech-andgar.me/subdomain
+</span></span><span class=line><span class=cl>$ ln -sv /root/projects/Personal/demo_project_backend/app/dist/pwa /var/www/tech-andgar.me/subdomain
 </span></span></code></pre></div><h2 id=pm2-freeze-list-process-for-startup>PM2 Freeze list process for startup
 <a class=heading-link href=#pm2-freeze-list-process-for-startup><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
 <span class=sr-only>Link to heading</span></a></h2><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># [PM2] Freeze a process list on reboot via:</span>
