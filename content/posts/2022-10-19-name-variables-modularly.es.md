@@ -9,13 +9,13 @@ tags = [
   "nombramiento las variables",
 ]
 categories = [
-  "Lenguaje de programacion",
+  "Lenguaje de programación",
 ]
 series = [
-  "Lenguaje de programacion"
+  "Lenguaje de programación"
 ]
 aliases = [
-  "Lenguaje de programacion"
+  "Lenguaje de programación"
 ]
 "featuredImage" = "images/posts/best_practices_naming_modular_variables_programming.webp"
 +++
@@ -631,7 +631,7 @@ Quizás tengo muchos colores en mi proyecto, pero sólo quiero colores de borde.
 
 ![image.png](https://cdn.tutsplus.com/cdn-cgi/image/width=568/webdesign/uploads/2013/07/var-color-border.png)
 
-Incluso si no tuvieras sugerencias de código, ésta seguiría siendo una forma efectiva de nombrar tus variables. Te ayuda a recordar fácilmente lo que has nombrado a las variables porque las variables que comparten relaciones comparten prefijos. 
+Incluso si no tuvieras sugerencias de código, ésta seguiría siendo una forma efectiva de nombrar tus variables. Te ayuda a recordar fácilmente lo que has nombrado a las variables porque las variables que comparten relaciones comparten prefijos.
 -->
 
 ## Conclusión
