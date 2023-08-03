@@ -230,7 +230,7 @@ url = "contact/"
 [[languages.en.menu.main]]
 name = "CV"
 weight = 6
-url = "https://link.tech-andgar.me/CV-AFGR-DEV"
+url = "https://link.tech-andgar.me/CVAFGR202308DEV"
 
 [languages.es]
 languageName = "Español :es:"
