@@ -169,17 +169,23 @@ url = "https://link.tech-andgar.me/stackoverflow"
 # weight = 2
 # # url = "https://gitlab.com/andgar2010/"
 
-# [[params.social]]
-# name = "Twitter"
-# icon = "fa fa-twitter"
-# weight = 3
-# # url = "https://twitter.com/andgar2010/"
-
 [[params.social]]
 name = "LinkedIn"
 icon = "fa fa-linkedin"
-weight = 4
+weight = 3
 url = "https://link.tech-andgar.me/linkedin"
+
+[[params.social]]
+name = "Youtube"
+icon = "fa fa-youtube"
+weight = 4
+url = "https://link.tech-andgar.me/youtube"
+
+[[params.social]]
+name = "Twitter"
+icon = "fa fa-twitter"
+weight = 5
+url = "https://link.tech-andgar.me/twitter"
 
 # [[params.social]]
 # name = "Medium"
@@ -202,7 +208,6 @@ url = "https://link.tech-andgar.me/linkedin"
 # url = "http://bit.ly/CertiSololearn-AndGar"
 # rel = "alternate"
 # type = "application/rss+xml"
-
 
 [languages.en]
 languageName = "English :uk:"
@@ -230,7 +235,7 @@ url = "contact/"
 [[languages.en.menu.main]]
 name = "CV"
 weight = 6
-url = "https://link.tech-andgar.me/CVAFGR202308DEV"
+url = "https://link.tech-andgar.me/CVAFGR202311DEV"
 
 [languages.es]
 languageName = "Español :es:"
@@ -266,4 +271,4 @@ url = "contact/"
 [[languages.es.menu.main]]
 name = "CV"
 weight = 6
-url = "https://link.tech-andgar.me/CV-AFGR-DEV"
+url = "https://link.tech-andgar.me/CVAFGR202311DEV"
