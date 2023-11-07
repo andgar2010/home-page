@@ -16,4 +16,4 @@ Y puedes visitar [mi perfil en tiempo real de habilidades técnicas](https://lin
 He contribuido a estos proyectos de código abierto.
 {{< contribuciones >}}
 
-Además, puedes consultar mi [CV](https://link.tech-andgar.me/CV-AFGR-DEV) o [Linkedln](https://link.tech-andgar.me/linkedin), donde encontrarás descripciones breves de proyectos con clientes.
+Además, puedes consultar mi [CV](https://link.tech-andgar.me/CVAFGR202311DEV) o [Linkedln](https://link.tech-andgar.me/linkedin), donde encontrarás descripciones breves de proyectos con clientes.

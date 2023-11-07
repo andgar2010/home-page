@@ -16,4 +16,4 @@ And you can look at [my real-time profile of technical skills](https://link.tech
 I've contributed to these open source projects.
 {{< contributions >}}
 
-And also, you can look at my [CV](https://link.tech-andgar.me/CV-AFGR-DEV) or [Linkedln](https://link.tech-andgar.me/linkedin), which includes brief descriptions of client projects.
+And also, you can look at my [CV](https://link.tech-andgar.me/CVAFGR202311DEV) or [Linkedln](https://link.tech-andgar.me/linkedin), which includes brief descriptions of client projects.
