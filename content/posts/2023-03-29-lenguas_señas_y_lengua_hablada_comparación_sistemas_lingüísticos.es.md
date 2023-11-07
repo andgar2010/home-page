@@ -13,11 +13,13 @@ categories = [
   "Lengua hablada",
 ]
 series = [
-  "Lenguas de señas y lengua hablada: una comparación de sistemas lingüísticos"
+  "Lengua de Señas",
+  "Lengua hablada",
 ]
 aliases = [
   "Lenguas de señas y lengua hablada una comparación de sistemas lingüísticos"
 ]
+"featuredImage" = "images/posts/sign_and_spoken_language_comparison_linguistic_systems.webp"
 +++
 
 # Lenguas de señas y lengua hablada: una comparación de sistemas lingüísticos

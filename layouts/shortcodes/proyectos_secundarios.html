@@ -1,0 +1,120 @@
+{{ $dataProjects := getJSON "data/projects.json" }}
+{{ $side_projects := $dataProjects.side_projects }}
+
+{{ $is_enabled_stars := false }}
+{{ $is_enabled_forks := false }}
+{{ $is_enabled_issues := false }}
+{{ $is_enabled_pull_requests := false }}
+{{ $is_enabled_preview := false }}
+
+{{ range $item := $side_projects }}
+  {{ if $item.stars}}
+    {{ $is_enabled_stars := true}}
+  {{ end }}
+  {{ if $item.forks}}
+    {{ $is_enabled_forks := true}}
+  {{ end }}
+  {{ if $item.issues}}
+    {{ $is_enabled_issues := true}}
+  {{ end }}
+  {{ if $item.pull_requests}}
+    {{ $is_enabled_pull_requests := true}}
+  {{ end }}
+  {{ if $item.preview}}
+    {{ $is_enabled_preview := true}}
+  {{ end }}
+{{ end }}
+
+<table>
+  <thead>
+    <tr>
+      <th>
+        <center>🗃️ Tipo</center>
+      </th>
+      <th>
+        <center>🎁 Proyecto</center>
+      </th>
+      <th>
+        <center>🛠 Tecnologías</center>
+      </th>
+      {{ if $is_enabled_stars }}
+      <th>
+        <center>⭐ Estrellas</center>
+      </th>
+      {{ end }}
+      {{ if $is_enabled_forks }}
+      <th>
+        <center>📚 Bifurcación</center>
+      </th>
+      {{ end }}
+      {{ if $is_enabled_issues }}
+      <th>
+        <center>🛎 Issues</center>
+      </th>
+      {{ end }}
+      {{ if $is_enabled_pull_requests }}
+      <th>
+        <center>📬 Pull requests</center>
+      </th>
+      {{ end }}
+      {{ if $is_enabled_preview }}
+      <th>
+        <center>🔍 Vista previa</center>
+      </th>
+      {{ end }}
+    </tr>
+  </thead>
+  <tbody>
+    {{ range $item := $side_projects }}
+    {{ if $item._enabled }}
+      <tr>
+        <td>{{ $item.type }}</td>
+        <td>
+          <a
+            href="{{ $item.link }}"
+            class="external-link"
+            target="_blank"
+            rel="noopener"
+            >{{ $item.name }}</a
+          ><br />{{ $item.description }}
+        </td>
+        <td>
+          {{ range $tech := $item.technologies }}
+            {{ if $tech}}
+              {{ if $item._bullet_point_technologies}}* {{ end }}{{ $tech }}<br />
+            {{ end }}
+          {{ end }}
+        </td>
+        {{ if $item.stars}}
+        <td>
+          * {{ $item.stars }} estrellas
+        </td>
+        {{ end }}
+        {{ if $item.forks}}
+        <td>
+          * {{ $item.forks }} bifurcaciones
+        </td>
+        {{ end }}
+        {{ if $item.issues}}
+        <td>
+          * {{ $item.issues }} issues
+        </td>
+        {{ end }}
+        {{ if $item.pull_requests}}
+        <td>
+          * {{ $item.pull_requests }} pull_requests
+        </td>
+        {{ end }}
+        {{ if $item.preview}}
+        <td>
+          <img
+            src="{{ $item.preview }}"
+            alt="{{ $item.name }}"
+          />
+        </td>
+        {{ end }}
+      </tr>
+    {{ end }}
+  {{ end }}
+  </tbody>
+</table>

@@ -12,6 +12,9 @@ enableEmoji = true
 # disqusShortname = "andgar2010"
 enableRobotsTXT = true
 
+[markup.highlight]
+noClasses = false
+
 [params]
 author = "Andrés García"
 description = "Andrés García's personal website"
@@ -89,7 +92,8 @@ formaction = [
 ]
 framesrc = [
   "'self'",
-  "https://www.youtube.com"
+  "https://www.youtube.com",
+  "https://giscus.app",
 ]
 imgsrc = [
   "'self'",
@@ -115,6 +119,7 @@ scriptsrc = [
   "https://www.googletagmanager.com/",
   "https://polyfill.io",
   "https://cdn.jsdelivr.net",
+  "https://giscus.app",
 ]
 prefetchsrc = [
   "'self'",
@@ -131,6 +136,20 @@ series = "series"
 tag = "tags"
 author = "authors"
 
+[params.giscus] # https://giscus.app
+  repo = "andgar2010/home-page"
+  repoID = "R_kgDOGJTFUQ"
+  category = "Comments"
+  categoryID = "DIC_kwDOGJTFUc4CXnjc"
+  mapping = "pathname"
+  term = ""
+  strict = "0"
+  reactionsEnabled = "1"
+  emitMetadata = "0"
+  inputPosition = "bottom"
+  theme = ""
+  lang = "en"
+  loading = ""
 
 [[params.social]]
 name = "Github"
@@ -150,17 +169,23 @@ url = "https://link.tech-andgar.me/stackoverflow"
 # weight = 2
 # # url = "https://gitlab.com/andgar2010/"
 
-# [[params.social]]
-# name = "Twitter"
-# icon = "fa fa-twitter"
-# weight = 3
-# # url = "https://twitter.com/andgar2010/"
-
 [[params.social]]
 name = "LinkedIn"
 icon = "fa fa-linkedin"
-weight = 4
+weight = 3
 url = "https://link.tech-andgar.me/linkedin"
+
+[[params.social]]
+name = "Youtube"
+icon = "fa fa-youtube"
+weight = 4
+url = "https://link.tech-andgar.me/youtube"
+
+[[params.social]]
+name = "Twitter"
+icon = "fa fa-twitter"
+weight = 5
+url = "https://link.tech-andgar.me/twitter"
 
 # [[params.social]]
 # name = "Medium"
@@ -183,7 +208,6 @@ url = "https://link.tech-andgar.me/linkedin"
 # url = "http://bit.ly/CertiSololearn-AndGar"
 # rel = "alternate"
 # type = "application/rss+xml"
-
 
 [languages.en]
 languageName = "English :uk:"
@@ -211,40 +235,40 @@ url = "contact/"
 [[languages.en.menu.main]]
 name = "CV"
 weight = 6
-url = "https://link.tech-andgar.me/CV-AFGR-DEV"
+url = "https://link.tech-andgar.me/CVAFGR202311DEV"
 
-[languages.es-419]
+[languages.es]
 languageName = "Español :es:"
 title = "TECH-ANDGAR"
 
-[languages.es-419.params]
+[languages.es.params]
 author = "Andrés García"
 info = ["Desarrollador Full Stack con Flutter", ""]
 description = "Sítio personal de Andrés García"
 keywords = "blog,desarrollador,personal,flutter,sordo"
 footerContent = "H E L L O @ T E C H - A N D G A R . M E"
 
-[[languages.es-419.menu.main]]
+[[languages.es.menu.main]]
 name = "Acerca de"
 weight = 1
 url = "about/"
 
-[[languages.es-419.menu.main]]
+[[languages.es.menu.main]]
 name = "Blog"
 weight = 2
 url = "posts/"
 
-[[languages.es-419.menu.main]]
+[[languages.es.menu.main]]
 name = "Proyectos"
 weight = 3
 url = "projects/"
 
-[[languages.es-419.menu.main]]
+[[languages.es.menu.main]]
 name = "Contacto"
 weight = 5
 url = "contact/"
 
-[[languages.es-419.menu.main]]
+[[languages.es.menu.main]]
 name = "CV"
 weight = 6
-url = "https://link.tech-andgar.me/CV-AFGR-DEV"
+url = "https://link.tech-andgar.me/CVAFGR202311DEV"

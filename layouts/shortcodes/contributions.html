@@ -1,0 +1,72 @@
+{{ $dataProjects := getJSON "data/projects.json" }}
+
+<table>
+  <thead>
+    <tr>
+      <th>
+        <center>🗃️ Type</center>
+      </th>
+      <th>
+        <center>🎁 Project</center>
+      </th>
+      <th>
+        <center>🛠 Technologies</center>
+      </th>
+      <th>
+        <center>📈 Engagement</br>Metrics</center>
+      </th>
+      <th>
+        <center>🔍 Preview</center>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    {{ $contributions := $dataProjects.contributions }}
+    {{ range $item := $contributions }}
+      {{ if $item._enabled }}
+      <tr>
+        <td>{{ $item.type }}</td>
+        <td>
+          <a
+            href="{{ $item.link }}"
+            class="external-link"
+            target="_blank"
+            rel="noopener"
+          >{{ $item.name }}</a>
+          </br>{{ $item.description }}
+        </td>
+        <td>
+          {{ range $tech := $item.technologies }}
+            {{ if $tech}}
+              {{ if $item._bullet_point_technologies}}* {{ end }}{{ $tech }}<br />
+            {{ end }}
+          {{ end }}
+        </td>
+        <td>
+          {{ if $item.engagement_metrics.stars}}
+            {{ $item.engagement_metrics.stars }} stars
+          {{ end }}
+          {{ if $item.engagement_metrics.downloads}}
+            </br>{{ $item.engagement_metrics.downloads }} downloads
+          {{ end }}
+        </td>
+        <td>
+          {{ if $item.preview}}
+            <a
+            href="{{ $item.link }}"
+            class="external-link"
+            target="_blank"
+            rel="noopener"
+            >
+              <img
+                src="{{ $item.preview }}"
+                alt="{{ $item.name }}"
+              />
+            </a>
+          {{ end }}
+        </td>
+      </tr>
+      {{ end }}
+    {{ end }}
+  </tbody>
+</table>

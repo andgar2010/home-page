@@ -1,0 +1,756 @@
+{
+  "all_link_certifications": null,
+  "certifications": [
+    {
+      "_status": "ongoing",
+      "date": null,
+      "link_certification": null,
+      "organization": "Capgemini - harvard institute",
+      "place": "Online",
+      "title": {
+        "_original": "Gestión del estrés",
+        "english": "Stress management",
+        "spanish": "Gestión del estrés"
+      },
+      "topic": [
+        "Stress management"
+      ],
+      "type": "course",
+      "validity": false
+    },
+    {
+      "_status": "completed",
+      "date": "23/06",
+      "link_certification": "https://www.linkedin.com/learning/certificates/eb2ef8d8611c26410b20f300eeecaa407aac47f10328bf96169f5729026fc287",
+      "organization": "linkedin",
+      "place": "Online",
+      "title": {
+        "_original": "Clean Code with Dart",
+        "english": "Clean Code with Dart",
+        "spanish": "Código limpio con Dart"
+      },
+      "topic": [
+        "Dart"
+      ],
+      "type": "course",
+      "validity": true
+    },
+    {
+      "_status": "completed",
+      "date": "23/04",
+      "link_certification": null,
+      "organization": "Youtube",
+      "place": "Online",
+      "title": {
+        "_original": "Fundamentals ChatGPT",
+        "english": "Fundamentals ChatGPT",
+        "spanish": "Fundamentos ChatGPT"
+      },
+      "topic": [
+        "ChatGPT"
+      ],
+      "type": "course",
+      "validity": false
+    },
+    {
+      "_status": "completed",
+      "date": "23/03",
+      "link_certification": null,
+      "organization": "Deeplearning.ai",
+      "place": "Online",
+      "title": {
+        "_original": "ChatGPT Prompt Engineering for Developers",
+        "english": "ChatGPT Prompt Engineering for Developers",
+        "spanish": "ChatGPT Prompt Ingeniería para desarrolladores"
+      },
+      "topic": [
+        "ChatGPT",
+        "Prompt Engoneering"
+      ],
+      "type": "course",
+      "validity": false
+    },
+    {
+      "_status": "completed",
+      "date": "23/03",
+      "link_certification": "https://s3.amazonaws.com/bucket-growthfiles/CertificationTemplate/Andrés%20Felipe%20García%20Ramírez.pdf",
+      "organization": "Pragma",
+      "place": "Online",
+      "title": {
+        "_original": "De Desarrollador Senior a Arquitecto de Software",
+        "english": "From Senior Developer to Software Architect",
+        "spanish": "De Desarrollador Senior a Arquitecto de Software"
+      },
+      "topic": [
+        "Software Architecture",
+        "Arquitecto de Software"
+      ],
+      "type": "event",
+      "validity": true
+    },
+    {
+      "_status": "completed",
+      "date": "23/02",
+      "link_certification": null,
+      "organization": "Ethics@Capgemini 2023",
+      "place": "Online",
+      "title": {
+        "_original": "Values and Ethics - Ethics@Capgemini 2023",
+        "english": "Values and Ethics",
+        "spanish": "Valores y Ética"
+      },
+      "topic": [
+        "Values",
+        "Ethics"
+      ],
+      "type": "course",
+      "validity": true
+    },
+    {
+      "_status": "completed",
+      "date": "23/02",
+      "link_certification": null,
+      "organization": "Ethics@Capgemini 2023",
+      "place": "Online",
+      "title": {
+        "_original": "Honoring Human Rights - Ethics@Capgemini 2023",
+        "english": "Honoring Human Rights",
+        "spanish": "Respetar los derechos humanos"
+      },
+      "topic": [
+        "Human Rights"
+      ],
+      "type": "course",
+      "validity": true
+    },
+    {
+      "_status": "completed",
+      "date": "23/02",
+      "link_certification": null,
+      "organization": "Ethics@Capgemini 2023",
+      "place": "Online",
+      "title": {
+        "_original": "Harassment-free work environment - Ethics@Capgemini 2023",
+        "english": "Harassment-free work environment",
+        "spanish": "Entorno laboral libre de acoso"
+      },
+      "topic": [
+        null,
+        "Harassment-free",
+        "work environment"
+      ],
+      "type": "course",
+      "validity": true
+    },
+    {
+      "_status": "completed",
+      "date": "23/02",
+      "link_certification": null,
+      "organization": "Ethics@Capgemini 2023",
+      "place": "Online",
+      "title": {
+        "_original": "Understanding Conflict of Interest - Ethics@Capgemini 2023",
+        "english": "Understanding Conflict of Interest",
+        "spanish": "Comprender los conflictos de intereses"
+      },
+      "topic": [
+        "Conflict of Interest"
+      ],
+      "type": "course",
+      "validity": true
+    },
+    {
+      "_status": "completed",
+      "date": "23/02",
+      "link_certification": null,
+      "organization": "Ethics@Capgemini 2023",
+      "place": "Online",
+      "title": {
+        "_original": "Speaking up and Non-Retaliation - Ethics@Capgemini 2023",
+        "english": "Speaking up and Non-Retaliation",
+        "spanish": "Denuncia y no represalias"
+      },
+      "topic": [
+        "Speaking up",
+        "Non-Retaliation"
+      ],
+      "type": "course",
+      "validity": true
+    },
+    {
+      "_status": "completed",
+      "date": "22/01",
+      "link_certification": null,
+      "organization": "Capgemini - Pluralsight",
+      "place": "Online",
+      "title": {
+        "_original": "Debugging, Testing, and Publishing a Flutter App",
+        "english": "Debugging, Testing, and Publishing a Flutter App",
+        "spanish": "Depuración, pruebas y publicación de una aplicación Flutter"
+      },
+      "topic": [
+        "Testing",
+        "Debugging",
+        "Publishing",
+        "Flutter"
+      ],
+      "type": "course",
+      "validity": true
+    },
+    {
+      "_status": "completed",
+      "date": "21/12",
+      "link_certification": "https://www.udemy.com/certificate/UC-d9566773-46ca-40e4-a39c-5ab631b22429/",
+      "organization": "Udemy",
+      "place": "Online",
+      "title": {
+        "_original": "Dart & Introducción a Flutter",
+        "english": "Dart & Introduction to Flutter",
+        "spanish": "Dart & Introducción a Flutter"
+      },
+      "topic": [
+        "Dart",
+        "Flutter"
+      ],
+      "type": "course",
+      "validity": true
+    },
+    {
+      "_status": "completed",
+      "date": "21/12",
+      "link_certification": "https://www.udemy.com/certificate/UC-0b16bcd0-5b98-42f1-bb20-beb22587f043/",
+      "organization": "Udemy",
+      "place": "Online",
+      "title": {
+        "_original": "Pre-Flutter & Dart: Everything To Know Before You Start!",
+        "english": "Pre-Flutter & Dart: Everything To Know Before You Start!",
+        "spanish": "Pre-Flutter & Dart: Todo lo que debe saber antes de empezar"
+      },
+      "topic": [
+        "Dart",
+        "Flutter"
+      ],
+      "type": "course",
+      "validity": true
+    },
+    {
+      "_status": "completed",
+      "date": "21/12",
+      "link_certification": "https://www.udemy.com/certificate/UC-c9ffbe18-15d0-4e78-992f-f6ee5c8ebe9c/",
+      "organization": "Udemy",
+      "place": "Online",
+      "title": {
+        "_original": "Dart - from Novice to Expert",
+        "english": "Dart - from Novice to Expert",
+        "spanish": "Dart - de principiante a experto"
+      },
+      "topic": [
+        "Dart"
+      ],
+      "type": "course",
+      "validity": true
+    },
+    {
+      "_status": "completed",
+      "date": "21/12",
+      "instituto vvalidity plataforma": "Capgemini - Pluralsight",
+      "place": "Online",
+      "title": {
+        "_original": "Microsoft Azure Fundamentals: Introduction to the AZ-900 Exam",
+        "english": "Microsoft Azure Fundamentals: Introduction to the AZ-900 Exam",
+        "spanish": "Fundamentos de Microsoft Azure: Introducción al examen AZ-900"
+      },
+      "topic": [
+        "Microsoft Azure"
+      ],
+      "type": "course",
+      "validity": true
+    },
+    {
+      "_status": "completed",
+      "date": "21/08",
+      "link_certification": null,
+      "organization": "Capgemini - Pluralsight",
+      "place": "Online",
+      "title": {
+        "_original": "Cultivating Effective Relationships in Virtual Work",
+        "english": "Cultivating Effective Relationships in Virtual Work",
+        "spanish": "Cultivar relaciones eficaces en el trabajo virtual"
+      },
+      "topic": [
+        null,
+        "Effective Relationships",
+        "Virtual Work"
+      ],
+      "type": "course",
+      "validity": true
+    },
+    {
+      "_status": "completed",
+      "date": "21/04",
+      "link_certification": null,
+      "organization": "Capgemini - Pluralsight",
+      "place": "Online",
+      "title": {
+        "_original": "Flutter: The Big Picture",
+        "english": "Flutter: The Big Picture",
+        "spanish": "Flutter: Panorama general"
+      },
+      "topic": [
+        "Flutter"
+      ],
+      "type": "course",
+      "validity": true
+    },
+    {
+      "_status": "completed",
+      "date": "21/04",
+      "link_certification": null,
+      "organization": "Capgemini - Pluralsight",
+      "place": "Online",
+      "title": {
+        "_original": "Flutter: Getting Started",
+        "english": "Flutter: Getting Started",
+        "spanish": "Flutter: Primeros pasos"
+      },
+      "topic": [
+        "Flutter"
+      ],
+      "type": "course",
+      "validity": true
+    },
+    {
+      "_status": "completed",
+      "date": "21/04",
+      "link_certification": null,
+      "organization": "Capgemini - Pluralsight",
+      "place": "Online",
+      "title": {
+        "_original": "Creating Layouts with Flutter",
+        "english": "Creating Layouts with Flutter",
+        "spanish": "Creación de diseños con Flutter"
+      },
+      "topic": [
+        "Flutter"
+      ],
+      "type": "course",
+      "validity": true
+    },
+    {
+      "_status": "completed",
+      "date": "20/10",
+      "link_certification": null,
+      "organization": {
+        "_original": "Servicio Nacional de Aprendizaje (SENA) - Centro Gestión de Mercados, Logística Y Tecnologías de la Información - CGMLTI",
+        "english": "National Training Service (Spanish: Servicio Nacional de Aprendizaje, SENA) - Center for Market Management, Logistics, and Information Technology - CGMLTI",
+        "spanish": "Servicio Nacional de Aprendizaje (SENA) - Centro Gestión de Mercados, Logística Y Tecnologías de la Información - CGMLTI"
+      },
+      "place": "Bogotá D.C., Col",
+      "title": {
+        "_original": "Especialización tecnológica en desarrollo de aplicaciones para dispositivos móviles",
+        "english": "Technological specialization in the development of applications for mobile devices",
+        "spanish": "Especialización tecnológica en desarrollo de aplicaciones para dispositivos móviles"
+      },
+      "topic": [
+        "Flutter",
+        "Dart",
+        "Kotlin",
+        "Swift",
+        "Angular",
+        "Ionic",
+        "Capacitor",
+        "Cordova"
+      ],
+      "type": "degree",
+      "validity": true
+    },
+    {
+      "_status": "completed",
+      "date": "20/10",
+      "link_certification": null,
+      "organization": "LinkedIn Learning",
+      "place": "Online",
+      "title": {
+        "_original": "Flutter: Part 01-09",
+        "english": "Flutter: Part 01-09",
+        "spanish": "Flutter: Parte 01-09"
+      },
+      "topic": [
+        "Flutter",
+        "Dart"
+      ],
+      "type": "course",
+      "validity": true
+    },
+    {
+      "_status": "completed",
+      "date": "20/04",
+      "link_certification": null,
+      "organization": "pluralsight",
+      "place": "Online",
+      "title": {
+        "_original": "Learning To Program - Part 1: Getting Started Node.js",
+        "english": "Learning To Program - Part 1: Getting Started Node.js",
+        "spanish": "Aprender a programar - Parte 1: Introducción a Node.js"
+      },
+      "topic": [
+        "Node.js"
+      ],
+      "type": "course",
+      "validity": true
+    },
+    {
+      "_status": "completed",
+      "date": "20/04",
+      "link_certification": null,
+      "organization": "Pluralsight",
+      "place": "Online",
+      "title": {
+        "_original": "TypeScript: Getting Started",
+        "english": "TypeScript: Getting Started",
+        "spanish": "TypeScript: Primeros pasos"
+      },
+      "topic": [
+        "TypeScript"
+      ],
+      "type": "course",
+      "validity": true
+    },
+    {
+      "_status": "completed",
+      "date": "20/04",
+      "link_certification": null,
+      "organization": "Pluralsight",
+      "place": "Online",
+      "title": {
+        "_original": "TypeScript: The Big Picture",
+        "english": "TypeScript: The Big Picture",
+        "spanish": "TypeScript: Panorama general"
+      },
+      "topic": [
+        "TypeScript"
+      ],
+      "type": "course",
+      "validity": true
+    },
+    {
+      "_status": "completed",
+      "date": "20/04",
+      "link_certification": null,
+      "organization": "Pluralsight",
+      "place": "Online",
+      "title": {
+        "_original": "RESTful Web Services with Node.js and Express",
+        "english": "RESTful Web Services with Node.js and Express",
+        "spanish": "Servicios web RESTful con Node.js y Express"
+      },
+      "topic": [
+        "RESTful Web",
+        "Node.js",
+        "Express"
+      ],
+      "type": "course",
+      "validity": true
+    },
+    {
+      "_status": "completed",
+      "date": "20/04",
+      "link_certification": null,
+      "organization": "Pluralsight",
+      "place": "Online",
+      "title": {
+        "_original": "NPM Playbook",
+        "english": "NPM Playbook",
+        "spanish": "Manual del NPM"
+      },
+      "topic": [
+        "npm"
+      ],
+      "type": "course",
+      "validity": true
+    },
+    {
+      "_status": "completed",
+      "date": "20/04",
+      "link_certification": null,
+      "organization": "Pluralsight",
+      "place": "Online",
+      "title": {
+        "_original": "Getting Started with npm",
+        "english": "Getting Started with npm",
+        "spanish": "Getting Started with npm"
+      },
+      "topic": [
+        "npm"
+      ],
+      "type": "course",
+      "validity": true
+    },
+    {
+      "_status": "completed",
+      "date": "20/04",
+      "link_certification": null,
+      "organization": "Pluralsight",
+      "place": "Online",
+      "title": {
+        "_original": "GraphQL: The Big Picture",
+        "english": "GraphQL: The Big Picture",
+        "spanish": "GraphQL: Panorama general"
+      },
+      "topic": [
+        "GraphQl"
+      ],
+      "type": "course",
+      "validity": true
+    },
+    {
+      "_status": "completed",
+      "date": "20/04",
+      "link_certification": null,
+      "organization": "Pluralsight",
+      "place": "Online",
+      "title": {
+        "_original": "DevOps: The Big Picture",
+        "english": "DevOps: The Big Picture",
+        "spanish": "DevOps: Panorama general"
+      },
+      "topic": [
+        "DevOps"
+      ],
+      "type": "course",
+      "validity": true
+    },
+    {
+      "_status": "completed",
+      "date": "20/04",
+      "link_certification": null,
+      "organization": "Pluralsight",
+      "place": "Online",
+      "title": {
+        "_original": "Node.js: Getting Started",
+        "english": "Node.js: Getting Started",
+        "spanish": "Node.js: Primeros pasos"
+      },
+      "topic": [
+        "Node.js"
+      ],
+      "type": "course",
+      "validity": true
+    },
+    {
+      "_status": "completed",
+      "date": "20/04",
+      "link_certification": null,
+      "organization": "Pluralsight",
+      "place": "Online",
+      "title": {
+        "_original": "Node.js: The Big Picture",
+        "english": "Node.js: The Big Picture",
+        "spanish": "Node.js: Panorama general"
+      },
+      "topic": [
+        "Node.js"
+      ],
+      "type": "course",
+      "validity": true
+    },
+    {
+      "_status": "completed",
+      "date": "20/04",
+      "link_certification": null,
+      "organization": "Pluralsight",
+      "place": "Online",
+      "title": {
+        "_original": "Microservices: The Big Picture",
+        "english": "Microservices: The Big Picture",
+        "spanish": "Microservicios: Panorama general"
+      },
+      "topic": [
+        "Microservices"
+      ],
+      "type": "course",
+      "validity": true
+    },
+    {
+      "_status": "completed",
+      "date": "19/04",
+      "link_certification": null,
+      "organization": "cursosdesarrolloweb.es",
+      "place": "Online",
+      "title": {
+        "_original": "PWA application development with Vuejs and Quasar Framework",
+        "english": "PWA application development with Vuejs and Quasar Framework",
+        "spanish": "Desarrollo de aplicaciones PWA con Vuejs y Quasar Framework"
+      },
+      "topic": [
+        "PWA",
+        "Vuejs",
+        "Quasar Framework"
+      ],
+      "type": "course",
+      "validity": true
+    },
+    {
+      "_status": "completed",
+      "date": "19/02",
+      "link_certification": null,
+      "organization": {
+        "_original": "Servicio Nacional de Aprendizaje (SENA) - Centro De Electricidad, Electrónica y Telecomunicaciones - CEET",
+        "english": "National Training Service (Spanish: Servicio Nacional de Aprendizaje, SENA) - Center Electricity, Electronics and Telecommunications - CEET",
+        "spanish": "Servicio Nacional de Aprendizaje (SENA) - Centro De Electricidad, Electrónica y Telecomunicaciones - CEET"
+      },
+      "place": "Bogotá D.C., Col",
+      "title": {
+        "_original": "Tecnólogo en Análisis y Desarrollo de Sistemas de Información",
+        "english": "Information Systems Analysis and Development Technologist",
+        "spanish": "Tecnólogo en Análisis y Desarrollo de Sistemas de Información"
+      },
+      "topic": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "PHP",
+        "Git",
+        "SQL",
+        "MySQL",
+        "MariaDB",
+        "Bootstrap",
+        "MaterialUi",
+        "CoreUi",
+        "Heroku",
+        "GitHub",
+        "Web App",
+        "Database"
+      ],
+      "type": "degree",
+      "validity": true
+    },
+    {
+      "_status": "completed",
+      "date": "18/11",
+      "link_certification": null,
+      "organization": "Microsoft",
+      "place": "Online",
+      "title": {
+        "_original": "Certification Database Administration Fundamentals (98-364:MTA)",
+        "english": "Certification Database Administration Fundamentals (98-364:MTA)",
+        "spanish": "Certificación Fundamentos de administración de bases de datos (98-364:MTA)"
+      },
+      "topic": [
+        "Database",
+        "SQL",
+        "MS SQL Server"
+      ],
+      "type": "certification",
+      "validity": true
+    },
+    {
+      "_status": "completed",
+      "date": "18/11",
+      "link_certification": "https://udemy-certificate.s3.amazonaws.com/pdf/UC-6HJB0RTR.pdf",
+      "organization": "Udemy",
+      "place": "Online",
+      "title": {
+        "_original": "Database Design and Management with Visual Paradigm",
+        "english": "Database Design and Management with Visual Paradigm",
+        "spanish": "Diseño y gestión de bases de datos con Visual Paradigm"
+      },
+      "topic": [
+        "Visual Paradigm"
+      ],
+      "type": "course",
+      "validity": true
+    },
+    {
+      "_status": "completed",
+      "date": "18/11",
+      "link_certification": null,
+      "organization": "Microsoft",
+      "place": "Online",
+      "title": {
+        "_original": "Jump Start for the advanced development of applications for the Windows Store with HTML5",
+        "english": "Jump Start for the advanced development of applications for the Windows Store with HTML5",
+        "spanish": "Jump Start para el desarrollo avanzado de aplicaciones para la Tienda Windows con HTML5"
+      },
+      "topic": [
+        "HTML5",
+        "CSS",
+        "JavaScript"
+      ],
+      "type": "course",
+      "validity": true
+    },
+    {
+      "_status": "completed",
+      "date": "18/11",
+      "link_certification": null,
+      "organization": "Microsoft",
+      "place": "Online",
+      "title": {
+        "_original": "Jump Start for HTML5 development with JavaScript and CSS3",
+        "english": "Jump Start for HTML5 development with JavaScript and CSS3",
+        "spanish": "Introducción al desarrollo HTML5 con JavaScript y CSS3"
+      },
+      "topic": [
+        "HTML5",
+        "CSS",
+        "JavaScript"
+      ],
+      "type": "course",
+      "validity": true
+    },
+    {
+      "_status": "completed",
+      "date": "2016-2018",
+      "link_certification": null,
+      "organization": "SOLOLEARN",
+      "place": "Online",
+      "title": {
+        "_original": "Basics of HTML, CSS, JavaScript, JQuery, PHP, SQL, JAVA, C#, Python, RUBY, Swift 4, C++",
+        "english": "Basics of HTML, CSS, JavaScript, JQuery, PHP, SQL, JAVA, C#, Python, RUBY, Swift 4, C++",
+        "spanish": "Fundamentos of HTML, CSS, JavaScript, JQuery, PHP, SQL, JAVA, C#, Python, RUBY, Swift 4, C++"
+      },
+      "topic": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "JQuery",
+        "PHP",
+        "SQL",
+        "JAVA",
+        "C#",
+        "Python",
+        "RUBY",
+        "Swift 4",
+        "C++"
+      ],
+      "type": "course",
+      "validity": true
+    },
+    {
+      "_status": "completed",
+      "date": "2011",
+      "link_certification": null,
+      "organization": "SENA CGMLTI",
+      "place": "Bogotá D.C., Col",
+      "title": {
+        "_original": "Certificado de Certificación de Normas Laborales: * Realizar el mantenimiento preventivo y predictivo que prolongue el funcionamiento de los equipos informáticos; * Realizar el mantenimiento correctivo de los equipos informáticos según lo establecido",
+        "english": "Certificate of Labor Standards Certification: * Perform preventive and predictive maintenance that prolongs the operation of computer equipment; * Perform corrective maintenance of computer equipment as established",
+        "spanish": "Certificado de Certificación de Normas Laborales: * Realizar el mantenimiento preventivo y predictivo que prolongue el funcionamiento de los equipos informáticos; * Realizar el mantenimiento correctivo de los equipos informáticos según lo establecido"
+      },
+      "topic": [
+        "Preventive Maintenance",
+        "Corrective Maintenance",
+        "Hardware",
+        "Software",
+        "Windows",
+        "Linux",
+        "MacOS",
+        "iOS",
+        "Network"
+      ],
+      "type": "certification",
+      "validity": true
+    }
+  ]
+}

@@ -27,15 +27,25 @@ Typo style corrections welcome via PRs.
 ## Setup - Development
 
 ```shell
-# Install Go 1.18+
+# Install Go 1.17+
 # Install dependencies with `go install`
 
 # Clone the repository including submodules
-> git clone git@github.com:andgar2010/home-page.git
+> git clone --recurse-submodules git@github.com:andgar2010/home-page.git
 
+# Change into the source directory:
+> cd home-page
+
+# Clean folder build directory
 > rm -rf public
+# If need publish to GitHub Pages, need to create a breach repository
 > git worktree add -B gh-pages public origin/gh-pages
-> npm i
+
+# Install package dependencies from the repository, using pnpm
+> pnpm i
+
+> hugo mod get -u # If use debugging tools
+> hugo mod clean # Clean cache Project
 
 # Create local preview server with `hugo serve`
 > hugo serve
@@ -60,3 +70,7 @@ Site content is licensed under the *Creative Commons Attribution 4.0 Internation
 
 - Uses [`luizdepra/hugo-coder`](https://github.com/luizdepra/hugo-coder)
 - Hosted via GitHub Pages with Github Actions
+
+<!--
+source: https://lapras.com/public/tech-andgar.json [TODO: NEED CREATE ADAPATER WIP]
+-->

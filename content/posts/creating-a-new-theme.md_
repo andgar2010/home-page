@@ -1,7 +1,7 @@
-+++ 
++++
 date = "2014-09-28"
 title = "Creating a New Theme"
-slug = "creating-a-new-theme" 
+slug = "creating-a-new-theme"
 tags = []
 categories = []
 series = ["Theme", "Hugo"]
@@ -955,7 +955,7 @@ $ vi themes/zafta/layouts/index.html
 <body>
   <h1>posts</h1>
   {{ range first 10 .Data.Pages }}
-    {{ if eq .Type "post"}}
+    {{ if eq .Type "post" }}
       <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
     {{ end }}
   {{ end }}
@@ -1042,7 +1042,7 @@ $ vi themes/zafta/layouts/index.html
 
   <h1>posts</h1>
   {{ range first 10 .Data.Pages }}
-    {{ if eq .Type "post"}}
+    {{ if eq .Type "post" }}
       <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
     {{ end }}
   {{ end }}

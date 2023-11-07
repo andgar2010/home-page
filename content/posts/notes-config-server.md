@@ -69,15 +69,15 @@ $ chmod -R 644 */*  # Fix Permissions Files
 ## Copy project to folder WWW public Nginx and Fix permissions
 
 ```bash
-$ cp -rL /root/projects/Personal/demo_cobrandoAG/app/dist/pwa /var/www/tech-andgar.me/subdomain/pwa && chmod -R 755 */ && chmod -R 644 */*
+$ cp -rL /root/projects/Personal/demo_project_backend/app/dist/pwa /var/www/tech-andgar.me/subdomain/pwa && chmod -R 755 */ && chmod -R 644 */*
 ```
 
 ## Link symbolic
 
 ```bash
-$ ln -s /root/projects/Personal/demo_cobrandoAG/app/dist/pwa/* /var/www/tech-andgar.me/subdomain/demo_cobrando
+$ ln -s /root/projects/Personal/demo_project_backend/app/dist/pwa/* /var/www/tech-andgar.me/subdomain/demo_cobrando
 
-$ ln -sv /root/projects/Personal/demo_cobrandoAG/app/dist/pwa /var/www/tech-andgar.me/subdomain
+$ ln -sv /root/projects/Personal/demo_project_backend/app/dist/pwa /var/www/tech-andgar.me/subdomain
 ```
 
 ## PM2 Freeze list process for startup
