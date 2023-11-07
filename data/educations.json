@@ -200,7 +200,7 @@
     {
       "_status": "completed",
       "date": "21/12",
-      "link_certification": null,
+      "link_certification": "https://www.udemy.com/certificate/UC-d9566773-46ca-40e4-a39c-5ab631b22429/",
       "organization": "Udemy",
       "place": "Online",
       "title": {
@@ -218,7 +218,7 @@
     {
       "_status": "completed",
       "date": "21/12",
-      "link_certification": null,
+      "link_certification": "https://www.udemy.com/certificate/UC-0b16bcd0-5b98-42f1-bb20-beb22587f043/",
       "organization": "Udemy",
       "place": "Online",
       "title": {
@@ -236,7 +236,7 @@
     {
       "_status": "completed",
       "date": "21/12",
-      "link_certification": null,
+      "link_certification": "https://www.udemy.com/certificate/UC-c9ffbe18-15d0-4e78-992f-f6ee5c8ebe9c/",
       "organization": "Udemy",
       "place": "Online",
       "title": {
@@ -647,7 +647,7 @@
     {
       "_status": "completed",
       "date": "18/11",
-      "link_certification": null,
+      "link_certification": "https://udemy-certificate.s3.amazonaws.com/pdf/UC-6HJB0RTR.pdf",
       "organization": "Udemy",
       "place": "Online",
       "title": {
