@@ -54,4 +54,7 @@ aliases = [
 
 [Herramienta TIC: Contexto 2.0 (CENTRO DE RELEVO COLOMBIA)](https://www.youtube.com/playlist?list=PLEBGYPnzsPeRc1ImLJ0cdrmkJk2SSFjvz)
 
-[Recomplicacion de varios links de Youtube, Es Gratis y No requiere certificado. Nota: Este enlace, no es un certificado oficial para el interprete de Lengua de Señas Colombiana (LSC)](https://edutin.com/lengua-de-se%C3%B1as-colombia-4198)
+[Recopilación de varios links de Youtube, Es Gratis](https://edutin.com/lengua-de-se%C3%B1as-colombia-4198)
+{{< notice info >}}
+ Nota: Este ultimo enlace de recopilación, no es un certificado oficial para el interprete de Lengua de Señas Colombiana (LSC)
+{{< /notice >}}

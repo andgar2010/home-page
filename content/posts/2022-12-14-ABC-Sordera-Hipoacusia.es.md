@@ -125,6 +125,8 @@ Las personas Sordas o con Hipoacusia utilizan diversos modos de comunicación. C
 
 ### Uno a Uno
 
+{{< notice tip >}}
+
 * Pregunte siempre a la persona Sorda por sus preferencias individuales de comunicación.
 * Cuando sea posible, utilice el apoyo de un intérprete cualificado de LSC/español.
 * Discutir de antemano las estrategias de comunicación, especialmente cuando se necesite un intérprete
@@ -139,9 +141,13 @@ Las personas Sordas o con Hipoacusia utilizan diversos modos de comunicación. C
 * Tenga en cuenta el entorno visual. Un entorno con mucho movimiento (especialmente cuando está detrás del emisor) también puede distraer.
 * Intente sentarse donde haya luz en frente y no detrás de usted.
 
+{{< /notice >}}
+
 ### En un grupo
 
 La gran mayoría de las personas Sordas necesitarán los servicios de un intérprete de LSC/español en la comunicación en un grupo:
+
+{{< notice tip >}}
 
 * Si es posible, ponga a su disposición un breve resumen de los principales temas que se van a tratar
 * Lo más probable es que la persona Sorda se sienta donde sea más fácil ver al orador y al intérprete
@@ -150,7 +156,11 @@ La gran mayoría de las personas Sordas necesitarán los servicios de un intérp
 * El orador debe repetir las preguntas y comentarios de la sala para el intérprete
 * Si es posible, se debe grabar la reunión y luego distribuir la grabación para que toda la información quede clara
 
+{{< /notice >}}
+
 ## Consejos para comunicarse con personas Hipoacúsicas
+
+{{< notice tip >}}
 
 * Pregunte siempre a la persona Hipoacúsica por sus preferencias individuales de comunicación.
 * Hable con la persona Hipoacúsica, no sobre ella.
@@ -165,6 +175,8 @@ La gran mayoría de las personas Sordas necesitarán los servicios de un intérp
 * Intente ubicarse donde haya luz en frente y no detrás de usted.
 * Cuando sea posible, utilice apoyos como un computador, dispositivos de ayuda a la escucha. Asegúrate de organizar estos servicios con antelación.
 * ¡Paciencia!
+
+{{< /notice >}}
 
 ## Hechos e información sobre la lectura del habla
 
@@ -187,9 +199,15 @@ Aunque la lectura del habla puede ser una herramienta útil para las personas co
 
 ## Comunidad y cultura sorda - Preguntas frecuentes
 
+{{< notice question >}}
+
 ### **¿Cuál es la diferencia entre una persona "sorda", "Sorda" o "Hipoacúsica"?**
 
 La comunidad de personas Sordas e hipoacúsicas es muy diversa. Existen variaciones en la causa y el grado de pérdida auditiva, la edad de inicio de la pérdida auditiva, el nivel educativo, los métodos de comunicación y la forma en que las personas se sienten con respecto a su pérdida auditiva. La forma en que las personas se "etiquetan" o se identifican a sí mismas es personal y puede reflejar la identificación con la comunidad de Sordos e hipoacúsicos, el grado en que pueden oír o la edad relativa de inicio. Por ejemplo, algunas personas se identifican a sí mismas como "sordas tardías", indicando que experimentaron una pérdida de audición más tarde en su vida. Otras personas se identifican como "Sordociegas", lo que suele indicar que tienen algún grado de pérdida auditiva y algún grado de pérdida de visión. Algunas personas creen que el término "personas con pérdida de audición" es inclusivo y eficaz. Sin embargo, algunas personas que han nacido Sordas o hipoacúsicas no se consideran a sí mismas como personas que han perdido la audición. A lo largo de los años, los términos más comúnmente aceptados han llegado a ser "sordo", " Sordo" e "hipoacúsico".
+
+{{< /notice >}}
+
+{{< notice question >}}
 
 ### **"Sordo" y "sordo"**
 
@@ -199,11 +217,19 @@ Según Carol Padden y Tom Humphries, en *"Deaf in America: Voices from a Culture
 
 Padden y Humphries comentan que "este conocimiento de las personas Sordas no es simplemente una camaradería con otras personas que tienen una condición física similar, sino que es, como muchas otras culturas en el sentido tradicional del término, creado históricamente y transmitido activamente a través de generaciones." Los autores también añaden que las personas Sordas "han encontrado formas de definirse y expresarse a través de sus rituales, cuentos, obras de teatro y encuentros sociales cotidianos. La riqueza de su lengua de señas les ofrece la posibilidad de ser perspicaces, irónicos y de inventar". La relación que las personas Sordas tienen con su lengua de señas es muy fuerte, y "la creencia errónea de que el ASL es un conjunto de gestos simples sin estructura interna ha llevado a la trágica idea equivocada de que la relación de las personas Sordas con su lengua de señas es una relación casual que puede ser fácilmente cortada y reemplazada." (Padden & Humphries)
 
+{{< /notice >}}
+
+{{< notice question >}}
+
 ### **"Hipoacúsico, ca"**
 
 *"Hipoacúsico" puede denotar a una persona con una pérdida de audición entre leve y moderada; también puede denotar a una persona sorda que no tiene/quiere ninguna afiliación cultural con la comunidad Sorda, o ambas cosas. La persona Hipoacúsica tiene un dilema: en cierto modo es oyente, en cierto modo es sorda, en otros, ninguno. <br><br> ¿Se puede ser persona hipoacúsica y sorda usuaria de ASL? También es posible. ¿Se puede ser hipoacúsico y desenvolverse como oyente? Por supuesto. ¿Y ser hipoacúsico a la vez que es un miembro activo de las comunidades de oyentes y Sordas? Es un delicado acto de funambulismo, pero también es posible. <br><br> En cuanto a la dimensión política: "Las personas Hipoacúsicas pueden ser aliadas de la comunidad Sorda. Pueden elegir unirse o no a ella: pueden participar en la vida social, cultural, política y legal de la comunidad junto con los que comparten la cultura Sorda o vivir sus vidas completamente dentro de los parámetros del "mundo de los oyentes". Sin embargo, puede que les resulte más difícil establecer una identidad cultural y social satisfactoria. <br><br> Deaf Life, "For Hearing People Only" [La vida de los sordos, "Sólo para oyentes"] (octubre de 1997).*
 
 Las personas Hipoacúsicas pueden elegir una perspectiva audiológica o cultural. Todo es cuestión de elección, comodidad, modo de comunicación y aceptación. Sea cual sea la decisión, la NAD (*National Association for the Deaf* [Asociación Nacional para los Sordos (Estados Unidos)]) da la bienvenida a todos los estadounidenses Sordos, con hipoacusia, con sordera tardía y sordociegos, y el trabajo de apoyo que realiza la NAD está disponible y pretende beneficiar a todos.
+
+{{< /notice >}}
+
+{{< notice question >}}
 
 ### **¿Qué hay de malo en el uso de los términos sordomudo, discapacitado auditivo / con problemas auditivos / problemas de audición / audioimpedido / con trastornos auditivos / dificultades auditivas / deficiente auditivo / problemas del habla y del oído?**
 
@@ -211,13 +237,26 @@ Las personas Sordas e Hipoacúsicas tienen derecho a elegir cómo quieren que se
 
 Sin embargo, hay muchas personas que persisten en utilizar términos distintos a "Sordo" e, "Hipoacúsico". Los términos alternativos se ven a menudo en la prensa, se escuchan en la radio y la televisión y se escuchan en conversaciones casuales por todas partes. Veamos los tres términos alternativos más utilizados.
 
+{{< /notice >}}
+
+
+{{< notice question >}}
+
 #### **Sordo y Tonto**
 
 Una traducción literal del término inglés *"Deaf and Dumb"*. Es una reliquia de la época medieval inglesa, el abuelo de todas las etiquetas negativas que se ponen a las personas Sordas e Hipoacúsicas. El filósofo griego Aristóteles los llamaba "sordos y tontos" porque consideraba que las personas sordas eran incapaces de aprender y razonar. A su modo de ver, si una persona no podía utilizar su voz de la misma manera que los oyentes, entonces no había forma de que esta persona pudiera desarrollar capacidades cognitivas (Fuente: Sordo Heritage, por Jack Gannon, 1980). En años posteriores, "Tonto" pasó a significar "mudo". Esta definición aún persiste, porque así es como la gente ve a los Sordos. El término es ofensivo para las personas Sordas e Hipoacúsicas por varias razones. En primer lugar, las personas sordas e hipoacúsicas no son "mudas" en absoluto, porque utilizan la lengua de señas, la lectura de labios, las vocalizaciones, etc. para comunicarse. La comunicación no está reservada únicamente a las personas oyentes y la voz no es la única herramienta para la comunicación. En segundo lugar, "mudo" también tiene un segundo significado: estúpido. Las personas Sordas e Hipoacúsicas se han encontrado con mucha gente que se adhiere a la filosofía de que si no puedes usar bien tu voz, no tienes mucho en la cabeza y no tienes nada a tu favor. Obviamente, esto es una opinión incorrecta, malinformada y falsa. Las personas Sordas e Hipoacúsicas han demostrado muchas veces que tienen mucho que aportar a la sociedad.
 
+{{< /notice >}}
+
+{{< notice question >}}
+
 #### **Sordomudo / problemas del habla**
 
 Otro término ofensivo del siglo XVIII y XIX, también se le dice "muda" a una persona silenciosa y sin voz. Esta etiqueta es inexacta, ya que las personas Sordas e Hipoacúsicas suelen tener cuerdas vocales funcionales. El problema radica en el hecho de que para modular la voz con éxito, generalmente es necesario poder oír la propia voz. De nuevo, dado que las personas Sordas e Hipoacúsicas utilizan varios métodos de comunicación además de la voz, no son mudas en el pleno sentido de la palabra. La verdadera comunicación se produce cuando el mensaje de alguien es entendido por los demás y éstos pueden responder de la misma manera.
+
+{{< /notice >}}
+
+{{< notice question >}}
 
 #### **Discapacitado auditivo / con problemas auditivos / problemas de audición / audioimpedido / con trastornos auditivos / dificultades auditivas / deficiente auditivo /  problemas del oído**
 
@@ -228,6 +267,8 @@ Para muchas personas, las palabras "sordas" y "hipoacusia" no son negativas. En 
 Cada individuo es único, pero hay una cosa que todos tenemos en común: todos queremos ser tratados con respeto. Según las capacidades únicas de las personas Sordas lo permitan, tienen familias, amigos, comunidades y vidas que son tan satisfactorias como las de cualquier otra persona. Pueden ser diferentes, pero no son deficientes.
 
 ¿Por qué tanto énfasis en la terminología? Las palabras y las etiquetas pueden tener un efecto profundo en las personas. Demuestra tu respeto por las personas, no utilices términos anticuados u ofensivos. En caso de duda, pregunta a la persona cómo se identifica.
+
+{{< /notice >}}
 
 <br>
 
