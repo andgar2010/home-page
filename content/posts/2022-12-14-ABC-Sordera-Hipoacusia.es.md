@@ -242,7 +242,8 @@ Cada individuo es único, pero hay una cosa que todos tenemos en común: todos q
 
 ## **Fuente**
 
-[American Sign Language Class Reference Handout [Clase de Lengua de Señas Estadounidense  - Folleto de referencia] en PDF](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/57d4752a-e93d-4589-a3ab-34d8c77b3002/ASL_Beginner_Packet.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221214%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221214T225542Z&X-Amz-Expires=86400&X-Amz-Signature=f16f7dd79933467c0b21076e50c9c5e18035ba786cd4e027137304b643ead741&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22ASL%2520Beginner%2520Packet.pdf%22&x-id=GetObject)
+[American Sign Language Class Reference Handout [Clase de Lengua de Señas Estadounidense  - Folleto de referencia] en PDF](https://file.notion.so/f/f/afaf8fab-2faf-4807-a773-5008e26bb11b/57d4752a-e93d-4589-a3ab-34d8c77b3002/ASL_Beginner_Packet.pdf?id=b53f6575-88ed-4712-b682-b8c743041592&table=block&spaceId=afaf8fab-2faf-4807-a773-5008e26bb11b&expirationTimestamp=1704564000000&signature=wJGtJD12fsf6KF1SKks0nXVdCBYB-g3ZkfEB0z0vwL8&downloadName=ASL+Beginner+Packet.pdf)
+[</br>Si el enlace es inutilizable, enlace alternativo](/files/preview/ASL_Beginner_Packet.pdf)
 
 [DHCC Deaf-Hearing Communication Centre - Deaf-Hearing Communication Centre, Inc.](https://dhcc.org/)
 
