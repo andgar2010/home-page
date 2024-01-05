@@ -734,12 +734,35 @@
       "organization": "SENA CGMLTI",
       "place": "Bogotá D.C., Col",
       "title": {
-        "_original": "Certificado de Certificación de Normas Laborales: * Realizar el mantenimiento preventivo y predictivo que prolongue el funcionamiento de los equipos informáticos; * Realizar el mantenimiento correctivo de los equipos informáticos según lo establecido",
-        "english": "Certificate of Labor Standards Certification: * Perform preventive and predictive maintenance that prolongs the operation of computer equipment; * Perform corrective maintenance of computer equipment as established",
-        "spanish": "Certificado de Certificación de Normas Laborales: * Realizar el mantenimiento preventivo y predictivo que prolongue el funcionamiento de los equipos informáticos; * Realizar el mantenimiento correctivo de los equipos informáticos según lo establecido"
+        "_original": "Certificado de Certificación de Normas Laborales: Realizar el mantenimiento preventivo y predictivo que prolongue el funcionamiento de los equipos informáticos.",
+        "english": "Certificate of Labor Standards Certification: Perform preventive and predictive maintenance that prolongs the operation of computer equipment.",
+        "spanish": "Certificado de Certificación de Normas Laborales: Realizar el mantenimiento preventivo y predictivo que prolongue el funcionamiento de los equipos informáticos."
       },
       "topic": [
         "Preventive Maintenance",
+        "Hardware",
+        "Software",
+        "Windows",
+        "Linux",
+        "MacOS",
+        "iOS",
+        "Network"
+      ],
+      "type": "certification",
+      "validity": true
+    },
+    {
+      "_status": "completed",
+      "date": "2011",
+      "link_certification": null,
+      "organization": "SENA CGMLTI",
+      "place": "Bogotá D.C., Col",
+      "title": {
+        "_original": "Certificado de Certificación de Normas Laborales: Realizar el mantenimiento correctivo de los equipos informáticos según lo establecido",
+        "english": "Certificate of Labor Standards Certification: Perform corrective maintenance of computer equipment as established",
+        "spanish": "Certificado de Certificación de Normas Laborales: Realizar el mantenimiento correctivo de los equipos informáticos según lo establecido"
+      },
+      "topic": [
         "Corrective Maintenance",
         "Hardware",
         "Software",
