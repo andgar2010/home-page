@@ -7,7 +7,7 @@
       "link": "https://link.tech-andgar.me/project_exception-handler_package-dart",
       "description": "A Dart package for streamlined API handling and robust exception management in Flutter apps.",
       "preview": "/images/preview/preview-exception_handler_demo.gif",
-      "_bullet_point_technologies": false,
+      "_bullet_point_technologies": true,
       "technologies": [
         "Flutter",
         "Dart",
@@ -42,7 +42,7 @@
       "name": "nomina",
       "link": "https://link.tech-andgar.me/project_nomina_webapp",
       "description": "Project focused on calculating basic payroll, taking into account the regulations in place in 2024 for Colombia.",
-      "preview": null,
+      "preview": "/images/preview/preview-nomina_demo.gif",
       "_bullet_point_technologies": true,
       "technologies": [
         "Framework Quasar v2",
@@ -63,7 +63,7 @@
       "name": "facturacion",
       "link": "https://link.tech-andgar.me/project_facturacion_webapp",
       "description": "Basic invoicing project",
-      "preview": null,
+      "preview": "/images/preview/preview-facturacion-simple_demo.gif",
       "_bullet_point_technologies": true,
       "technologies": [
         "Framework Quasar v1",
@@ -111,7 +111,7 @@
       "name": "Personal Web Blog",
       "description": null,
       "link": "https://link.tech-andgar.me/project_personal_web_blog",
-      "preview": null,
+      "preview": "/images/preview/preview-personal_web_demo.gif",
       "_bullet_point_technologies": true,
       "technologies": [
         "HUGO",
@@ -222,6 +222,20 @@
         "Dart",
         "GitHub Actions"
       ],
+      "stars": null,
+      "forks": null,
+      "issues": null,
+      "pull_requests": null
+    },
+    {
+      "type": "Essay",
+      "_enabled": true,
+      "name": "'¿Cómo se escucha el silencio?' (Colombian Sign Language Edition with Spanish subtitles)",
+      "link": "http://bit.ly/EnsayoComoSeEscuchaElSilencio",
+      "description": null,
+      "preview": null,
+      "_bullet_point_technologies": false,
+      "technologies": [],
       "stars": null,
       "forks": null,
       "issues": null,
@@ -368,6 +382,92 @@
         "JSON"
       ],
       "preview": "/images/preview/logo-FastForward.png"
+    },
+    {
+      "type": "App mobile",
+      "_enabled": true,
+      "name": "MX Player (Contribution to the package in the Spanish translation)",
+      "link": "https://crowdin.com/project/mx-video-player",
+      "description": "Powerful video player with audio support for almost all formats (including AC-3), advanced hardware acceleration and multi-subtitle support",
+      "engagement_metrics": {
+        "stars": "12.4M",
+        "downloads": "+1000M"
+      },
+      "_bullet_point_technologies": true,
+      "technologies": [
+        "Crowdin",
+        "JSON"
+      ],
+      "preview": "/images/preview/logo-mxplayer.png"
+    },
+    {
+      "type": "App desktop",
+      "_enabled": true,
+      "name": "HeidiSQL (Contribution to the package in the Spanish translation)",
+      "link": "https://www.transifex.com/david.proweb/teams/12545/es/",
+      "description": "A free and powerful client for MariaDB, MySQL, Microsoft SQL Server, PostgreSQL and SQLite.",
+      "engagement_metrics": {
+        "stars": "+4200",
+        "downloads": "+500K"
+      },
+      "_bullet_point_technologies": true,
+      "technologies": [
+        "Transifex",
+        "JSON"
+      ],
+      "preview": "/images/preview/logo-heidisql.png"
+    },
+    {
+      "type": "Platform Edu",
+      "_enabled": true,
+      "name": "edX platform (Contribution to the package in the Spanish translation)",
+      "link": "https://www.transifex.com/open-edx/teams/6205/es_419/",
+      "description": "The online learning platform from world-leading digital education company 2U, Inc.",
+      "engagement_metrics": {
+        "stars": null,
+        "downloads": null
+      },
+      "_bullet_point_technologies": true,
+      "technologies": [
+        "Transifex",
+        "JSON"
+      ],
+      "preview": "/images/preview/logo-edx.svg"
+    },
+    {
+      "type": "Package Quasar",
+      "_enabled": true,
+      "name": "QDatetimePicker [Archived] (Contribution to the package in the Spanish translation)",
+      "link": "https://github.com/TobyMosque/app-extension-qdatetimepicker",
+      "description": "A UI App Extension for Quasar Framework v1.",
+      "engagement_metrics": {
+        "stars": "54",
+        "downloads": null
+      },
+      "_bullet_point_technologies": true,
+      "technologies": [
+        "JavaScript",
+        "JSON"
+      ],
+      "preview": null
+    },
+    {
+      "type": "App Web",
+      "_enabled": true,
+      "name": "Framework Directus Frontend [Archived] (Contribution to the package in the Spanish translation and improvements)",
+      "link": "https://github.com/directus/v8-archive",
+      "description": " Directus Database API — Wraps Custom SQL Databases with a REST/GraphQL API ",
+      "engagement_metrics": {
+        "stars": "+24K",
+        "downloads": null
+      },
+      "_bullet_point_technologies": true,
+      "technologies": [
+        "PHP",
+        "JavaScript",
+        "JSON"
+      ],
+      "preview": "/images/preview/logo-directus.png"
     },
     {
       "type": null,

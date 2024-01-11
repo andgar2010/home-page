@@ -6,24 +6,27 @@
 {{ $is_enabled_issues := false }}
 {{ $is_enabled_pull_requests := false }}
 {{ $is_enabled_preview := false }}
+{{ $length_items := len $side_projects }}
 
 {{ range $item := $side_projects }}
   {{ if $item.stars}}
-    {{ $is_enabled_stars := true}}
+    {{ $is_enabled_stars := true }}
   {{ end }}
   {{ if $item.forks}}
-    {{ $is_enabled_forks := true}}
+    {{ $is_enabled_forks := true }}
   {{ end }}
   {{ if $item.issues}}
-    {{ $is_enabled_issues := true}}
+    {{ $is_enabled_issues := true }}
   {{ end }}
   {{ if $item.pull_requests}}
-    {{ $is_enabled_pull_requests := true}}
+    {{ $is_enabled_pull_requests := true }}
   {{ end }}
   {{ if $item.preview}}
-    {{ $is_enabled_preview := true}}
+    {{ $is_enabled_preview := true }}
   {{ end }}
 {{ end }}
+
+<h3>{{ $length_items }} Ítems de los proyectos:</h3>
 
 <table>
   <thead>

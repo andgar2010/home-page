@@ -7,23 +7,28 @@
 {{ $is_enabled_pull_requests := false }}
 {{ $is_enabled_preview := false }}
 
+{{ $length_items := len $side_projects }}
+
 {{ range $item := $side_projects }}
-  {{ if $item.stars}}
-    {{ $is_enabled_stars := true}}
+  {{ if $item.stars }}
+    {{ $is_enabled_stars := true }}
   {{ end }}
-  {{ if $item.forks}}
-    {{ $is_enabled_forks := true}}
+  {{ if $item.forks }}
+    {{ $is_enabled_forks := true }}
   {{ end }}
-  {{ if $item.issues}}
-    {{ $is_enabled_issues := true}}
+  {{ if $item.issues }}
+    {{ $is_enabled_issues := true }}
   {{ end }}
-  {{ if $item.pull_requests}}
-    {{ $is_enabled_pull_requests := true}}
+  {{ if $item.pull_requests }}
+    {{ $is_enabled_pull_requests := true }}
   {{ end }}
-  {{ if $item.preview}}
-    {{ $is_enabled_preview := true}}
+  {{ if $item.preview }}
+    {{ $is_enabled_preview := true }}
   {{ end }}
 {{ end }}
+
+
+<h3>{{ $length_items }} Items of projects:</h3>
 
 <table>
   <thead>
@@ -67,54 +72,54 @@
   <tbody>
     {{ range $item := $side_projects }}
     {{ if $item._enabled }}
-      <tr>
-        <td>{{ $item.type }}</td>
-        <td>
-          <a
-            href="{{ $item.link }}"
-            class="external-link"
-            target="_blank"
-            rel="noopener"
+    <tr>
+      <td>{{ $item.type }}</td>
+      <td>
+        <a
+          href="{{ $item.link }}"
+          class="external-link"
+          target="_blank"
+          rel="noopener"
             >{{ $item.name }}</a
           ><br />{{ $item.description }}
-        </td>
-        <td>
-          {{ range $tech := $item.technologies }}
-            {{ if $tech}}
-              {{ if $item._bullet_point_technologies}}* {{ end }}{{ $tech }}<br />
-            {{ end }}
+      </td>
+      <td>
+        {{ range $tech := $item.technologies }}
+          {{ if $tech }}
+            {{ if $item._bullet_point_technologies }}* {{ end }}{{ $tech }}<br />
           {{ end }}
-        </td>
-        {{ if $item.stars}}
-        <td>
-          * {{ $item.stars }} stars
-        </td>
         {{ end }}
-        {{ if $item.forks}}
-        <td>
-          * {{ $item.forks }} forks
-        </td>
-        {{ end }}
-        {{ if $item.issues}}
-        <td>
-          * {{ $item.issues }} issues
-        </td>
-        {{ end }}
-        {{ if $item.pull_requests}}
-        <td>
-          * {{ $item.pull_requests }} pull_requests
-        </td>
-        {{ end }}
-        {{ if $item.preview}}
-        <td>
-          <img
-            src="{{ $item.preview }}"
-            alt="{{ $item.name }}"
-          />
-        </td>
-        {{ end }}
-      </tr>
+      </td>
+      {{ if $item.stars }}
+      <td>
+        * {{ $item.stars }} stars
+      </td>
+      {{ end }}
+      {{ if $item.forks }}
+      <td>
+        * {{ $item.forks }} forks
+      </td>
+      {{ end }}
+      {{ if $item.issues }}
+      <td>
+        * {{ $item.issues }} issues
+      </td>
+      {{ end }}
+      {{ if $item.pull_requests }}
+      <td>
+        * {{ $item.pull_requests }} pull_requests
+      </td>
+      {{ end }}
+      {{ if $item.preview }}
+      <td>
+        <img
+          src="{{ $item.preview }}"
+          alt="{{ $item.name }}"
+        />
+      </td>
+      {{ end }}
+    </tr>
     {{ end }}
-  {{ end }}
+    {{ end }}
   </tbody>
 </table>
