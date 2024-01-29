@@ -3,6 +3,40 @@
     {
       "type": "Package Dart",
       "_enabled": true,
+      "name": "http_status",
+      "link": "https://link.tech-andgar.me/project-http_status-package_dart",
+      "description": "Constants enumerating the HTTP status codes in Dart.",
+      "preview": null,
+      "_bullet_point_technologies": true,
+      "technologies": [
+        "Dart",
+        "GitHub Actions"
+      ],
+      "stars": null,
+      "forks": null,
+      "issues": null,
+      "pull_requests": null
+    },
+    {
+      "type": "Package Dart",
+      "_enabled": true,
+      "name": "http_exception",
+      "link": "https://link.tech-andgar.me/project-http_exception-package_dart",
+      "description": "Provides the abillity to simply throw an HttpException that gets converted to an appropriate response code and a formatted response body dependent on clients accept header.",
+      "preview": null,
+      "_bullet_point_technologies": true,
+      "technologies": [
+        "Dart",
+        "GitHub Actions"
+      ],
+      "stars": null,
+      "forks": null,
+      "issues": null,
+      "pull_requests": null
+    },
+    {
+      "type": "Package Dart",
+      "_enabled": true,
       "name": "exception_handler",
       "link": "https://link.tech-andgar.me/project_exception-handler_package-dart",
       "description": "A Dart package for streamlined API handling and robust exception management in Flutter apps.",
