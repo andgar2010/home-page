@@ -21,5 +21,6 @@ ListView: Para múltiples widgets desplazables. ListView( children: &amp;lt;Widg
 A Dart package for streamlined API handling and robust exception management in Flutter apps. * Flutter
 * Dart
 * GitHub Actions
+* Coveralls
 App mobile clean-flutter-app (Source code)
 Application made in Flutter using TDD, Clean Architecture, Design Patterns and SOLID principles.</description></item></channel></rss>
