@@ -11,7 +11,8 @@
       "technologies": [
         "Flutter",
         "Dart",
-        "GitHub Actions"
+        "GitHub Actions",
+        "Coveralls"
       ],
       "stars": null,
       "forks": null,
@@ -273,7 +274,8 @@
       "_bullet_point_technologies": true,
       "technologies": [
         "Dart",
-        "GitHub Actions"
+        "GitHub Actions",
+        "Coveralls"
       ],
       "preview": null
     },
@@ -290,7 +292,8 @@
       "_bullet_point_technologies": true,
       "technologies": [
         "Dart",
-        "GitHub Actions"
+        "GitHub Actions",
+        "Coveralls"
       ],
       "preview": null
     },
