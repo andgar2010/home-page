@@ -6,13 +6,13 @@ settings:
 
 dependencies:
   '@builder.io/partytown':
-    specifier: ^0.8.2
-    version: 0.8.2
+    specifier: ^0.9.0
+    version: 0.9.0
 
 packages:
 
-  /@builder.io/partytown@0.8.2:
-    resolution: {integrity: sha512-WKGE+SO0qUGirW8J+xOWkHeCkfFEoPPvHnFkcdMl+MY3kDbAcTwjZCzjg27JCvoD0h8fH47FR7DSIss0/S5lyg==}
+  /@builder.io/partytown@0.9.0:
+    resolution: {integrity: sha512-kWMcSKBFeymAbumz+pWEYKgdI1JOD6QdkZRi16/ANuCqq2nZ6xZZvXOxWxodN71gBbY+6O31dRd2bMfZNLESJw==}
     engines: {node: '>=18.0.0'}
     hasBin: true
     dev: false
