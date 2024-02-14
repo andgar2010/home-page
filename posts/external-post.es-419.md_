@@ -1,15 +1,15 @@
-+++
-author = "Hugo Authors"
-date = "2019-03-04"
-title = "Página Externa: Wiki Hugo Coder"
-slug = "hugo-coder-wiki"
-tags = [
+---
+author: "Hugo Authors"
+date: "2019-03-04"
+title: "Página Externa: Wiki Hugo Coder"
+slug: "hugo-coder-wiki"
+tags: [
     "hugo",
     "development",
     "themes"
 ]
-categories = [
+categories: [
     "Development",
 ]
-externalLink = "https://github.com/luizdepra/hugo-coder/wiki"
-+++
+externalLink: "https://github.com/luizdepra/hugo-coder/wiki"
+---
