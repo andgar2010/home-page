@@ -44,6 +44,12 @@ aliases = [
 
 <br>
 
+## Ensayo: ¿Cómo se escucha el silencio? (Edición en LSC) [sub-ES]
+
+{{< youtube nETAAumPcyQ >}}
+
+<br>
+
 ## Playlists de videos
 
 [Historia de la LSC (FENASCOL)](https://www.youtube.com/playlist?list=PLKw3VoW4MxvovzME2Nme5k2wXOYCj7xTc)
