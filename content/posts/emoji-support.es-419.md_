@@ -1,12 +1,12 @@
-+++
-author = "Hugo Authors"
-title = "Suporte a Emojis"
-date = "2019-03-05"
-description = "Um guia de utilização de emojis com Hugo"
-tags = [
+---
+author: "Hugo Authors"
+title: "Suporte a Emojis"
+date: "2019-03-05"
+description: "Um guia de utilização de emojis com Hugo"
+tags: [
     "emoji",
 ]
-+++
+---
 
 Emojis podem ser ativados em um projeto Hugo de diversar formas.
 <!--more-->

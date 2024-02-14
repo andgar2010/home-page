@@ -1,15 +1,15 @@
-+++
-author = "Andrés García"
-title = "About"
-date = "2020-02-28"
-description = "About Andres Garcia"
-slug = "about"
-aliases = [
+---
+author: "Andrés García"
+title: "About"
+date: "2020-02-28"
+description: "About Andres Garcia"
+slug: "about"
+aliases: [
   "about-us",
   "about-andres-garcia",
   "contact",
 ]
-+++
+---
 
 Hi! I'm Andres, a Deaf developer whose native language is Colombian Sign Language (LSC). I have a passion for working with computers, whether it's researching new software trends, learning new technologies, or exploring ways to integrate logic and communication.
 <!-- I have a thing for mobile development and backend, and love working on software development and UX! -->

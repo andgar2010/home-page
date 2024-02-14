@@ -1,7 +1,7 @@
-+++
-title = "Contacto"
-slug = "contact"
-+++
+---
+title: "Contacto"
+slug: "contact"
+---
 
 <!-- Síganme, @andgar2010. -->
 

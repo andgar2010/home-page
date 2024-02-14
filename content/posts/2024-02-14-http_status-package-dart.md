@@ -1,26 +1,26 @@
-+++
-author = "Andrés García"
-title = "`http_status` Dart Package: A Comprehensive Guide"
-date = "2024-02-14"
-description = "`http_status` Dart Package: A Comprehensive Guide"
-slug = "Dart Http_Status Package"
-tags = [
+---
+author: "Andrés García"
+title: "`http_status` Dart Package: A Comprehensive Guide"
+date: "2024-02-14"
+description: "`http_status` Dart Package: A Comprehensive Guide"
+slug: "Dart Http_Status Package"
+tags: [
   "Dart",
   "Http Status",
   "Package",
 ]
-categories = [
+categories: [
   "Dart",
   "Package"
 ]
-series = [
+series: [
   "Dart",
   "Package"
 ]
-aliases = [
+aliases: [
   "Dart Late keyword"
 ]
-+++
+---
 
 # `http_status` Dart Package: A Comprehensive Guide
 
