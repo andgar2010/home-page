@@ -1,24 +1,24 @@
-+++
-author = "Andrés García"
-title = "Buenas prácticas para nombrar las variables de forma modular"
-date = "2022-10-19"
-description = "Buenas prácticas para nombrar las variables de forma modular"
-slug = "Buenas prácticas para nombrar las variables de forma modular"
-tags = [
+---
+author: "Andrés García"
+title: "Buenas prácticas para nombrar las variables de forma modular"
+date: "2022-10-19"
+description: "Buenas prácticas para nombrar las variables de forma modular"
+slug: "Buenas prácticas para nombrar las variables de forma modular"
+tags: [
   "nombrar las variables",
   "nombramiento las variables",
 ]
-categories = [
+categories: [
   "Lenguaje de programación",
 ]
-series = [
+series: [
   "Lenguaje de programación"
 ]
-aliases = [
+aliases: [
   "Lenguaje de programación"
 ]
-"featuredImage" = "images/posts/best_practices_naming_modular_variables_programming.webp"
-+++
+"featuredImage": "images/posts/best_practices_naming_modular_variables_programming.webp"
+---
 
 # Estándar nombramiento las variables de forma modular
 

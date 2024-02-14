@@ -1,25 +1,25 @@
-+++
-author = "Andrés García"
-title = "Cofiguration server"
-date = "2020-02-20"
-description = "Notes basic commands of nginx on Server Ubuntu"
-slug = "notes-config-server"
-tags = [
+---
+author: "Andrés García"
+title: "Cofiguration server"
+date: "2020-02-20"
+description: "Notes basic commands of nginx on Server Ubuntu"
+slug: "notes-config-server"
+tags: [
   "Server",
   "Backend",
   "ngnix",
   "PM2",
 ]
-categories = [
+categories: [
   "Backend",
 ]
-series = [
+series: [
   ""
 ]
-aliases = [
+aliases: [
   ""
 ]
-+++
+---
 
 ## View logs ngnix
 

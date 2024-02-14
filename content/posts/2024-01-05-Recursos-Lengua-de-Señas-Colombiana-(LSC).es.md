@@ -1,27 +1,27 @@
-+++
-author = "Andrés García"
-title = "Recursos Lengua De Señas Colombiana (LSC)"
-date = "2024-01-05"
-description = "Recursos Lengua De Señas Colombiana (LSC)"
-slug = "Recursos Lengua De Señas Colombiana (LSC)"
-tags = [
+---
+author: "Andrés García"
+title: "Recursos Lengua De Señas Colombiana (LSC)"
+date: "2024-01-05"
+description: "Recursos Lengua De Señas Colombiana (LSC)"
+slug: "Recursos Lengua De Señas Colombiana (LSC)"
+tags: [
   "Sordo",
   "Comunidad Sorda",
   "Lengua de Señas",
   "Lengua de Señas Colombiana",
 ]
-categories = [
+categories: [
   "Sordo",
   "Lengua de Señas",
   "Lengua de Señas Colombiana",
 ]
-series = [
+series: [
   "Recursos Lengua De Señas Colombiana (LSC)"
 ]
-aliases = [
+aliases: [
   "Recursos Lengua De Señas Colombiana (LSC)"
 ]
-+++
+---
 
 
 # RECURSOS LENGUA DE SEÑAS COLOMBIANA (LSC)

@@ -1,26 +1,26 @@
-+++
-author = "Andrés García"
-title = "Lenguas de señas y lengua hablada: una comparación de sistemas lingüísticos"
-date = "2023-03-29"
-description = "Lenguas de señas y lengua hablada: una comparación de sistemas lingüísticos"
-slug = "Lenguas de señas y lengua hablada: una comparación de sistemas lingüísticos"
-tags = [
+---
+author: "Andrés García"
+title: "Lenguas de señas y lengua hablada: una comparación de sistemas lingüísticos"
+date: "2023-03-29"
+description: "Lenguas de señas y lengua hablada: una comparación de sistemas lingüísticos"
+slug: "Lenguas de señas y lengua hablada: una comparación de sistemas lingüísticos"
+tags: [
   "Lengua de Señas",
   "Lengua hablada",
 ]
-categories = [
+categories: [
   "Lengua de Señas",
   "Lengua hablada",
 ]
-series = [
+series: [
   "Lengua de Señas",
   "Lengua hablada",
 ]
-aliases = [
+aliases: [
   "Lenguas de señas y lengua hablada una comparación de sistemas lingüísticos"
 ]
-"featuredImage" = "images/posts/sign_and_spoken_language_comparison_linguistic_systems.webp"
-+++
+"featuredImage": "images/posts/sign_and_spoken_language_comparison_linguistic_systems.webp"
+---
 
 # Lenguas de señas y lengua hablada: una comparación de sistemas lingüísticos
 

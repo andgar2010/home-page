@@ -1,26 +1,26 @@
-+++
-author = "Andrés García"
-title = "`http_status` Dart Paquete: A Comprehensive Guide"
-date = "2024-02-14"
-description = "`http_status` Dart Paquete: A Comprehensive Guide"
-slug = "Dart Http_Status Paquete"
-tags = [
+---
+author: "Andrés García"
+title: "`http_status` Paquete de Dart: Una Guía Completa"
+date: "2024-02-14"
+description: "`http_status` Paquete de Dart: Una Guía Completa"
+slug: "Dart Http_Status Paquete"
+tags: [
   "Dart",
   "Http Status",
   "Paquete",
 ]
-categories = [
+categories: [
   "Dart",
   "Paquete"
 ]
-series = [
+series: [
   "Dart",
   "Paquete"
 ]
-aliases = [
+aliases: [
   "Dart paquete http_status"
 ]
-+++
+---
 
 # [`http_status`] Paquete de Dart: Una Guía Completa
 

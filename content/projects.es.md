@@ -1,7 +1,7 @@
-+++
-title = "Proyectos"
-slug = "projects"
-+++
+---
+title: "Proyectos"
+slug: "projects"
+---
 
 ## Proyectos secundarios
 

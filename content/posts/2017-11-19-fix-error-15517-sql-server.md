@@ -1,24 +1,24 @@
-+++
-author = "Andrés García"
-title = "Fix Error 15517 MS SQL SERVER"
-date = "2017-11-19"
-description = "Fix Error 15517 MS SQL SERVER"
-slug = "FIX ERROR MS SQL SERVER"
-tags = [
+---
+author: "Andrés García"
+title: "Fix Error 15517 MS SQL SERVER"
+date: "2017-11-19"
+description: "Fix Error 15517 MS SQL SERVER"
+slug: "FIX ERROR MS SQL SERVER"
+tags: [
   "SQL",
   "SQL SERVER",
   "MS SQL SERVER",
 ]
-categories = [
+categories: [
   "SQL",
 ]
-series = [
+series: [
   "SQL"
 ]
-aliases = [
+aliases: [
   "FIX ERROR MS SQL SERVER"
 ]
-+++
+---
 Fix Error 15517 MS SQL SERVER
 
 [Original link](https://gist.github.com/andgar2010/1bc6958ea6565c009f4513fe12e1d32b)
