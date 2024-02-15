@@ -32,7 +32,7 @@ aliases: [
 
 ## Códigos de estado HTTP
 
-| Code | Nombre de estado HTTP              | `http_status` (v1.x - v2.x Deprecated[obsoleto])                                                | `http_status` (v2.x - v3.x)     |
+| Code | Nombre de estado HTTP              | [`http_status` v1.x - v2.x Deprecated (obsoleto)]                                               | [`http_status` (v2.x - v3.x)]   |
 | ---- | ---------------------------------- | ----------------------------------------------------------------------------------------------- | ------------------------------- |
 | 100  | Continue                           | Continue                                  / CONTINUE                                            | continue_                       |
 | 101  | Switching Protocols                | Switching_Protocols                       / SWITCHING_PROTOCOLS                                 | switchingProtocols              |
@@ -241,3 +241,5 @@ Este código obtiene datos de una API y comprueba el código de estado HTTP de l
 Espero que esta exhaustiva información valiosa sobre el uso del paquete [`http_status`] en tus proyectos Dart.
 
 [`http_status`]: https://github.com/DartForge/http_status
+[`http_status` (v2.x - v3.x)]: https://github.com/DartForge/http_status
+[`http_status` v1.x - v2.x Deprecated (obsoleto)]: https://github.com/DartForge/http_status/tree/2.1.0

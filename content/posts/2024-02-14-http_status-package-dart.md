@@ -32,7 +32,7 @@ aliases: [
 
 ## Http Status Codes
 
-| Code | Http Status Name                   | Http Status (v1.x - v2.x Deprecated)                                                            | Http Status (v2.x - v3.x)       |
+| Code | Http Status Name                   | [`http_status` (v1.x - v2.x Deprecated)]                                                        | [`http_status` (v2.x - v3.x)]   |
 | ---- | ---------------------------------- | ----------------------------------------------------------------------------------------------- | ------------------------------- |
 | 100  | Continue                           | Continue                                  / CONTINUE                                            | continue_                       |
 | 101  | Switching Protocols                | Switching_Protocols                       / SWITCHING_PROTOCOLS                                 | switchingProtocols              |
@@ -243,3 +243,5 @@ This code fetches data from an API and checks the HTTP status code of the respon
 I hope this comprehensive valuable insights into using the [`http_status`] package in your Dart projects!
 
 [`http_status`]: https://github.com/DartForge/http_status
+[`http_status` (v2.x - v3.x)]: https://github.com/DartForge/http_status
+[`http_status` (v1.x - v2.x Deprecated)]: https://github.com/DartForge/http_status/tree/2.1.0
