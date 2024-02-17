@@ -4,7 +4,7 @@
 <label class="menu-button float-right" for=menu-toggle><i class="fa fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/es/about/>Acerca de</a></li><li class=navigation-item><a class=navigation-link href=/es/posts/>Blog</a></li><li class=navigation-item><a class=navigation-link href=/es/projects/>Proyectos</a></li><li class=navigation-item><a class=navigation-link href=/es/contact/>Contacto</a></li><li class=navigation-item><a class=navigation-link href=https://link.tech-andgar.me/CVAFGR202311DEV>CV</a></li><li class="navigation-item menu-separator"><span>|</span></li><li class=navigation-item><a href=/posts/dart-http_status-package/>English 🇬🇧</a></li></ul></section></nav><div class=content><section class="container post"><article><header><div class=post-title><h1 class=title><a class=title-link href=https://tech-andgar.me/es/posts/dart-http_status-package/>`http_status` Paquete de Dart: Una Guía Completa</a></h1></div><div class=post-meta><div class=date><span class=posted-on><i class="fa fa-calendar" aria-hidden=true></i>
 <time datetime=2024-02-14T00:00:00Z>febrero 14, 2024
 </time></span><span class=reading-time><i class="fa fa-clock-o" aria-hidden=true></i>
-6 minutos de lectura.</span></div><div class=categories><i class="fa fa-folder" aria-hidden=true></i>
+7 minutos de lectura.</span></div><div class=categories><i class="fa fa-folder" aria-hidden=true></i>
 <a href=/es/categories/dart/>Dart</a>
 <span class=separator>•</span>
 <a href=/es/categories/paquete/>Paquete</a></div><div class=tags><i class="fa fa-tag" aria-hidden=true></i>
@@ -41,40 +41,40 @@ Incluye 63 códigos de estado, mensajes y descripciones extraídos de las especi
 </span></span></span><span class=line><span class=cl><span class=c1>//        &#39;the target resource or is not willing to disclose that one exists.&#39;,
 </span></span></span><span class=line><span class=cl><span class=c1>//  );`
 </span></span></span></code></pre></div></li><li><p><strong>Comprobar estados:</strong></p><div class=highlight><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=c1>/// Devuelve true si está entre 100 y 199
-</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>res</span><span class=p>.</span><span class=n>statusCode</span><span class=p>.</span><span class=n>isInformationHttpStatusCode</span><span class=p>;</span>
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>response</span><span class=p>.</span><span class=n>statusCode</span><span class=p>.</span><span class=n>isInformationHttpStatusCode</span><span class=p>;</span>
 </span></span><span class=line><span class=cl><span class=n>print</span><span class=p>(</span><span class=n>HttpStatusCode</span><span class=p>.</span><span class=n>processing</span><span class=p>.</span><span class=n>isInformationHttpStatusCode</span><span class=p>);</span> <span class=c1>// true
 </span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>print</span><span class=p>(</span><span class=n>HttpStatusCode</span><span class=p>.</span><span class=n>notFound</span><span class=p>.</span><span class=n>isInformationHttpStatusCode</span><span class=p>);</span> <span class=c1>// false
 </span></span></span><span class=line><span class=cl><span class=c1></span>
 </span></span><span class=line><span class=cl><span class=c1>/// Devuelve true si el código está entre 200 y 299
-</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>res</span><span class=p>.</span><span class=n>statusCode</span><span class=p>.</span><span class=n>isSuccessfulHttpStatusCode</span><span class=p>;</span>
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>response</span><span class=p>.</span><span class=n>statusCode</span><span class=p>.</span><span class=n>isSuccessfulHttpStatusCode</span><span class=p>;</span>
 </span></span><span class=line><span class=cl><span class=n>print</span><span class=p>(</span><span class=m>200.</span><span class=n>isSuccessfulHttpStatusCode</span><span class=p>);</span> <span class=c1>// true
 </span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>print</span><span class=p>(</span><span class=m>400.</span><span class=n>isSuccessfulHttpStatusCode</span><span class=p>);</span> <span class=c1>// false
 </span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>print</span><span class=p>(</span><span class=n>HttpStatusCode</span><span class=p>.</span><span class=n>accepted</span><span class=p>.</span><span class=n>isSuccessfulHttpStatusCode</span><span class=p>);</span> <span class=c1>// true
 </span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>print</span><span class=p>(</span><span class=n>HttpStatusCode</span><span class=p>.</span><span class=n>notFound</span><span class=p>.</span><span class=n>isSuccessfulHttpStatusCode</span><span class=p>);</span> <span class=c1>// false
 </span></span></span><span class=line><span class=cl><span class=c1></span>
 </span></span><span class=line><span class=cl><span class=c1>/// Devuelve true si el código está entre 300 y 399
-</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>res</span><span class=p>.</span><span class=n>statusCode</span><span class=p>.</span><span class=n>isRedirectHttpStatusCode</span><span class=p>;</span>
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>response</span><span class=p>.</span><span class=n>statusCode</span><span class=p>.</span><span class=n>isRedirectHttpStatusCode</span><span class=p>;</span>
 </span></span><span class=line><span class=cl><span class=n>print</span><span class=p>(</span><span class=n>HttpStatusCode</span><span class=p>.</span><span class=n>permanentRedirect</span><span class=p>.</span><span class=n>isRedirectHttpStatusCode</span><span class=p>);</span> <span class=c1>// true
 </span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>print</span><span class=p>(</span><span class=n>HttpStatusCode</span><span class=p>.</span><span class=n>notFound</span><span class=p>.</span><span class=n>isRedirectHttpStatusCode</span><span class=p>);</span> <span class=c1>// false
 </span></span></span><span class=line><span class=cl><span class=c1></span>
 </span></span><span class=line><span class=cl><span class=c1>/// Devuelve true si está entre 400 y 499
-</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>res</span><span class=p>.</span><span class=n>statusCode</span><span class=p>.</span><span class=n>isClientErrorHttpStatusCode</span><span class=p>;</span>
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>response</span><span class=p>.</span><span class=n>statusCode</span><span class=p>.</span><span class=n>isClientErrorHttpStatusCode</span><span class=p>;</span>
 </span></span><span class=line><span class=cl><span class=n>print</span><span class=p>(</span><span class=n>HttpStatusCode</span><span class=p>.</span><span class=n>notFound</span><span class=p>.</span><span class=n>isClientErrorHttpStatusCode</span><span class=p>);</span> <span class=c1>// true
 </span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>print</span><span class=p>(</span><span class=n>HttpStatusCode</span><span class=p>.</span><span class=n>processing</span><span class=p>.</span><span class=n>isClientErrorHttpStatusCode</span><span class=p>);</span> <span class=c1>// false
 </span></span></span><span class=line><span class=cl><span class=c1></span>
 </span></span><span class=line><span class=cl><span class=c1>/// Devuelve true si el código está entre 500 y 599
-</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>res</span><span class=p>.</span><span class=n>statusCode</span><span class=p>.</span><span class=n>isServerErrorHttpStatusCode</span><span class=p>;</span>
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>response</span><span class=p>.</span><span class=n>statusCode</span><span class=p>.</span><span class=n>isServerErrorHttpStatusCode</span><span class=p>;</span>
 </span></span><span class=line><span class=cl><span class=n>print</span><span class=p>(</span><span class=n>HttpStatusCode</span><span class=p>.</span><span class=n>internalServerError</span><span class=p>.</span><span class=n>isServerErrorHttpStatusCode</span><span class=p>);</span> <span class=c1>// true
 </span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>print</span><span class=p>(</span><span class=n>HttpStatusCode</span><span class=p>.</span><span class=n>notFound</span><span class=p>.</span><span class=n>isServerErrorHttpStatusCode</span><span class=p>);</span> <span class=c1>// false;
 </span></span></span><span class=line><span class=cl><span class=c1></span>
-</span></span><span class=line><span class=cl><span class=k>if</span> <span class=p>(</span><span class=n>res</span><span class=p>.</span><span class=n>statusCode</span><span class=p>.</span><span class=n>isSuccessfulHttpStatusCode</span><span class=p>)</span> <span class=p>{</span> <span class=c1>// Código de estado HTTP 200 - 299
+</span></span><span class=line><span class=cl><span class=k>if</span> <span class=p>(</span><span class=n>response</span><span class=p>.</span><span class=n>statusCode</span><span class=p>.</span><span class=n>isSuccessfulHttpStatusCode</span><span class=p>)</span> <span class=p>{</span> <span class=c1>// Código de estado HTTP 200 - 299
 </span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=c1>// Manejar respuesta exitosa
-</span></span></span><span class=line><span class=cl><span class=c1></span><span class=p>}</span> <span class=k>else</span> <span class=k>if</span> <span class=p>(</span><span class=n>res</span><span class=p>.</span><span class=n>statusCode</span><span class=p>.</span><span class=n>isClientErrorHttpStatusCode</span><span class=p>)</span> <span class=p>{</span> <span class=c1>// Código de estado HTTP 400 - 499
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=p>}</span> <span class=k>else</span> <span class=k>if</span> <span class=p>(</span><span class=n>response</span><span class=p>.</span><span class=n>statusCode</span><span class=p>.</span><span class=n>isClientErrorHttpStatusCode</span><span class=p>)</span> <span class=p>{</span> <span class=c1>// Código de estado HTTP 400 - 499
 </span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=c1>// Gestionar el error del cliente
 </span></span></span><span class=line><span class=cl><span class=c1></span><span class=p>}</span> <span class=k>else</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>  <span class=c1>// Gestionar otros códigos o errores
 </span></span></span><span class=line><span class=cl><span class=c1></span><span class=p>}</span>
-</span></span></code></pre></div></li><li><p><strong>Convertir desde Int:</strong></p><div class=highlight><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=kd>final</span> <span class=n>httpStatus</span> <span class=o>=</span> <span class=n>HttpStatus</span><span class=p>.</span><span class=n>fromCode</span><span class=p>(</span><span class=n>res</span><span class=p>.</span><span class=n>statusCode</span><span class=p>);</span> <span class=c1>// res.statusCode = 404
+</span></span></code></pre></div></li><li><p><strong>Convertir desde Int:</strong></p><div class=highlight><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=kd>final</span> <span class=n>httpStatus</span> <span class=o>=</span> <span class=n>HttpStatus</span><span class=p>.</span><span class=n>fromCode</span><span class=p>(</span><span class=n>response</span><span class=p>.</span><span class=n>statusCode</span><span class=p>);</span> <span class=c1>// response.statusCode = 404
 </span></span></span><span class=line><span class=cl><span class=c1></span>
 </span></span><span class=line><span class=cl><span class=n>print</span><span class=p>(</span><span class=n>httpStatus</span><span class=p>);</span>
 </span></span><span class=line><span class=cl><span class=c1>// Salida:
@@ -86,33 +86,90 @@ Incluye 63 códigos de estado, mensajes y descripciones extraídos de las especi
 </span></span></span><span class=line><span class=cl><span class=c1>//  );
 </span></span></span></code></pre></div></li></ol><h2 id=ejemplo>Ejemplo
 <a class=heading-link href=#ejemplo><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h2><div class=highlight><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl><span class=k>import</span> <span class=s1>&#39;paquete:http/http.dart&#39;</span> <span class=k>as</span> <span class=n>http</span><span class=p>;</span>
-</span></span><span class=line><span class=cl><span class=k>import</span> <span class=s1>&#39;package:http_status/http_status.dart&#39;</span><span class=p>;</span>
+<span class=sr-only>Link to heading</span></a></h2><ol><li><p>Método clásico</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl> <span class=k>import</span> <span class=s1>&#39;package:http/http.dart&#39;</span> <span class=k>as</span> <span class=n>http</span><span class=p>;</span>
+</span></span><span class=line><span class=cl> <span class=k>import</span> <span class=s1>&#39;package:http_status/http_status.dart&#39;</span><span class=p>;</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=kd>final</span> <span class=n>url</span> <span class=o>=</span> <span class=s1>&#39;https://api.example.com/data&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl> <span class=kd>final</span> <span class=n>url</span> <span class=o>=</span> <span class=s1>&#39;https://api.example.com/data&#39;</span><span class=p>;</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=n>Future</span><span class=o>&lt;</span><span class=kt>void</span><span class=o>&gt;</span> <span class=n>fetchData</span><span class=p>()</span> <span class=kd>async</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>  <span class=k>try</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>    <span class=kd>final</span> <span class=n>response</span> <span class=o>=</span> <span class=kd>await</span> <span class=n>http</span><span class=p>.</span><span class=kd>get</span><span class=p>(</span><span class=n>Uri</span><span class=p>.</span><span class=n>parse</span><span class=p>(</span><span class=n>url</span><span class=p>));</span>
+</span></span><span class=line><span class=cl> <span class=n>Future</span><span class=o>&lt;</span><span class=kt>void</span><span class=o>&gt;</span> <span class=n>fetchData</span><span class=p>()</span> <span class=kd>async</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>   <span class=k>try</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>     <span class=kd>final</span> <span class=n>response</span> <span class=o>=</span> <span class=kd>await</span> <span class=n>http</span><span class=p>.</span><span class=kd>get</span><span class=p>(</span><span class=n>Uri</span><span class=p>.</span><span class=n>parse</span><span class=p>(</span><span class=n>url</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>     <span class=kd>final</span> <span class=n>httpStatusResponse</span> <span class=o>=</span> <span class=n>HttpStatus</span><span class=p>.</span><span class=n>fromCode</span><span class=p>(</span><span class=n>response</span><span class=p>.</span><span class=n>statusCode</span><span class=p>);</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>     <span class=k>if</span> <span class=p>(</span><span class=n>res</span><span class=p>.</span><span class=n>statusCode</span><span class=p>.</span><span class=n>isClientErrorHttpStatusCode</span><span class=p>)</span> <span class=p>{</span> <span class=c1>// Código de estado HTTP 400 - 499
+</span></span><span class=line><span class=cl>     <span class=k>if</span> <span class=p>(</span><span class=n>response</span><span class=p>.</span><span class=n>statusCode</span> <span class=o>==</span> <span class=n>HttpStatusCode</span><span class=p>.</span><span class=n>ok</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>       <span class=kd>final</span> <span class=n>data</span> <span class=o>=</span> <span class=n>response</span><span class=p>.</span><span class=n>body</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>       <span class=c1>// Procesar respuesta correcta
+</span></span></span><span class=line><span class=cl><span class=c1></span>       <span class=k>return</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>         <span class=s1>&#39;statusCode&#39;</span><span class=o>:</span> <span class=n>response</span><span class=p>.</span><span class=n>statusCode</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>         <span class=s1>&#39;data&#39;</span><span class=o>:</span> <span class=n>response</span><span class=p>.</span><span class=n>body</span>
+</span></span><span class=line><span class=cl>       <span class=p>};</span>
+</span></span><span class=line><span class=cl>     <span class=p>}</span> <span class=k>else</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>       <span class=n>print</span><span class=p>(</span><span class=s1>&#39;Error: </span><span class=si>${</span><span class=n>httpStatusResponse</span><span class=p>.</span><span class=n>code</span><span class=si>}</span><span class=s1>&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>       <span class=c1>// Manejar los errores con elegancia
+</span></span></span><span class=line><span class=cl><span class=c1></span>     <span class=p>}</span>
+</span></span><span class=line><span class=cl>   <span class=p>}</span> <span class=k>catch</span> <span class=p>(</span><span class=n>error</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>     <span class=n>print</span><span class=p>(</span><span class=s1>&#39;Error: </span><span class=si>$</span><span class=n>error</span><span class=s1>&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>   <span class=p>}</span>
+</span></span><span class=line><span class=cl> <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl> <span class=kt>void</span> <span class=n>main</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>   <span class=n>fetchData</span><span class=p>();</span>
+</span></span><span class=line><span class=cl> <span class=p>}</span>
+</span></span></code></pre></div></li><li><p>Método alternativo (Igual que el método #1, pero con una validación más directa usando ej: <code>.isSuccessfulHttpStatusCode</code>)</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl> <span class=k>import</span> <span class=s1>&#39;package:http/http.dart&#39;</span> <span class=k>as</span> <span class=n>http</span><span class=p>;</span>
+</span></span><span class=line><span class=cl> <span class=k>import</span> <span class=s1>&#39;package:http_status/http_status.dart&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl> <span class=kd>final</span> <span class=n>url</span> <span class=o>=</span> <span class=s1>&#39;https://api.example.com/data&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl> <span class=n>Future</span><span class=o>&lt;</span><span class=kt>void</span><span class=o>&gt;</span> <span class=n>fetchData</span><span class=p>()</span> <span class=kd>async</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>   <span class=k>try</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>     <span class=kd>final</span> <span class=n>response</span> <span class=o>=</span> <span class=kd>await</span> <span class=n>http</span><span class=p>.</span><span class=kd>get</span><span class=p>(</span><span class=n>Uri</span><span class=p>.</span><span class=n>parse</span><span class=p>(</span><span class=n>url</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>     <span class=kd>final</span> <span class=n>httpStatusResponse</span> <span class=o>=</span> <span class=n>HttpStatus</span><span class=p>.</span><span class=n>fromCode</span><span class=p>(</span><span class=n>response</span><span class=p>.</span><span class=n>statusCode</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>     <span class=k>if</span> <span class=p>(</span><span class=n>response</span><span class=p>.</span><span class=n>statusCode</span><span class=p>.</span><span class=n>isClientErrorHttpStatusCode</span><span class=p>)</span> <span class=p>{</span> <span class=c1>// Código de estado HTTP 400 - 499
+</span></span></span><span class=line><span class=cl><span class=c1></span>     <span class=c1>// Gestionar el error del cliente
+</span></span></span><span class=line><span class=cl><span class=c1></span>     <span class=p>}</span> <span class=k>else</span> <span class=k>if</span> <span class=p>(</span><span class=n>response</span><span class=p>.</span><span class=n>statusCode</span><span class=p>.</span><span class=n>isSuccessfulHttpStatusCode</span><span class=p>)</span> <span class=p>{</span> <span class=c1>// Código de estado HTTP 200 - 299
+</span></span></span><span class=line><span class=cl><span class=c1></span>       <span class=kd>final</span> <span class=n>data</span> <span class=o>=</span> <span class=n>response</span><span class=p>.</span><span class=n>body</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>       <span class=c1>// Procesar respuesta correcta
+</span></span></span><span class=line><span class=cl><span class=c1></span>     <span class=p>}</span> <span class=k>else</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>       <span class=n>print</span><span class=p>(</span><span class=s1>&#39;Error: </span><span class=si>${</span><span class=n>httpStatusResponse</span><span class=p>.</span><span class=n>code</span><span class=si>}</span><span class=s1>&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>       <span class=c1>// Manejar los errores con elegancia
+</span></span></span><span class=line><span class=cl><span class=c1></span>     <span class=p>}</span>
+</span></span><span class=line><span class=cl>   <span class=p>}</span> <span class=k>catch</span> <span class=p>(</span><span class=n>error</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>     <span class=n>print</span><span class=p>(</span><span class=s1>&#39;Error: </span><span class=si>$</span><span class=n>error</span><span class=s1>&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>   <span class=p>}</span>
+</span></span><span class=line><span class=cl> <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl> <span class=kt>void</span> <span class=n>main</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>   <span class=n>fetchData</span><span class=p>();</span>
+</span></span><span class=line><span class=cl> <span class=p>}</span>
+</span></span></code></pre></div></li><li><p>Método alternativo (Igual que el método #1, si necesita el objeto HttpStatus del código de estado generado dinámicamente de la respuesta)</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-dart data-lang=dart><span class=line><span class=cl> <span class=k>import</span> <span class=s1>&#39;package:http/http.dart&#39;</span> <span class=k>as</span> <span class=n>http</span><span class=p>;</span>
+</span></span><span class=line><span class=cl> <span class=k>import</span> <span class=s1>&#39;package:http_status/http_status.dart&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl> <span class=kd>final</span> <span class=n>url</span> <span class=o>=</span> <span class=s1>&#39;https://api.example.com/data&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl> <span class=n>Future</span><span class=o>&lt;</span><span class=kt>void</span><span class=o>&gt;</span> <span class=n>fetchData</span><span class=p>()</span> <span class=kd>async</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>   <span class=k>try</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>     <span class=kd>final</span> <span class=n>response</span> <span class=o>=</span> <span class=kd>await</span> <span class=n>http</span><span class=p>.</span><span class=kd>get</span><span class=p>(</span><span class=n>Uri</span><span class=p>.</span><span class=n>parse</span><span class=p>(</span><span class=n>url</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>     <span class=kd>final</span> <span class=n>httpStatusResponse</span> <span class=o>=</span> <span class=n>HttpStatus</span><span class=p>.</span><span class=n>fromCode</span><span class=p>(</span><span class=n>response</span><span class=p>.</span><span class=n>statusCode</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>     <span class=k>if</span> <span class=p>(</span><span class=n>httpStatusResponse</span><span class=p>.</span><span class=n>isClientErrorHttpStatusCode</span><span class=p>)</span> <span class=p>{</span> <span class=c1>// Código de estado HTTP 400 - 499
 </span></span></span><span class=line><span class=cl><span class=c1></span>       <span class=c1>// Gestionar el error del cliente
-</span></span></span><span class=line><span class=cl><span class=c1></span>     <span class=p>}</span> <span class=k>else</span> <span class=k>if</span> <span class=p>(</span><span class=n>response</span><span class=p>.</span><span class=n>statusCode</span> <span class=o>==</span> <span class=n>HttpStatusCode</span><span class=p>.</span><span class=n>ok</span><span class=p>)</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>      <span class=kd>final</span> <span class=n>data</span> <span class=o>=</span> <span class=n>response</span><span class=p>.</span><span class=n>body</span><span class=p>;</span>
-</span></span><span class=line><span class=cl>      <span class=c1>// Procesar respuesta correcta
-</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=p>}</span> <span class=k>else</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>      <span class=n>print</span><span class=p>(</span><span class=s1>&#39;Error: </span><span class=si>${</span><span class=n>response</span><span class=p>.</span><span class=n>statusCode</span><span class=si>}</span><span class=s1>&#39;</span><span class=p>);</span>
-</span></span><span class=line><span class=cl>      <span class=c1>// Manejar los errores con elegancia
-</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=p>}</span>
-</span></span><span class=line><span class=cl>  <span class=p>}</span> <span class=k>catch</span> <span class=p>(</span><span class=n>error</span><span class=p>)</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>    <span class=n>print</span><span class=p>(</span><span class=s1>&#39;Error: </span><span class=si>$</span><span class=n>error</span><span class=s1>&#39;</span><span class=p>);</span>
-</span></span><span class=line><span class=cl>  <span class=p>}</span>
-</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></span><span class=line><span class=cl><span class=c1></span>     <span class=p>}</span> <span class=k>else</span> <span class=k>if</span> <span class=p>(</span><span class=n>httpStatusResponse</span><span class=p>.</span><span class=n>isSuccessfulHttpStatusCode</span><span class=p>)</span> <span class=p>{</span> <span class=c1>// Código de estado HTTP 200 - 299
+</span></span></span><span class=line><span class=cl><span class=c1></span>       <span class=kd>final</span> <span class=n>data</span> <span class=o>=</span> <span class=n>response</span><span class=p>.</span><span class=n>body</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>   <span class=c1>// Procesar respuesta correcta
+</span></span></span><span class=line><span class=cl><span class=c1></span>     <span class=p>}</span> <span class=k>else</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>       <span class=n>print</span><span class=p>(</span><span class=s1>&#39;Error: </span><span class=si>${</span><span class=n>httpStatusResponse</span><span class=p>.</span><span class=n>code</span><span class=si>}</span><span class=s1>&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>       <span class=c1>// Manejar los errores con elegancia
+</span></span></span><span class=line><span class=cl><span class=c1></span>     <span class=p>}</span>
+</span></span><span class=line><span class=cl>   <span class=p>}</span> <span class=k>catch</span> <span class=p>(</span><span class=n>error</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>     <span class=n>print</span><span class=p>(</span><span class=s1>&#39;Error: </span><span class=si>$</span><span class=n>error</span><span class=s1>&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>   <span class=p>}</span>
+</span></span><span class=line><span class=cl> <span class=p>}</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=kt>void</span> <span class=n>main</span><span class=p>()</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>  <span class=n>fetchData</span><span class=p>();</span>
-</span></span><span class=line><span class=cl><span class=p>}</span>
-</span></span></code></pre></div><p>Este código obtiene datos de una API y comprueba el código de estado HTTP de la respuesta. Basado en el código, puedes tomar las acciones apropiadas dependiendo del resultado.</p><h2 id=consejos-adicionales>Consejos adicionales
+</span></span><span class=line><span class=cl> <span class=kt>void</span> <span class=n>main</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>   <span class=n>fetchData</span><span class=p>();</span>
+</span></span><span class=line><span class=cl> <span class=p>}</span>
+</span></span></code></pre></div></li></ol><p>Este código obtiene datos de una API y comprueba el código de estado HTTP de la respuesta. Basado en el código, puedes tomar las acciones apropiadas dependiendo del resultado.</p><h2 id=consejos-adicionales>Consejos adicionales
 <a class=heading-link href=#consejos-adicionales><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
 <span class=sr-only>Link to heading</span></a></h2><ul><li>Utiliza nombres de variables significativos (por ejemplo, <code>data</code> en lugar de <code>httpStatus.description</code>).</li><li>Considere el uso de bloques <code>try-catch</code> para manejar errores de red con gracia.</li><li>Consulte la documentación de <a href=https://github.com/DartForge/http_status class=external-link target=_blank rel=noopener><code>http_status</code></a> para obtener la última información y características adicionales.</li></ul><p>Espero que esta exhaustiva información valiosa sobre el uso del paquete <a href=https://github.com/DartForge/http_status class=external-link target=_blank rel=noopener><code>http_status</code></a> en tus proyectos Dart.</p></div><footer><section class=see-also><h3 id=también-ver-en-dart>También ver en Dart
 <a class=heading-link href=#tambi%c3%a9n-ver-en-dart><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
