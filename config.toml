@@ -121,9 +121,6 @@ scriptsrc = [
   "https://cdn.jsdelivr.net",
   "https://giscus.app",
 ]
-prefetchsrc = [
-  "'self'",
-]
 # connect-src directive - defines valid targets for to XMLHttpRequest (AJAX),WebSockets or EventSource
 connectsrc = [
   "'self'",
@@ -137,65 +134,65 @@ tag = "tags"
 author = "authors"
 
 [params.giscus] # https://giscus.app
-  repo = "andgar2010/home-page"
-  repoID = "R_kgDOGJTFUQ"
-  category = "Comments"
-  categoryID = "DIC_kwDOGJTFUc4CXnjc"
-  mapping = "pathname"
-  term = ""
-  strict = "0"
-  reactionsEnabled = "1"
-  emitMetadata = "0"
-  inputPosition = "bottom"
-  theme = ""
-  lang = "en"
-  loading = ""
+repo = "andgar2010/home-page"
+repoID = "R_kgDOGJTFUQ"
+category = "Comments"
+categoryID = "DIC_kwDOGJTFUc4CXnjc"
+mapping = "pathname"
+term = ""
+strict = "0"
+reactionsEnabled = "1"
+emitMetadata = "0"
+inputPosition = "bottom"
+theme = ""
+lang = "en"
+loading = ""
 
 [[params.social]]
 name = "Github"
-icon = "fa fa-github"
+icon = "fa-brands fa-github fa-2x"
 weight = 1
 url = "https://link.tech-andgar.me/github"
 
 [[params.social]]
 name = "Stackoverflow"
-icon = "fa fa-stack-overflow"
+icon = "fa-brands fa-stack-overflow fa-2x"
 weight = 2
 url = "https://link.tech-andgar.me/stackoverflow"
 
 # [[params.social]]
 # name = "Gitlab"
-# icon = "fa fa-gitlab"
+# icon = "fa-brands fa-gitlab fa-2x"
 # weight = 2
 # # url = "https://gitlab.com/andgar2010/"
 
 [[params.social]]
 name = "LinkedIn"
-icon = "fa fa-linkedin"
+icon = "fa-brands fa-linkedin fa-2x"
 weight = 3
 url = "https://link.tech-andgar.me/linkedin"
 
 [[params.social]]
 name = "Youtube"
-icon = "fa fa-youtube"
+icon = "fa-brands fa-youtube fa-2x"
 weight = 4
 url = "https://link.tech-andgar.me/youtube"
 
 [[params.social]]
 name = "Twitter"
-icon = "fa fa-twitter"
+icon = "fa-brands fa-twitter fa-2x"
 weight = 5
 url = "https://link.tech-andgar.me/twitter"
 
 # [[params.social]]
 # name = "Medium"
-# icon = "fa fa-medium"
+# icon = "fa-brands fa-medium fa-2x"
 # weight = 5
 # url = "https://medium.com/@andgar2010"
 
 # [[params.social]]
 # name = "RSS"
-# icon = "fa fa-rss"
+# icon = "fa-brands fa-rss fa-2x"
 # weight = 6
 # url = "https://tech-andgar.me/index.xml"
 # rel = "alternate"
@@ -203,7 +200,7 @@ url = "https://link.tech-andgar.me/twitter"
 
 #[[params.social]]
 # name = "RSS"
-# icon = "fa fa-rss"
+# icon = "fa-brands fa-rss fa-2x"
 # weight = 6
 # url = "http://bit.ly/CertiSololearn-AndGar"
 # rel = "alternate"
