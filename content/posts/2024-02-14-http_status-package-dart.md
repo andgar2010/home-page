@@ -149,36 +149,36 @@ dependencies:
 3. **Check Statuses:**
 
    ```dart
-    /// Returns true if this ranges between 100 y 199
-   res.statusCode.isInformationHttpStatusCode;
+   /// Returns true if this ranges between 100 y 199
+   response.statusCode.isInformationHttpStatusCode;
    print(HttpStatusCode.processing.isInformationHttpStatusCode); // true
    print(HttpStatusCode.notFound.isInformationHttpStatusCode); // false
 
    /// Returns true if this ranges between 200 y 299
-   res.statusCode.isSuccessfulHttpStatusCode;
+   response.statusCode.isSuccessfulHttpStatusCode;
    print(200.isSuccessfulHttpStatusCode); // true
    print(400.isSuccessfulHttpStatusCode); // false
    print(HttpStatusCode.accepted.isSuccessfulHttpStatusCode); // true
    print(HttpStatusCode.notFound.isSuccessfulHttpStatusCode); // false
 
    /// Returns true if this ranges between 300 y 399
-   res.statusCode.isRedirectHttpStatusCode;
+   response.statusCode.isRedirectHttpStatusCode;
    print(HttpStatusCode.permanentRedirect.isRedirectHttpStatusCode); // true
    print(HttpStatusCode.notFound.isRedirectHttpStatusCode); // false
 
     /// Returns true if this ranges between 400 y 499
-   res.statusCode.isClientErrorHttpStatusCode;
+   response.statusCode.isClientErrorHttpStatusCode;
    print(HttpStatusCode.notFound.isClientErrorHttpStatusCode); // true
    print(HttpStatusCode.processing.isClientErrorHttpStatusCode); // false
 
    /// Returns true if this ranges between 500 y 599
-   res.statusCode.isServerErrorHttpStatusCode;
+   response.statusCode.isServerErrorHttpStatusCode;
    print(HttpStatusCode.internalServerError.isServerErrorHttpStatusCode); // true
    print(HttpStatusCode.notFound.isServerErrorHttpStatusCode); // false;
 
-   if (res.statusCode.isSuccessfulHttpStatusCode) {
+   if (response.statusCode.isSuccessfulHttpStatusCode) {
      // Handle successful response
-   } else if (res.statusCode.isClientErrorHttpStatusCode) {
+   } else if (response.statusCode.isClientErrorHttpStatusCode) {
      // Handle client error
    } else {
      // Handle other errors
@@ -189,7 +189,7 @@ dependencies:
 4. **Convert from Int:**
 
    ```dart
-   final httpStatus = HttpStatus.fromCode(res.statusCode); // res.statusCode = 404
+   final httpStatus = HttpStatus.fromCode(response.statusCode); // response.statusCode = 404
 
    print(httpStatus);
    // Salida:
@@ -203,34 +203,103 @@ dependencies:
 
 ## Example
 
-```dart
-import 'package:http/http.dart' as http;
-import 'package:http_status/http_status.dart';
+1. Classic method
 
-final url = 'https://api.example.com/data';
+   ```dart
+    import 'package:http/http.dart' as http;
+    import 'package:http_status/http_status.dart';
 
-Future<void> fetchData() async {
-  try {
-    final response = await http.get(Uri.parse(url));
+    final url = 'https://api.example.com/data';
 
-     if (res.statusCode.isClientErrorHttpStatusCode) { // HTTP status code 400 - 499
-       // Handle client error
-     } else if (response.statusCode == HttpStatusCode.ok) {
-      final data = response.body;
-      // Process successful response
-    } else {
-      print('Error: ${response.statusCode}');
-      // Handle errors gracefully
+    Future<void> fetchData() async {
+      try {
+        final response = await http.get(Uri.parse(url));
+        final httpStatusResponse = HttpStatus.fromCode(response.statusCode);
+
+        if (response.statusCode == HttpStatusCode.ok) {
+          final data = response.body;
+          // Process successful response
+          return {
+            'statusCode': response.statusCode,
+            'data': response.body
+          };
+        } else {
+          print('Error: ${httpStatusResponse.code}');
+          // Handle errors gracefully
+        }
+      } catch (error) {
+        print('Error: $error');
+      }
     }
-  } catch (error) {
-    print('Error: $error');
-  }
-}
 
-void main() {
-  fetchData();
-}
-```
+    void main() {
+      fetchData();
+    }
+   ```
+
+2. Alternative method (Same as #1 method, but with more direct validation using eg: `.isSuccessfulHttpStatusCode`)
+
+   ```dart
+    import 'package:http/http.dart' as http;
+    import 'package:http_status/http_status.dart';
+
+    final url = 'https://api.example.com/data';
+
+    Future<void> fetchData() async {
+      try {
+        final response = await http.get(Uri.parse(url));
+        final httpStatusResponse = HttpStatus.fromCode(response.statusCode);
+
+        if (response.statusCode.isClientErrorHttpStatusCode) { // HTTP status code 400 - 499
+          // Handle client error
+        } else if (response.statusCode.isSuccessfulHttpStatusCode) { // HTTP status code 200 - 299
+          final data = response.body;
+          // Process successful response
+        } else {
+          print('Error: ${httpStatusResponse.code}');
+          // Handle errors gracefully
+        }
+      } catch (error) {
+        print('Error: $error');
+      }
+    }
+
+    void main() {
+      fetchData();
+    }
+   ```
+
+3. Alternative method (Same as #1 method, if you need the HttpStatus object from the dynamically generated status code of the response)
+
+   ```dart
+    import 'package:http/http.dart' as http;
+    import 'package:http_status/http_status.dart';
+
+    final url = 'https://api.example.com/data';
+
+    Future<void> fetchData() async {
+      try {
+        final response = await http.get(Uri.parse(url));
+        final httpStatusResponse = HttpStatus.fromCode(response.statusCode);
+
+        if (httpStatusResponse.isClientErrorHttpStatusCode) { // HTTP status code 400 - 499
+          // Handle client error
+        } else if (httpStatusResponse.isSuccessfulHttpStatusCode) { // HTTP status code 200 - 299
+          final data = response.body;
+          // Process successful response
+        } else {
+          print('Error: ${httpStatusResponse.code}');
+          // Handle errors gracefully
+        }
+      } catch (error) {
+        print('Error: $error');
+      }
+    }
+
+    void main() {
+      fetchData();
+    }
+   ```
 
 This code fetches data from an API and checks the HTTP status code of the response. Based on the code, you can take appropriate actions depending on the outcome.
 

@@ -149,35 +149,35 @@ dependencias:
 
    ```dart
    /// Devuelve true si está entre 100 y 199
-   res.statusCode.isInformationHttpStatusCode;
+   response.statusCode.isInformationHttpStatusCode;
    print(HttpStatusCode.processing.isInformationHttpStatusCode); // true
    print(HttpStatusCode.notFound.isInformationHttpStatusCode); // false
 
    /// Devuelve true si el código está entre 200 y 299
-   res.statusCode.isSuccessfulHttpStatusCode;
+   response.statusCode.isSuccessfulHttpStatusCode;
    print(200.isSuccessfulHttpStatusCode); // true
    print(400.isSuccessfulHttpStatusCode); // false
    print(HttpStatusCode.accepted.isSuccessfulHttpStatusCode); // true
    print(HttpStatusCode.notFound.isSuccessfulHttpStatusCode); // false
 
    /// Devuelve true si el código está entre 300 y 399
-   res.statusCode.isRedirectHttpStatusCode;
+   response.statusCode.isRedirectHttpStatusCode;
    print(HttpStatusCode.permanentRedirect.isRedirectHttpStatusCode); // true
    print(HttpStatusCode.notFound.isRedirectHttpStatusCode); // false
 
    /// Devuelve true si está entre 400 y 499
-   res.statusCode.isClientErrorHttpStatusCode;
+   response.statusCode.isClientErrorHttpStatusCode;
    print(HttpStatusCode.notFound.isClientErrorHttpStatusCode); // true
    print(HttpStatusCode.processing.isClientErrorHttpStatusCode); // false
 
    /// Devuelve true si el código está entre 500 y 599
-   res.statusCode.isServerErrorHttpStatusCode;
+   response.statusCode.isServerErrorHttpStatusCode;
    print(HttpStatusCode.internalServerError.isServerErrorHttpStatusCode); // true
    print(HttpStatusCode.notFound.isServerErrorHttpStatusCode); // false;
 
-   if (res.statusCode.isSuccessfulHttpStatusCode) { // Código de estado HTTP 200 - 299
+   if (response.statusCode.isSuccessfulHttpStatusCode) { // Código de estado HTTP 200 - 299
      // Manejar respuesta exitosa
-   } else if (res.statusCode.isClientErrorHttpStatusCode) { // Código de estado HTTP 400 - 499
+   } else if (response.statusCode.isClientErrorHttpStatusCode) { // Código de estado HTTP 400 - 499
      // Gestionar el error del cliente
    } else {
      // Gestionar otros códigos o errores
@@ -187,7 +187,7 @@ dependencias:
 4. **Convertir desde Int:**
 
    ```dart
-   final httpStatus = HttpStatus.fromCode(res.statusCode); // res.statusCode = 404
+   final httpStatus = HttpStatus.fromCode(response.statusCode); // response.statusCode = 404
 
    print(httpStatus);
    // Salida:
@@ -201,34 +201,103 @@ dependencias:
 
 ## Ejemplo
 
-```dart
-import 'paquete:http/http.dart' as http;
-import 'package:http_status/http_status.dart';
+1. Método clásico
 
-final url = 'https://api.example.com/data';
+   ```dart
+    import 'package:http/http.dart' as http;
+    import 'package:http_status/http_status.dart';
 
-Future<void> fetchData() async {
-  try {
-    final response = await http.get(Uri.parse(url));
+    final url = 'https://api.example.com/data';
 
-     if (res.statusCode.isClientErrorHttpStatusCode) { // Código de estado HTTP 400 - 499
-       // Gestionar el error del cliente
-     } else if (response.statusCode == HttpStatusCode.ok) {
-      final data = response.body;
-      // Procesar respuesta correcta
-    } else {
-      print('Error: ${response.statusCode}');
-      // Manejar los errores con elegancia
+    Future<void> fetchData() async {
+      try {
+        final response = await http.get(Uri.parse(url));
+        final httpStatusResponse = HttpStatus.fromCode(response.statusCode);
+
+        if (response.statusCode == HttpStatusCode.ok) {
+          final data = response.body;
+          // Procesar respuesta correcta
+          return {
+            'statusCode': response.statusCode,
+            'data': response.body
+          };
+        } else {
+          print('Error: ${httpStatusResponse.code}');
+          // Manejar los errores con elegancia
+        }
+      } catch (error) {
+        print('Error: $error');
+      }
     }
-  } catch (error) {
-    print('Error: $error');
-  }
-}
 
-void main() {
-  fetchData();
-}
-```
+    void main() {
+      fetchData();
+    }
+   ```
+
+2. Método alternativo (Igual que el método #1, pero con una validación más directa usando ej: `.isSuccessfulHttpStatusCode`)
+
+   ```dart
+    import 'package:http/http.dart' as http;
+    import 'package:http_status/http_status.dart';
+
+    final url = 'https://api.example.com/data';
+
+    Future<void> fetchData() async {
+      try {
+        final response = await http.get(Uri.parse(url));
+        final httpStatusResponse = HttpStatus.fromCode(response.statusCode);
+
+        if (response.statusCode.isClientErrorHttpStatusCode) { // Código de estado HTTP 400 - 499
+        // Gestionar el error del cliente
+        } else if (response.statusCode.isSuccessfulHttpStatusCode) { // Código de estado HTTP 200 - 299
+          final data = response.body;
+          // Procesar respuesta correcta
+        } else {
+          print('Error: ${httpStatusResponse.code}');
+          // Manejar los errores con elegancia
+        }
+      } catch (error) {
+        print('Error: $error');
+      }
+    }
+
+    void main() {
+      fetchData();
+    }
+   ```
+
+3. Método alternativo (Igual que el método #1, si necesita el objeto HttpStatus del código de estado generado dinámicamente de la respuesta)
+
+   ```dart
+    import 'package:http/http.dart' as http;
+    import 'package:http_status/http_status.dart';
+
+    final url = 'https://api.example.com/data';
+
+    Future<void> fetchData() async {
+      try {
+        final response = await http.get(Uri.parse(url));
+        final httpStatusResponse = HttpStatus.fromCode(response.statusCode);
+
+        if (httpStatusResponse.isClientErrorHttpStatusCode) { // Código de estado HTTP 400 - 499
+          // Gestionar el error del cliente
+        } else if (httpStatusResponse.isSuccessfulHttpStatusCode) { // Código de estado HTTP 200 - 299
+          final data = response.body;
+      // Procesar respuesta correcta
+        } else {
+          print('Error: ${httpStatusResponse.code}');
+          // Manejar los errores con elegancia
+        }
+      } catch (error) {
+        print('Error: $error');
+      }
+    }
+
+    void main() {
+      fetchData();
+    }
+   ```
 
 Este código obtiene datos de una API y comprueba el código de estado HTTP de la respuesta. Basado en el código, puedes tomar las acciones apropiadas dependiendo del resultado.
 
