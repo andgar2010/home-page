@@ -8,6 +8,19 @@
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
 {{ end }}
 
+<div id="black-fire">
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+</div>
+
 <div id="cursor-color-bg"></div>
 <div id="cursor-color-bg--blur"></div>
 
@@ -18,11 +31,12 @@
 {{ $js_animation_h1 := resources.Get "js/animation_h1.js" }}
 {{ $js_cursor_color_blur := resources.Get "js/cursor_color_blur.js" }}
 {{ $js_trailer_cursor := resources.Get "js/trailer_cursor.js" }}
+{{ $black_fire_cursor_trail_animation := resources.Get "js/black_fire_cursor_trail_animation.js" }}
 
 {{ if .Site.IsServer }}
-  {{ $js_bundle := slice $js_cursor_color_blur $js_trailer_cursor $js_animation_h1 | resources.Concat "js/bundle.js" }}
+  {{ $js_bundle := slice $js_cursor_color_blur $js_trailer_cursor $js_animation_h1 $black_fire_cursor_trail_animation | resources.Concat "js/bundle.js" }}
   <script defer src="{{ $js_bundle.RelPermalink }}"></script>
 {{ else }}
-  {{ $js_bundle := slice $js_cursor_color_blur $js_trailer_cursor $js_animation_h1 | resources.Concat "js/bundle.min.js" | js.Build (dict "minify" true) | fingerprint }}
+  {{ $js_bundle := slice $js_cursor_color_blur $js_trailer_cursor $js_animation_h1 $black_fire_cursor_trail_animation | resources.Concat "js/bundle.min.js" | js.Build (dict "minify" true) | fingerprint }}
   <script defer src="{{ $js_bundle.RelPermalink }}" crossorigin="anonymous"></script>
 {{ end }}
