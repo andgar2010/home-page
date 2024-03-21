@@ -6,13 +6,13 @@ if (3 > window.location.pathname.split('/').length) {
 
 const trailer = document.getElementById("trailer");
 
-const animateTrailer = (e, interacting) => {
+const animateTrailer = (e, isInteracting) => {
   const { clientX, clientY } = e;
   const x = clientX - trailer.offsetWidth / 2,
     y = clientY - trailer.offsetHeight / 2;
   const keyframes = {
-    transform: `translate(${x}px, ${y}px) scale(${interacting ? 2.5 : 0.75})`,
-    opacity: `${interacting ? 0.5 : 1}`
+    transform: `translate(${x}px, ${y}px) scale(${isInteracting ? 2.5 : 0.75})`,
+    opacity: `${isInteracting ? 0.5 : 1}`
   };
 
   trailer.animate(keyframes, { duration: 350, fill: "forwards" });
@@ -30,12 +30,12 @@ const getTailerClass = (type) => {
 };
 
 window.onmousemove = e => {
-  const interactable = e.target.closest("a"),
-    interacting = interactable !== null;
+  const interactable = e.target.closest("a");
+  const isInteracting = interactable !== null;
   const icon = document.getElementById("trailer-icon");
-  animateTrailer(e, interacting);
-  trailer.className = interacting ? interactable.className : "";
-  if (interacting) {
+  animateTrailer(e, isInteracting);
+  trailer.className = isInteracting ? interactable.className : "";
+  if (isInteracting) {
     icon.className = getTailerClass(interactable.className);
   } else {
     icon.className = "";
