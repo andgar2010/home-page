@@ -1,28 +1,53 @@
-#cursor-color {
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+#cursor-color-bg {
   height: 30vh;
   aspect-ratio: 1;
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: 50%;
   translate: -50% -50%;
   border-radius: 50%;
   background: #1472cbe7;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #abc544, #1472cbe7);
+  background: -webkit-gradient(linear, left top, right top, from(#abc544), to(#1472cbe7));
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #abc544, #1472cbe7);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -o-linear-gradient(left, #abc544, #1472cbe7);
+  -webkit-animation: rotate 15s infinite;
   animation: rotate 15s infinite;
+  -webkit-filter: blur(150px);
   filter: blur(150px);
   z-index: -1;
 }
 
-#blur {
+#cursor-color-bg--blur {
   width: 100%;
   height: 100wh;
   position: relative;
   z-index: -1;
+  -webkit-backdrop-filter: blur(200px);
   backdrop-filter: blur(200px);
+}
+
+@-webkit-keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+
+  50% {
+    scale: 1 1.5;
+  }
+
+  to {
+    rotate: 360deg;
+  }
 }
 
 @keyframes rotate {

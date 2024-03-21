@@ -1,5 +1,5 @@
 // Cursor Color Blur
-const cursorColor = document.getElementById("cursor-color");
+const cursorColor = document.getElementById("cursor-color-bg")
 document.body.onpointermove = (event) => {
   const { clientX, clientY } = event;
   cursorColor.animate({
