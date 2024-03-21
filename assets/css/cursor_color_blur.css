@@ -7,19 +7,27 @@
 
 #cursor-color-bg {
   height: 30vh;
-  aspect-ratio: 1;
+  aspect-ratio: 1/1;
   position: fixed;
   left: 50%;
   top: 50%;
-  translate: -50% -50%;
+
+  transform: translate( -50%,  -50%);
   border-radius: 50%;
   background: #1472cbe7;
-  /* fallback for old browsers */
-  background: -webkit-gradient(linear, left top, right top, from(#abc544), to(#1472cbe7));
+  /* Fallback for older browsers */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #abc544, #1472cbe7);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-gradient(linear, left top, right top, from(#abc544), to(#1472cbe7));
+  /* Firefox 3.6-15 */
+  background: -moz-linear-gradient(left, #abc544, #1472cbe7);
+  /* Opera 11.10-12.02 */
   background: -o-linear-gradient(left, #abc544, #1472cbe7);
+  /* IE 10-11 */
+  background: -ms-linear-gradient(left, #abc544, #1472cbe7);
+  /* W3C, Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #abc544, #1472cbe7);
+  -moz-animation: rotate 15s infinite;
+  -o-animation: rotate 15s infinite;
   -webkit-animation: rotate 15s infinite;
   animation: rotate 15s infinite;
   -webkit-filter: blur(150px);
@@ -34,6 +42,34 @@
   z-index: -1;
   -webkit-backdrop-filter: blur(200px);
   backdrop-filter: blur(200px);
+}
+
+@-moz-keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+
+  50% {
+    scale: 1 1.5;
+  }
+
+  to {
+    rotate: 360deg;
+  }
+}
+
+@-o-keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+
+  50% {
+    scale: 1 1.5;
+  }
+
+  to {
+    rotate: 360deg;
+  }
 }
 
 @-webkit-keyframes rotate {
