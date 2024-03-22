@@ -62,7 +62,7 @@ Feel free to challenge me, disagree with me, or tell me I'm completely nuts in t
 
 ## Copyright and License
 
-Copyright (C) 2023 by Andres Garcia
+Copyright (C) 2024 by Andres Garcia
 
 Site content is licensed under the *Creative Commons Attribution 4.0 International* license (CC-BY-4.0).
 
