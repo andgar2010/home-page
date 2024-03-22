@@ -5,7 +5,7 @@
   font-size: 2.15rem;
   border-radius: 1.25rem;
   padding: 0.7rem;
-  position: fixed;
+  position: absolute;
   top: -5.155rem;
   left: -11.7rem;
   visibility: hidden;
