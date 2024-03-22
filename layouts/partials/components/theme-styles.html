@@ -42,12 +42,11 @@
 {{ $js_cursor_color_blur := resources.Get "js/cursor_color_blur.js" }}
 {{ $js_trailer_cursor := resources.Get "js/trailer_cursor.js" }}
 {{ $black_fire_cursor_trail_animation := resources.Get "js/black_fire_cursor_trail_animation.js" }}
-{{ $typewriter_animation := resources.Get "js/typewriter.js" }}
 
 {{ if .Site.IsServer }}
-  {{ $js_bundle := slice $js_cursor_color_blur $js_trailer_cursor $js_animation_h1 $black_fire_cursor_trail_animation $typewriter_animation | resources.Concat "js/bundle.js" }}
+  {{ $js_bundle := slice $js_cursor_color_blur $js_trailer_cursor $js_animation_h1 $black_fire_cursor_trail_animation | resources.Concat "js/bundle.js" }}
   <script defer src="{{ $js_bundle.RelPermalink }}"></script>
 {{ else }}
-  {{ $js_bundle := slice $js_cursor_color_blur $js_trailer_cursor $js_animation_h1 $black_fire_cursor_trail_animation $typewriter_animation | resources.Concat "js/bundle.min.js" | js.Build (dict "minify" true) | fingerprint }}
+  {{ $js_bundle := slice $js_cursor_color_blur $js_trailer_cursor $js_animation_h1 $black_fire_cursor_trail_animation | resources.Concat "js/bundle.min.js" | js.Build (dict "minify" true) | fingerprint }}
   <script defer src="{{ $js_bundle.RelPermalink }}" crossorigin="anonymous"></script>
 {{ end }}

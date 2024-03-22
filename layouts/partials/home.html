@@ -2,7 +2,13 @@
   <div class="about">
     {{ if and (isset .Site.Params "avatarurl") (not (isset .Site.Params "gravatar")) }}
       {{ with .Site.Params.avatarURL }}
-        <div class="avatar"><img src="{{ . | relURL }}" width="350" height="350" alt="avatar"></div>
+        <div class="avatar">
+          <picture>
+            <source srcset="{{ . | relURL }}.webp"/>
+            <img src="{{ . | relURL }}.jpg" width="350" height="350" alt="avatar" />
+          </picture>
+
+        </div>
       {{ end }}
     {{ end }}
     {{ with .Site.Params.gravatar }}
