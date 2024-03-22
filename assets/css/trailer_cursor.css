@@ -55,3 +55,7 @@ a:hover {
 a i:hover {
   font-size: 175%;
 }
+
+.fa-2x:hover {
+  font-size: 268%;
+}
