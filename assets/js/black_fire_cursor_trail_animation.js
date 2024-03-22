@@ -18,12 +18,29 @@ function animateCircles () {
   let y = coords.y;
 
   circles.forEach(function (circle, index) {
-    circle.style.left = x - 12 + 'px';
-    circle.style.top = y - 12 + 'px';
+    let xOffset = 12;
+    let yOffset = 12;
+    let xTarget = x - xOffset;
+    let yTarget = y - yOffset;
 
-    circle.style.scale = [circles.length - index] / circles.length;
+    // Ajuste de distancia entre círculos y escalamiento conforme al índice
+    const scale = (circles.length - index) / circles.length;
 
+    // circle.style.left = xTarget + 'px';
+    // circle.style.top = yTarget + 'px';
+    // circle.style.scale = scale;
 
+    const keyframes = [
+      { transform: `translate(${xTarget}px, ${yTarget}px) scale(${scale})` }
+    ];
+
+    const options = {
+      duration: 350,
+      fill: 'forwards'
+    };
+    circle.animate(keyframes, options);
+
+    // Actualiza las posiciones actuales del círculo para la próxima iteración
     circle.x = x;
     circle.y = y;
 
@@ -36,13 +53,3 @@ function animateCircles () {
 }
 
 animateCircles();
-
-// Cursor Color Blur
-// const cursorColor = document.getElementById("cursor-color")
-// document.body.onpointermove = (event) => {
-//   const { clientX, clientY } = event
-//   cursorColor.animate({
-//     left: `${clientX}px`,
-//     top: `${clientY}px`,
-//   }, { duration: 1000, fill: "forwards" })
-// }
