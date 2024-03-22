@@ -34,10 +34,17 @@ window.onmousemove = e => {
   const isInteracting = interactable !== null;
   const icon = document.getElementById("trailer-icon");
   animateTrailer(e, isInteracting);
-  trailer.className = isInteracting ? interactable.className : "";
+
   if (isInteracting) {
-    icon.className = getTailerClass(interactable.className);
+    trailer.className = interactable.className;
+    const newClass = getTailerClass(interactable.className).split(' ');
+    icon.classList.add(...newClass);
   } else {
-    icon.className = "";
+    if (trailer && trailer.classList && trailer.classList.length > 0) {
+      trailer.removeAttribute("class");
+    }
+    if (icon && icon.classList && icon.classList.length > 0) {
+      icon.removeAttribute("class");
+    }
   }
 };
