@@ -8,9 +8,12 @@
     {{ with .Site.Params.gravatar }}
       <div class="avatar"><img src="https://www.gravatar.com/avatar/{{ md5 . }}?s=240&d=mp" alt="gravatar"></div>
     {{ end }}
-    <h1>{{ .Site.Params.author }}</h1>
+    <h1> {{ .Site.Params.author }}</h1>
     {{ if reflect.IsSlice .Site.Params.info }}
-    <h2>{{ range .Site.Params.info }}{{ . }}<br>{{ end }}</h2>
+    <h2 id="info" hidden>{{ range .Site.Params.info }}{{ . }} <br>{{ end }}</h2>
+    <h2>
+      <span id="typewriter"></span><span id="cursor">|</span>
+    </h2>
     {{ else }}
     <h2>{{ .Site.Params.info }}</h2>
     {{ end }}
@@ -33,3 +36,62 @@
     {{ end }}
   </div>
 </section>
+
+
+<script>
+  function sleep (ms) {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+  }
+
+  // Obtener el elemento <h2>
+  var h2Element = document.getElementById("info");
+
+  // Obtener todos los elementos hermanos del <br> dentro del <h2>
+  var brElements = h2Element.querySelectorAll("br");
+
+  // Inicializar un array para almacenar los elementos
+  const phrases = [];
+
+  // Agregar el texto del <h2> al array
+  phrases.push(h2Element.textContent.trim());
+
+  // Iterar sobre los elementos hermanos del <br> para obtener su texto y agregarlo al array
+  brElements.forEach(function (brElement) {
+    phrases.push(brElement.previousSibling.textContent.trim());
+  });
+  phrases.shift();
+
+  const el = document.getElementById("typewriter");
+
+  let sleepTime = 100;
+
+  let curPhraseIndex = 0;
+
+  const writeLoop = async () => {
+    while (true) {
+      let curWord = phrases[curPhraseIndex];
+
+      for (let i = 0; i < curWord.length; i++) {
+        el.innerText = curWord.substring(0, i + 1);
+        await sleep(sleepTime);
+      }
+
+      await sleep(sleepTime * 10);
+
+      for (let i = curWord.length; i > 0; i--) {
+        el.innerText = curWord.substring(0, i - 1);
+        await sleep(sleepTime);
+      }
+
+      await sleep(sleepTime * 5);
+
+      if (curPhraseIndex === phrases.length - 1) {
+        curPhraseIndex = 0;
+      } else {
+        curPhraseIndex++;
+      }
+    }
+  };
+
+  writeLoop();
+</script>

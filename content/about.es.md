@@ -12,7 +12,7 @@ aliases: [
 ---
 
 
-¡Hola! Soy Andrés, un desarrollador sordo cuya lengua materna es Lengua de Señas Colombiana (LSC). Tengo una pasión por trabajar con computadoras, ya sea investigando nuevas tendencias de software, aprendiendo nuevas tecnologías o explorando las últimas novedades en el mundo tecnológico para encontrar nuevas formas de integrar la lógica y la comunicación.
+¡Hola! Soy Andrés, un desarrollador Sordo cuya lengua materna es Lengua de Señas Colombiana (LSC). Tengo una pasión por trabajar con computadoras, ya sea investigando nuevas tendencias de software, aprendiendo nuevas tecnologías o explorando las últimas novedades en el mundo tecnológico para encontrar nuevas formas de integrar la lógica y la comunicación.
 
 Tecnólogo especializado en desarrollo de aplicaciones para dispositivos móviles con sólida experiencia en front-end móvil Flutter.
 

@@ -19,7 +19,12 @@ noClasses = false
 author = "Andrés García"
 description = "Andrés García's personal website"
 keywords = "blog,developer,personal,flutter,deaf"
-info = ["Mobile App Developer with Flutter | FullStack", ""]
+info = [
+  "Software Developer ",
+  "Colombian Sign Language (LSC) Consultant ",
+  "Colombian Sign Language (LSC) Translator ",
+  "Adventurer ",
+]
 avatarURL = "images/avatar.jpg"
 #gravatar = "john.doe@example.com"
 footerContent = "H E L L O @ T E C H - A N D G A R . M E"
@@ -240,9 +245,14 @@ title = "TECH-ANDGAR"
 
 [languages.es.params]
 author = "Andrés García"
-info = ["Desarrollador Full Stack con Flutter", ""]
+info = [
+  "Desarrollador de software ",
+  "Consultor Lengua de Señas Colombiana (LSC) ",
+  "Traductor Lengua de Señas Colombiana (LSC) ",
+  "Aventurero ",
+]
 description = "Sítio personal de Andrés García"
-keywords = "blog,desarrollador,personal,flutter,sordo"
+keywords = "blog,desarrollador,personal,flutter,Sordo"
 footerContent = "H E L L O @ T E C H - A N D G A R . M E"
 
 [[languages.es.menu.main]]
