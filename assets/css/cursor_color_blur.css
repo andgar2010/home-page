@@ -11,8 +11,6 @@
   position: fixed;
   left: 50%;
   top: 50%;
-
-  /* transform: translate( -50%, -50%); */
   transform-origin: center center;
   border-radius: 50%;
   background: #1472cbe7;
@@ -27,13 +25,13 @@
   background: -ms-linear-gradient(left, #abc544, #1472cbe7);
   /* W3C, Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: linear-gradient(to right, #abc544, #1472cbe7);
-  /* -moz-animation: rotate 15s infinite;
-  -o-animation: rotate 15s infinite;
-  -webkit-animation: rotate 15s infinite;
-  animation: rotate 15s infinite; */
-  -webkit-animation: spin 15s cubic-bezier(0.8, 0, 0.2, 1) infinite;
-  -moz-animation:    spin 15s cubic-bezier(0.8, 0, 0.2, 1) infinite;
-          animation: spin 15s cubic-bezier(0.8, 0, 0.2, 1) infinite;
+
+  -webkit-animation: rotate 15s linear infinite;
+  -ms-animation:     rotate 15s linear infinite;
+  -moz-animation:    rotate 15s linear infinite;
+  -o-animation:      rotate 15s linear infinite;
+  animation:         rotate 15s linear infinite;
+
   -webkit-filter: blur(150px);
   filter: blur(150px);
   z-index: -1;
@@ -48,28 +46,18 @@
   backdrop-filter: blur(200px);
 }
 
-@-moz-keyframes spin {
-
-  50% {
-    scale: 1 1.5;
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes spin {
-
-  50% {
-    scale: 1 1.5;
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 @keyframes spin {
+  /* from {
+    rotate: 0deg;
+  }
 
+  50% {
+    scale: 1 1.5;
+  }
+
+  to {
+    rotate: 360deg;
+  } */
   50% {
     scale: 1 1.5;
     transform: rotate(180deg);
@@ -78,7 +66,8 @@
     transform: rotate(360deg);
   }
 }
-/*
+
+
 @-moz-keyframes rotate {
   from {
     rotate: 0deg;
@@ -133,4 +122,4 @@
   to {
     rotate: 360deg;
   }
-} */
+}
